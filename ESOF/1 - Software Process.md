@@ -63,4 +63,6 @@ tenta melhorar o aspeto visual, mantendo a poderio computacional.
   - Flexível.
   - Permite satisfazer facilmente os requirimentos essenciais.
   - Facilita o desenvolvimento de funções adicionais e complementares.
-
+  
+  Este método consiste em aumentar a funcionalidade do código à medida que vai sendo desenvolvido, de forma gradual e por ordem de prioridade, sem alterar substancialmente o anterior. É um bom processo para o projeto a ter em conta, pois permite disponibilizar novas funcionalidades estáveis, sempre que possível. Este processo é repetido de forma cíclica até que se chegue ao resultado pretendido. 
+ 
