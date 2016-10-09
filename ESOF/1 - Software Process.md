@@ -39,3 +39,20 @@ encontrada neste projeto, é constatável que, apesar de grande parte do desenvo
 pelos vários contribuidores deste projeto, o **Shoudly** baseia-se na framework [NUnit](http://www.nunit.org/), 
 a ferramenta de testes standard em aplicações .NET. Por este motivo, é possível afirmar que utiliza 
 o modelo **Reuse-oriented development**.
+
+Além disso, consideramos que o processo **Iterative and incremental development** também foi utilizado, visto que, regularmente, são lançadas novas [versões](https://github.com/shouldly/shouldly/releases) do projeto, complementadoras das versões que as precedem.
+
+<br>
+
+<h1 align="center">Análise crítica</h1>
+<h3>Processos</h3>
+Os modelos de desenvolvimento de software do **Shoudly** são adequados ao âmbito do projeto, pelas seguintes razões:
++ Reuse-oriented development
+  - Utiliza NUnit, uma framework consagrada e estável.
+  - Pretende alterar a facilidade de utilização. 
+  - Pretende melhorar a estética e a apresentação.
++ Iterative and incremental development
+  - Permite criar software rapidamente.
+  - Flexível.
+  - Permite satisfazer facilmente os requirimentos essenciais.
+  - Facilita o desenvolvimento de funções adicionais e complementares.
