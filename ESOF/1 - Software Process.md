@@ -52,7 +52,7 @@ Os modelos de desenvolvimento de software do **Shoudly** são adequados ao âmbi
   - Pretende alterar a facilidade de utilização. 
   - Pretende melhorar a estética e a apresentação.
   
-O objetivo do projeto não é criar uma ferramenta de testes de raíz, mas sim melhorar o que já está feito. A framework NUnit
+  O objetivo do projeto não é criar uma ferramenta de testes de raíz, mas sim melhorar o que já está feito. A framework NUnit
 apresenta-se como uma ferramenta poderosa e eficiente, mas pouco apelativa esteticamente - por esta razão, o **Shouldly** 
 tenta melhorar o aspeto visual, mantendo a poderio computacional.
 
