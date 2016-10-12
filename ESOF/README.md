@@ -14,11 +14,11 @@
 <h6 align="center"> 2016/2017</h6>
 <h6 align="center">Turma COMP_1049 Grupo - 1</h6>
 
-Lázaro Gabriel Barros da Costa - up201405342 - [@lazarocosta](https://github.com/lazarocosta)
-
 João Paulo Moreira Barbosa – up201406241 - [@bmpj13](https://github.com/bmpj13)
 
-Miguel Barbeitos Lira Luís - up201405324 - [@mitchLira](https://github.com/MitchLira)
+Lázaro Gabriel Barros da Costa - up201405342 - [@lazarocosta](https://github.com/lazarocosta)
+
+Miguel Lira Barbeitos Luís - up201405324 - [@mitchLira](https://github.com/MitchLira)
 
 Miriam Cristiana Meireles Campos Gonçalves – up201403441 - [@miriamcmcg](https://github.com/miriamcmcg)
 
