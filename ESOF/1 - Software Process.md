@@ -66,3 +66,19 @@ tenta melhorar o aspeto visual, mantendo a poderio computacional.
   
   Este método consiste em aumentar a funcionalidade do código à medida que vai sendo desenvolvido, de forma gradual e por ordem de prioridade, sem alterar substancialmente o anterior. É um bom processo para o projeto a ter em conta, pois permite disponibilizar novas funcionalidades estáveis, sempre que possível. Este processo é repetido de forma cíclica até que se chegue ao resultado pretendido. 
  
+ <br>
+
+<h3>Contribuir</h3>
+
+O sistema de contribuição é um simples e intuitivvo, que usa um sistema de issues para ajudar o contribuidor a ter noção daquilo que pode e deve fazer.
+
+Além disso, as issues têm tags que permitem o colaborador comrpovar se está apto para "derrubar uma barreira".
+
+<br>
+
+<h3>Contribuição do grupo</h3>
+
+João Barbosa - 25% <br>
+Lázaro Costa - 25% <br> 
+Miguel Lira - 25% <br>
+Miriam Gonçalves - 25%
