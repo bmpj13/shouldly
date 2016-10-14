@@ -36,13 +36,9 @@ Mais informações podem ser encontradas no [readme](https://github.com/shouldly
 <br>
 
 <h3>Processo de Software</h3>
-Pelo código encontrado na primeira [atividade](https://github.com/shouldly/shouldly/releases/tag/v1.0.1) 
-encontrada neste projeto, é constatável que, apesar de grande parte do desenvolvimento ter sido feito
-pelos vários contribuidores deste projeto, o **Shoudly** baseia-se na framework [NUnit](http://www.nunit.org/), 
-a ferramenta de testes standard em aplicações .NET. Por este motivo, é possível afirmar que utiliza 
-o modelo **Reuse-oriented development**.
-
-Além disso, consideramos que o processo **Iterative and incremental development** também foi utilizado, visto que, regularmente, são lançadas novas [versões](https://github.com/shouldly/shouldly/releases) do projeto, complementadoras das versões que as precedem.
+Consideramos que o processo utilizado é **Iterative and incremental development**, visto que, regularmente, são lançadas novas [versões](https://github.com/shouldly/shouldly/releases) do projeto, complementadoras das versões que as precedem. 
+ 
+Este método consiste em aumentar a funcionalidade do código à medida que vai sendo desenvolvido, de forma gradual e por ordem de prioridade, sem alterar substancialmente o anterior. Este processo é repetido de forma cíclica até que se chegue ao resultado pretendido.
 
 <br>
 <br>
@@ -50,24 +46,15 @@ Além disso, consideramos que o processo **Iterative and incremental development
 <h1 align="center">Análise crítica</h1>
 <h3>Processos</h3>
 Os modelos de desenvolvimento de software do **Shoudly** são adequados ao âmbito do projeto, pelas seguintes razões:
-+ Reuse-oriented development
-  - Utiliza NUnit, uma framework consagrada e estável.
-  - Pretende alterar a facilidade de utilização. 
-  - Pretende melhorar a estética e a apresentação.
-  
-  O objetivo do projeto não é criar uma ferramenta de testes de raíz, mas sim melhorar o que já está feito. A framework NUnit
-apresenta-se como uma ferramenta poderosa e eficiente, mas pouco apelativa esteticamente - por esta razão, o **Shouldly** 
-tenta melhorar o aspeto visual, mantendo o poderio computacional.
 
-<br>
-  
 + Iterative and incremental development
   - Permite criar software rapidamente.
   - Flexível.
   - Permite satisfazer facilmente os requirimentos essenciais.
   - Facilita o desenvolvimento de funções adicionais e complementares.
   
-  Este método consiste em aumentar a funcionalidade do código à medida que vai sendo desenvolvido, de forma gradual e por ordem de prioridade, sem alterar substancialmente o anterior. É um bom processo para o projeto a ter em conta, pois permite disponibilizar novas funcionalidades estáveis, sempre que possível. Este processo é repetido de forma cíclica até que se chegue ao resultado pretendido. 
+ É um bom processo para o projeto a ter em conta, pois permite utilizar a prática de **integração contínua (CI)**, possibilitando o
+ aparecimento de novas funcionalidades estáveis, sempre que possível. Desta forma, a interação com o cliente é mais frequente, o que permite receber mais vezes *feedback* de como a aplicação deve evoluir.
  
 <br>
 
