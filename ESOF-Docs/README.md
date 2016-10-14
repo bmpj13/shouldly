@@ -61,4 +61,4 @@ Protegido pela licença [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Cla
 <h3>Relatórios ESOF</h3>
 Os diferentes relatórios podem ser encontrados aqui:
 
-1 - [Processos de Desenvolvimento de Software](https://github.com/bmpj13/shouldly/blob/master/ESOF/1%20-%20Software%20Process.md)
+1 - [Processos de Desenvolvimento de Software](https://github.com/bmpj13/shouldly/blob/master/ESOF-Docs/1%20-%20Software%20Process.md)
