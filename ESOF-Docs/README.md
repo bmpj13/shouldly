@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://github.com/bmpj13/shouldly/blob/master/ESOF/resources/images/ShouldlyLogo.png" alt="icon">
+  <img src="https://github.com/bmpj13/shouldly/blob/master/ESOF-Docs/resources/images/ShouldlyLogo.png" alt="icon">
 </p>
 <h1 align="center">Shoudly</h1>
 
 <p align="right">
-  <img src="https://github.com/bmpj13/shouldly/blob/master/ESOF/resources/images/FEUPlogo.png" alt="FEUP logo">
+  <img src="https://github.com/bmpj13/shouldly/blob/master/ESOF-Docs/resources/images/FEUPlogo.png" alt="FEUP logo">
 </p>
 <h3>Faculdade de Engenharia da Universidade do Porto</h3> 
 <h5>Rua Roberto Frias, sn, 4200-465, Porto, Portugal</h5>
