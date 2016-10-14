@@ -17,6 +17,8 @@ Para além disso, são atribuídas tags aos problemas encontrados, como **_Enhan
 para facilitar a escolha de problemas a ser resolvidos, permitindo ao contribuidor filtrar as questões 
 que estejam fora do seu âmbito.
 
+É também aconselhado utilizar o [gitter](https://gitter.im/shouldly/shouldly?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) do repositório, para obter rapidamente informações e para trabalhar conjuntamente.
+
 <br>
 
 <h3>Contribuição</h3>
@@ -43,6 +45,7 @@ o modelo **Reuse-oriented development**.
 Além disso, consideramos que o processo **Iterative and incremental development** também foi utilizado, visto que, regularmente, são lançadas novas [versões](https://github.com/shouldly/shouldly/releases) do projeto, complementadoras das versões que as precedem.
 
 <br>
+<br>
 
 <h1 align="center">Análise crítica</h1>
 <h3>Processos</h3>
@@ -54,7 +57,7 @@ Os modelos de desenvolvimento de software do **Shoudly** são adequados ao âmbi
   
   O objetivo do projeto não é criar uma ferramenta de testes de raíz, mas sim melhorar o que já está feito. A framework NUnit
 apresenta-se como uma ferramenta poderosa e eficiente, mas pouco apelativa esteticamente - por esta razão, o **Shouldly** 
-tenta melhorar o aspeto visual, mantendo a poderio computacional.
+tenta melhorar o aspeto visual, mantendo o poderio computacional.
 
 <br>
   
@@ -66,15 +69,18 @@ tenta melhorar o aspeto visual, mantendo a poderio computacional.
   
   Este método consiste em aumentar a funcionalidade do código à medida que vai sendo desenvolvido, de forma gradual e por ordem de prioridade, sem alterar substancialmente o anterior. É um bom processo para o projeto a ter em conta, pois permite disponibilizar novas funcionalidades estáveis, sempre que possível. Este processo é repetido de forma cíclica até que se chegue ao resultado pretendido. 
  
- <br>
-
-<h3>Contribuir</h3>
-
-O sistema de contribuição é um simples e intuitivvo, que usa um sistema de issues para ajudar o contribuidor a ter noção daquilo que pode e deve fazer.
-
-Além disso, as issues têm tags que permitem o colaborador comrpovar se está apto para "derrubar uma barreira".
-
 <br>
+
+<h3>Estrutura e Contribuição</h3>
+
+Tendo em conta a finalidade e complexidade do projeto, a estrutura do repositório é aceitável. Porém, é de notar que o projeto
+beneficiaria de uma agrupação de contribuidores em cargos (por exemplo: *Developers*, *Testers*, *Designers* e *Translators*).
+Isto permitiria uma maior compreensão do código entre as unidades, focando-se nos aspetos chave que lhes compete.
+
+O processo de contribuição é simples e intuitivo, usando um sistema de *issues* para ajudar o contribuidor a ter noção daquilo que pode e deve fazer. Além disso, são atribuídas tags aos problemas encontrados para ajudar o programador a escolher problemas
+dentro do seu nível de conhecimento.
+
+======
 
 <h3>Contribuição do grupo</h3>
 
