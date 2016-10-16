@@ -45,7 +45,7 @@ Este método consiste em aumentar a funcionalidade do código à medida que vai 
 
 <h1 align="center">Análise crítica</h1>
 <h3>Processos</h3>
-Os modelos de desenvolvimento de software do **Shoudly** são adequados ao âmbito do projeto, pelas seguintes razões:
+O modelo de desenvolvimento de software do **Shoudly** é adequado ao âmbito do projeto, pelas seguintes razões:
 
 + Iterative and incremental development
   - Permite criar software rapidamente.
@@ -53,8 +53,21 @@ Os modelos de desenvolvimento de software do **Shoudly** são adequados ao âmbi
   - Permite satisfazer facilmente os requirimentos essenciais.
   - Facilita o desenvolvimento de funções adicionais e complementares.
   
- É um bom processo para o projeto a ter em conta, pois permite utilizar a prática de **integração contínua (CI)**, possibilitando o
- aparecimento de novas funcionalidades estáveis, sempre que possível. Desta forma, a interação com o cliente é mais frequente, o que permite receber mais vezes *feedback* de como a aplicação deve evoluir.
+ É um bom processo para o projeto a ter em conta, pois permite utilizar a prática de **integração contínua (CI)**, possibilitando o aparecimento de novas funcionalidades estáveis, sempre que possível.
+Desta forma, a interação com o cliente é mais frequente, o que permite receber mais vezes *feedback* de 
+como a aplicação deve evoluir.
+
+Quando posto em perspetiva com métodos *non-agile (Waterfall, V-model, ...)*, que:
+ - Dividem estrita e sequencialmente as fases de desenvolvimento de um projeto.
+ - Passa para a fase seguinte, quando a fase atual estiver totalmente concluída.
+ - É produzido software apenas numa fase final de desenvolvimento, *i.e*, demora mais a distribuir a aplicação.
+ - Custoso se é necessário fazer modificações em etapas de desenvolvimento posteriores.
+
+Este processo mostra-se como ideal para desenvolvimento de *software*, especialmente em *open-source*, pois possibilita a distribuição (de uma versão) do programa mais cedo. Consequentemente, há uma maior probabilidade de o projeto ser visto por mais desenvolvedores, que podem ficar interessados em contribuir: este efeito pode resultar num crescimento abrupto da aplicação, em termos de visibilidade, qualidade e velocidade de construção.
+
+Além disso, o uso de um método *non-agile* dificultaria bastante a chegada de novos contribuidores, visto que estes teriam
+que dedicar grande porção do tempo a estudar as etapas iniciais (Requirimentos e análise/Arquitetura do sistema), para ter as
+ideias bem definidas e sedimentadas, aquando da codificação propriamente dita.
  
 <br>
 
