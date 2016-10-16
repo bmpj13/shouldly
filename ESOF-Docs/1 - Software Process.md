@@ -5,7 +5,7 @@
 
 <h3>Desenvolvimento do projeto</h3>
 A contribuição para este projeto não é dependente de uma vertente de desenvolvimento, isto é, os contribuidores
-são livres de melhorar e optimizar o programa de forma autónoma, não havendo atribuição de papéis ou cargos aos diferentes *developers*.
+são livres de melhorar e optimizar o programa de forma autónoma, não havendo atribuição de papéis ou cargos aos diferentes *developers*, distruibuindo-os por várias equipas.
 
 A maneira mais sugerida e convidativa para contribuir é pelo sistema de [issues](https://github.com/shouldly/shouldly/issues)
 que a comunidade do projeto utiliza, sempre que algum erro é encontrado, ou se quer apresentar alguma sugestão.
@@ -36,7 +36,7 @@ Mais informações podem ser encontradas no [readme](https://github.com/shouldly
 <br>
 
 <h3>Processo de Software</h3>
-Consideramos que o processo utilizado é **Iterative and incremental development**, visto que, regularmente, são lançadas novas [versões](https://github.com/shouldly/shouldly/releases) do projeto, complementadoras das versões que as precedem. 
+Consideramos que o processo utilizado é **Iterative and Incremental Development** (a base para os métodos de desenvolvimento *agile*), visto que, regularmente, são lançadas novas [versões](https://github.com/shouldly/shouldly/releases) do projeto, complementadoras das versões que as precedem. 
  
 Este método consiste em aumentar a funcionalidade do código à medida que vai sendo desenvolvido, de forma gradual e por ordem de prioridade, sem alterar substancialmente o anterior. Este processo é repetido de forma cíclica até que se chegue ao resultado pretendido.
 
@@ -45,7 +45,7 @@ Este método consiste em aumentar a funcionalidade do código à medida que vai 
 
 <h1 align="center">Análise crítica</h1>
 <h3>Processos</h3>
-Os modelos de desenvolvimento de software do **Shoudly** são adequados ao âmbito do projeto, pelas seguintes razões:
+O modelo de desenvolvimento de software do **Shoudly** é adequado ao âmbito do projeto, pelas seguintes razões:
 
 + Iterative and incremental development
   - Permite criar software rapidamente.
@@ -53,9 +53,57 @@ Os modelos de desenvolvimento de software do **Shoudly** são adequados ao âmbi
   - Permite satisfazer facilmente os requirimentos essenciais.
   - Facilita o desenvolvimento de funções adicionais e complementares.
   
- É um bom processo para o projeto a ter em conta, pois permite utilizar a prática de **integração contínua (CI)**, possibilitando o
- aparecimento de novas funcionalidades estáveis, sempre que possível. Desta forma, a interação com o cliente é mais frequente, o que permite receber mais vezes *feedback* de como a aplicação deve evoluir.
- 
+ É um bom processo para o projeto a ter em conta, pois permite utilizar a prática de **integração contínua (CI)**, possibilitando o aparecimento de novas funcionalidades estáveis, sempre que possível.
+Desta forma, a interação com o cliente é mais frequente, o que permite receber mais vezes *feedback* de 
+como a aplicação deve evoluir.
+
+<br>
+
+Quando posto em perspetiva com métodos *non-agile (__Waterfall__, __V-model__, ...)*, que:
+ - Dividem estrita e sequencialmente as fases de desenvolvimento de um projeto.
+ - Avançam para uma fase seguinte, quando a fase atual estiver totalmente concluída.
+ - Produzem software apenas numa fase final de desenvolvimento, *i.e*, demora mais a distribuir a aplicação.
+ - Custosos se é necessário fazer modificações em etapas de desenvolvimento posteriores.
+
+Este processo mostra-se como ideal para desenvolvimento de *software*, especialmente em *open-source*, pois possibilita a distribuição (de uma versão) do programa mais cedo. Consequentemente, há uma maior probabilidade de o projeto ser visto por mais desenvolvedores, que podem ficar interessados em contribuir: este efeito pode resultar num crescimento abrupto da aplicação, em termos de visibilidade, qualidade e velocidade de construção.
+
+Além disso, o uso de um método *non-agile* dificultaria bastante a chegada de novos contribuidores, visto que estes teriam
+que dedicar grande porção do tempo a estudar as etapas iniciais (Requirimentos e análise/Arquitetura do sistema), para ter as
+ideias bem definidas e sedimentadas, aquando da codificação propriamente dita.
+
+<br>
+
+Quando posto em perspetiva com métodos *agile*, é da nossa opinião que outros processos seriam igualmente válidos, dependendo
+da estrutura do projeto:
+
+**Scrum** pode ser utilizado quando há uma separação dos programadores em equipas (em que os vários intervenientes são os *Product Owner*, *Scrum Master* e *Development Team*). As equipas também devem fazer, em reuniões, *reviews* do trabalho feito, com uma frequência pré-estabelecida (p.ex. de 2 em 2 semanas), podendo também fazer uso de [milestones](https://github.com/shouldly/shouldly/milestones). <br>
+Tal como referido anteriormente, não existe esse tipo de estrutura neste repositório: as contribuições são individuais e nem sequer é usado o sistema de *milestones* do Github. Além disso, como o **Shoudly** é um projeto *open-source*, a garantia que as equipas se disponibilizariam a fazer reuniões em certos intervalos de tempo é, geralmente, baixa. <br>
+Finalmente, o envolvimento do *Product Owner* não é simples, visto que, neste caso, este é a comunidade, pelo que, muito dificilmente, é exequível ter este elemento a liderar o projeto.
+
+Deste modo, este método não seria apropriado, tendo em conta a estruturação do repositório - note-se, no entanto, que seria perfeitamente viável, caso a organização das equipas fosse outra.
+
+<br>
+
+**XP** é um método que se baseia em 4 grandes fundamentos:
++ Comunicação
+  - Valoriza a comunicação entre os membros das equipas, para uma maior entreajuda e garantia de qualidade.
+  - *On-site customer*, *Pair Programming*, *Collective Code Ownership*, ...
++ Simplicidade
+  - Todos os problemas devem ser solucionados da forma mais simples possível.
+  - *KISS*
++ Feedback
+  - É importante obter, frequentemente, *feedback* do cliente, para garantir que satisfaz as necessidades principais.
+  - *Distribuição frequente de novas versões da aplicação*
++ Coragem
+  - Para dar e aceitar críticas.
+  - Para alterar, ou mesmo eliminar, estruturas/códigos que podem melhorar/ser feitos de outra forma.
+  
+Advoga, também, que os programadores devem seguir os mesmos *standards* de codificação, o desenvolvimento deve ser *test-driven*, a uma velocidade sustentável, e em integração contínua.
+  
+Este processo de desenvolvimento poderia muito mais facilmente ser aplicado neste projeto. Aliás, é possível verificar que alguns destes valores são utilizados - existe uma grande comunicação entre os membros (com recurso ao *gitter*), é possível obter regularmente validações do cliente, com o lançamento regular de novas distribuições, e existe integração contínua. Estas semelhanças são de esperar visto que o método **Iterative and incremental development**, tal como dito anteriormente, é o fundamento para a maior parte dos processos *agile*.
+
+Existe, no entanto, algumas dificuldades em aplicar alguns procedimentos (como *On-site customer* ou *Pair Programming*), pelas mesmas razões referidas para o **Scrum**.
+
 <br>
 
 <h3>Estrutura e Contribuição</h3>
