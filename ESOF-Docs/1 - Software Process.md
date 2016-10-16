@@ -36,7 +36,7 @@ Mais informações podem ser encontradas no [readme](https://github.com/shouldly
 <br>
 
 <h3>Processo de Software</h3>
-Consideramos que o processo utilizado é **Iterative and incremental development** (a base para os métodos de desenvolvimento *agile*), visto que, regularmente, são lançadas novas [versões](https://github.com/shouldly/shouldly/releases) do projeto, complementadoras das versões que as precedem. 
+Consideramos que o processo utilizado é **Iterative and Incremental Development** (a base para os métodos de desenvolvimento *agile*), visto que, regularmente, são lançadas novas [versões](https://github.com/shouldly/shouldly/releases) do projeto, complementadoras das versões que as precedem. 
  
 Este método consiste em aumentar a funcionalidade do código à medida que vai sendo desenvolvido, de forma gradual e por ordem de prioridade, sem alterar substancialmente o anterior. Este processo é repetido de forma cíclica até que se chegue ao resultado pretendido.
 
@@ -56,6 +56,8 @@ O modelo de desenvolvimento de software do **Shoudly** é adequado ao âmbito do
  É um bom processo para o projeto a ter em conta, pois permite utilizar a prática de **integração contínua (CI)**, possibilitando o aparecimento de novas funcionalidades estáveis, sempre que possível.
 Desta forma, a interação com o cliente é mais frequente, o que permite receber mais vezes *feedback* de 
 como a aplicação deve evoluir.
+
+<br>
 
 Quando posto em perspetiva com métodos *non-agile (__Waterfall__, __V-model__, ...)*, que:
  - Dividem estrita e sequencialmente as fases de desenvolvimento de um projeto.
@@ -80,7 +82,28 @@ Finalmente, o envolvimento do *Product Owner* não é simples, visto que, neste 
 
 Deste modo, este método não seria apropriado, tendo em conta a estruturação do repositório - note-se, no entanto, que seria perfeitamente viável, caso a organização das equipas fosse outra.
 
- 
+<br>
+
+**XP** é um método que se baseia em 4 grandes fundamentos:
++ Comunicação
+  - Valoriza a comunicação entre os membros das equipas, para uma maior entreajuda e garantia de qualidade.
+  - *On-site customer*, *Pair Programming*, *Collective Code Ownership*, ...
++ Simplicidade
+  - Todos os problemas devem ser solucionados da forma mais simples possível.
+  - *KISS*
++ Feedback
+  - É importante obter, frequentemente, *feedback* do cliente, para garantir que satisfaz as necessidades principais.
+  - *Distribuição frequente de novas versões da aplicação*
++ Coragem
+  - Para dar e aceitar críticas.
+  - Para alterar, ou mesmo eliminar, estruturas/códigos que podem melhorar/ser feitos de outra forma.
+  
+Advoga, também, que os programadores devem seguir os mesmos *standards* de codificação, o desenvolvimento deve ser *test-driven*, a uma velocidade sustentável, e em integração contínua.
+  
+Este processo de desenvolvimento poderia muito mais facilmente ser aplicado neste projeto. Aliás, é possível verificar que alguns destes valores são utilizados - existe uma grande comunicação entre os membros (com recurso ao *gitter*), é possível obter regularmente validações do cliente, com o lançamento regular de novas distribuições, e existe integração contínua. Estas semelhanças são de esperar visto que o método **Iterative and incremental development**, tal como dito anteriormente, é o fundamento para a maior parte dos processos *agile*.
+
+Existe, no entanto, algumas dificuldades em aplicar alguns procedimentos (como *On-site customer* ou *Pair Programming*), pelas mesmas razões referidas para o **Scrum**.
+
 <br>
 
 <h3>Estrutura e Contribuição</h3>
