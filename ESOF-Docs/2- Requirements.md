@@ -7,6 +7,7 @@
 O **Shouldly** é uma ferramente de testes, baseada em *NUnit*, e tem como objetivo simplificar a escrita de
 testes, e tornar o seu *output* visualmente mais agradável.
 
+<br>
 <h3>Elicitação</h3>
 
 No que diz respeito à evolução do projeto, esta é possível pelo sistema de issues utilizada pela comunidade 
@@ -27,7 +28,7 @@ Este método divide-se em 4 partes:
 
 <h4>1. Elicitação</h4>
 
-  - Processo de descobrir, rever, documentar e perceber as necessidades dos **_stakeholders_**, para o sistema a implementar.
+  - Processo de descobrir, rever, documentar e perceber as necessidades dos **_stakeholders_**, para o sistema a implementar
   
   Nesta fase inicial, é necessário interagir com os vários agentes que irão utilizar o *software*, para perceber quais os seus requisitos. Esta interação pode ser facilitada por entrevistas, reuniões, questionários, etc.
   
@@ -65,7 +66,6 @@ Este método divide-se em 4 partes:
 
   - Gestão na mudança e na evolução dos requisitos, ao longo do tempo
 
-<br>
 <br>
 Os requisitos de um sistema podem-se dividir em **funcionais** e **não funcionais**:
 
