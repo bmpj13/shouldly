@@ -10,9 +10,7 @@ testes, e tornar o seu *output* visualmente mais agradável.
 <br>
 <h3>Elicitação</h3>
 
-No que diz respeito à evolução do projeto, esta é possível pelo sistema de issues utilizada pela comunidade 
-do projeto onde é feita a listagem dos erros que precisam de ser resolvidos e possibilidades de sugestões por
-parte da comunidade que permitem melhorar a funcionalidade da aplicação.
+
 
 
 <br>
@@ -24,16 +22,15 @@ Estes requisitos são formulados a partir das expectativas do utilizador, em rel
 podem parecer óbvios e desnecessários de referir, como podem também mostrar-se como (ainda) desconhecidos.
 
 **_Requirements Engineering_** define-se como o processo de estudo das necessidades e expectativas do cliente, para conceber a definição do sistema a implementar.
-Este método divide-se em 4 partes:
+Este método divide-se em 5 partes:
 
 <h4>1. Elicitação</h4>
 
   - Processo de descobrir, rever, documentar e perceber as necessidades dos **_stakeholders_**, para o sistema a implementar
   
-  Nesta fase inicial, é necessário interagir com os vários agentes que irão utilizar o *software*, para perceber quais os seus requisitos. Esta interação pode ser facilitada por entrevistas, reuniões, questionários, etc.
-  
-  O principal problema a enfrentar neste processo é falta de entendimento: os utilizadores não conhecem totalmente as suas necessidades e não conhecem as limitações dos computadores; o engenheiro pode não ter a inteira noção de qual o âmbito e contexto do software pedido; informação "óbvia" pode ser omitida, entre outros.
-  
+  No que diz respeito à evolução do projeto, esta é possível pelo sistema de issues utilizada pela comunidade 
+  do projeto onde é feita a listagem dos erros que precisam de ser resolvidos e possibilidades de sugestões por
+  parte da comunidade que permitem melhorar a funcionalidade da aplicação.
   
 <h4>2. Análise</h4>
 
@@ -43,11 +40,9 @@ Este método divide-se em 4 partes:
   
   - Elaborar requisitos do sistema
   
-  É, na sua essência, um processo para refinar o que foi pedido pelo utilizador. 
   
-  Nesta fase, os requisitos são normalmente ordenados por ordem de importância. É também importante perceber se um requisito é *implementável, necessário, testável, claro, consistente, correto e completo*
 
-<h4>2. Especificação</h4>
+<h4>3. Especificação</h4>
 
   - Produzir o documento *__SRS__ (Software Requirements Specificiation)*
   
@@ -58,11 +53,11 @@ Este método divide-se em 4 partes:
     + Modelos (*Use case*, *Domain*)
     + Entre outros
     
-<h4>3. Validação</h4>
+<h4>4. Validação</h4>
 
   - Demonstrar que o *software* satisfaz os requisitos do cliente
   
-<h4>4. Gestão</h4>
+<h4>5. Gestão</h4>
 
   - Gestão na mudança e na evolução dos requisitos, ao longo do tempo
 
@@ -79,7 +74,7 @@ No contexto do **Shouldly**, os requisitos são:
     1. Escolher um tipo de asserção em testes, para desenvolver.
     2. Criar uma nova função que satisfaça a asserção escolhida.
     3. Repetir o processo, até o conjunto de funcionalidades pretendidas estarem implementadas.
-    4. A novas funções a criar devem ser baseadas em *NUnit*, ou em **Shouldly** (caso já possua as funcionalidades necessárias para o desenvolvimento destas).
+    4. A novas funções a criar devem ser baseadas em *NUnit*, ou em **Shouldly** (caso já possua as funcionalidades         necessárias para o desenvolvimento destas).
     5. As asserções implementadas devem conseguir satisfazer tantas ou mais baterias de testes, relativamente ao *NUnit*. Isto significa que devem ter o mesmo poder de asserção, podendo, no entanto, ser melhoradas. 
     
   - Não funcionais
