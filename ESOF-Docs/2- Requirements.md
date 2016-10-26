@@ -82,7 +82,7 @@ O projeto não possui um documento formal *SRS*, mas possui [documentação](htt
   
    - Demonstrar que o *software* satisfaz os requisitos do cliente.
    
-Apesar de não haver um controlo rigoroso sobre os avanços do projeto, todos os envolvidos no projeto e devidos utilizadores sentem-se de uma forma geral satisfeita por o projeto progredir, apesar de ser de uma forma gradual. Uma vez que o projeto ainda continua a progredir e, por vezes, os contribuidores deparam-se com certas limitações de software, assim como os utilizadores, estes últimos continuam a surgir com novas ideias ou mesmo críticas sobre o que deve ser melhorado para que esta framework se torne acessível e satisfatória para os seus clientes.
+Apesar de não haver um controlo rigoroso sobre os avanços do projeto, todos os envolvidos no projeto e devidos utilizadores sentem-se de uma forma geral satisfeita por a evolução do projeto, apesar de ser de uma forma gradual. Uma vez que o projeto ainda continua a progredir e, por vezes, os contribuidores deparam-se com certas limitações de software, assim como os utilizadores, estes últimos continuam a surgerir novas ideias ou mesmo críticas sobre o que deve ser melhorado para que esta framework se torne acessível e satisfatória para os seus clientes.
 
 <h4>5. Gestão</h4>
 
