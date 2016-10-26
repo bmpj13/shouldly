@@ -55,8 +55,12 @@ No contexto do **Shouldly**, os requisitos são:
     5. Repetir o processo, até o conjunto de funcionalidades pretendidas estarem implementadas.
     
   - Não funcionais
-    1. Facilitar a escrita de testes.
-    3. Garantir que as mensagens de *output* são esteticamente apelativas.
+    1. Facilidade na escrita de testes.
+    2. Mensagens de *output* esteticamente apelativas.
+    3. Open source
+    4. Documentação
+    5. Integração contínua
+    6. Compatível com C#
 
 A análise ao projeto é feita por qualquer contribuidor: de uma forma informal e bastante prática, são analisados os objetivos
 realizados e os que ainda faltam cumprir tendo em conta o que foi feito e as limitações existentes do projeto, havendo a possibilidade de se criar um novo objetivo, caso este seja suficientemente necessário e adicione funcionalidades importantes, ou de se descartar um objetivo antigo, caso se considere de pouca importância para este projeto.  
