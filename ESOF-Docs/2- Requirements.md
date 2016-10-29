@@ -125,17 +125,13 @@ Alguns desses requisitos não são possíveis de implementar ou por vezes para o
 
 
 <h4>Análise</h4>
-Devido aos vários utilizadores poderem dar opiniões e pedir novas funcionalidades, como não existe uma ordenação da importância dos varios requisitos pode acontecer a serem implementados os requisitos menos importantes em primeiro lugar, não havendo uma evolução do projeto da forma pretendida e por vezes custos na sua implementação desnecessários.
+Devido aos vários utilizadores poderem dar opiniões e pedir novas funcionalidades, como não existe uma ordenação da importância dos vários requisitos pode acontecer a serem implementados os requisitos menos importantes em primeiro lugar, não havendo uma evolução do projeto da forma pretendida e por vezes custos na sua implementação desnecessários.
 
 
 <h4>Especificação</h4>
-O Shoudly é uma framework que não possui uma documentação SRS ((Software Requirements Specificiation), isto é, uma documentação formal.
+Embora o Shoudly possua uma documentação informal, a documentação existente sobre esta framework é bastante completa. É visível o manual de utilizador, com a descrição de cada função de testes disponíveis, bem como protótipos de chamadas às funções e a respetiva visualização dos outputs obtidos. Logo, do ponto de vista do utilizador é uma documentação suficiente e completa.
 
-Embora o Shoudly possua uma documentação informal, a documentação existente sobre esta framework é bastante completa. É visível o manual de utilizador, com a descrição de cada função de teste existem, bem como protótipos de chamadas às funções e a respetiva visualização dos outputs obtidos.
-
-Cremos que para tornar a documentação do Shoudly completa, faltaria apenas incluir os modelos construídos, isto é, o modelo Use Case e Domain Model.
-<br>O modelo Use Case é um modelo que é construído com os casos de utilização que cada utilizador tem disponível. Ou seja, é um modelo que é construído do ponto de vista do utilizador. É mais fácil de visualizar tudo aquilo que o utilizador deve/pode fazer com esta framework.
-<br>O modelo Domain Model é um modelo (falta completar ainda)....
+Já do ponto de vista dos contribuidores não se verifica isso. Para alguém que queira tornar-se contribuidor do Shoudly a documentação existente é pouco clara em alguns aspetos. Exemplos disso seria, na documentação, incluir modelos de Use Case e Domaind como os construídos a cima, visto serem modelos que ajudam a perceber como a framework funciona internamente.
 
 
 <h4>Validação</h4>
