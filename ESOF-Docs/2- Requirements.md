@@ -112,14 +112,16 @@ Os requisitos do projeto podem, naturalmente, mudar ao longo do tempo. O princip
 Aquando da introdução da funcionalidade, o processo de **integração contínua** vai permitir aos principais colaboradores saber se esta interfere com os outros módulos do programa, garantindo de forma constante a consistência do programa.
 
 <br>
-<h3>Analise crítica</h3>
+<h1 align="center">Análise crítica</h1>
+<h3>Requisitos</h3>
 
-O principal problema a enfrentar neste processo é falta de entendimento: os utilizadores não conhecem totalmente as suas necessidades e não conhecem as limitações dos computadores; o engenheiro pode não ter a inteira noção de qual o âmbito e contexto do software pedido; informação "óbvia" pode ser omitida e desta forma os varios agentes que vão utilizar o software não ficam a saber todas as suas funcionalidades e carateristicas.
+O principal problema a enfrentar neste processo é falta de entendimento: os utilizadores não conhecem totalmente as suas necessidades e não conhecem as limitações dos computadores; o engenheiro pode não ter a inteira noção de qual o âmbito e contexto do software pedido; informação "óbvia" pode ser omitida e desta forma os varios agentes que pretendem utilizar o software não consguem tirar o maximo partido dele devido a falta de uma explicação e esclarecimento mais promenorizado.
 
-Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode se tornar um bocado difícil para o engenheiro tentar corresponder a todos os requisitos impostos pelos utilizadores.
+Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode se tornar um bocado difícil para os vários utilizadores que estao a desenvolver o projeto, tornando-se difícil tentar corresponder a todos os requisitos, impostos pelos utilizadores.
+Alguns desses requisitos não são possíveis de implementar ou por vezes para os implementar seria necessário alterar a estrutura do projeto em sí e por este motivo alguns requisitos não são implementados devido aos seus custos.
 
-Relativamente à analise dos requisitos:
-Devido aos vários utilizadores poderem dar opiniões e pedir novas funcionalidades e devido a não haver niguém que faça a ordenação da importância dos vários requisitos, pode acontecer a serem implementados os requisitos menos importantes em primeiro lugar, não havendo uma evolução do projeto da forma pretendida.
+Relativamente à análise dos requisitos:
+Devido aos vários utilizadores poderem dar opiniões e pedir novas funcionalidades, como não existe uma ordenaçao da importancia dos varios requisitos pode acontecer a serem implementados os requisitos menos importantes em primeiro lugar, não havendo uma evolução do projeto da forma pretendida e por vezes custos na sua implementação desnecessários.
 
 
 
