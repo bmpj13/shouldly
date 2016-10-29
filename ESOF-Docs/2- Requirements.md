@@ -24,8 +24,6 @@ Este método divide-se em 5 partes:
 
 Nesta fase inicial, é necessário interagir com os vários agentes que irão utilizar o *software*, para perceber quais os seus requisitos. Esta interação pode ser facilitada por entrevistas, reuniões, questionários, etc.
 
-O principal problema a enfrentar neste processo é falta de entendimento: os utilizadores não conhecem totalmente as suas necessidades e não conhecem as limitações dos computadores; o engenheiro pode não ter a inteira noção de qual o âmbito e contexto do software pedido; informação "óbvia" pode ser omitida, entre outros.
-
 <br>
 No que diz respeito ao levantamento de novos requisitos no projeto, este é possível pelo sistema de issues utilizada pela comunidade, onde não só é feita a listagem dos erros que precisam de ser resolvidos, como também são dadas sugestões que permitem melhorar a funcionalidade da aplicação (normalmente rotuladas com as tags *Enchancement* ou *Discussion*).
 
@@ -115,14 +113,13 @@ Aquando da introdução da funcionalidade, o processo de **integração contínu
 
 <br>
 <h3>Analise crítica</h3>
-<br>
+
 O principal problema a enfrentar neste processo é falta de entendimento: os utilizadores não conhecem totalmente as suas necessidades e não conhecem as limitações dos computadores; o engenheiro pode não ter a inteira noção de qual o âmbito e contexto do software pedido; informação "óbvia" pode ser omitida e desta forma os varios agentes que vão utilizar o software não ficam a saber todas as suas funcionalidades e carateristicas.
 
-Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode se tornar um bocado dificil para o engenheiro tentar corresponder a todos os requisitos impostos pelos utilizadores.
+Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode se tornar um bocado difícil para o engenheiro tentar corresponder a todos os requisitos impostos pelos utilizadores.
 
 Relativamente à analise dos requisitos:
-Devido aos varios utilizadores poderem dar opinioes e pedir novas funcionalidades e devido a não haver niguem que faça a ordenação da importancia dos varios requisitos, pode acontecer a serem implementados os requisitos menos importantes em primeiro lugar, não satisfazendo as funcionalidades principais.
-
+Devido aos vários utilizadores poderem dar opiniões e pedir novas funcionalidades e devido a não haver niguém que faça a ordenação da importância dos vários requisitos, pode acontecer a serem implementados os requisitos menos importantes em primeiro lugar, não havendo uma evolução do projeto da forma pretendida.
 
 
 
