@@ -118,20 +118,20 @@ Aquando da introdução da funcionalidade, o processo de **integração contínu
 <h3>Requisitos e Funcionalidades</h3>
 
 <h4>Elicitação</h4>
-Por vezes a criação do projeto pedido pelo utilizador pode se tornar difíil de implementar por falta de esclarecimento por parte do utilizador e por falta de conhecimenento do utilizador das capacidades e funcionalidades do software.
+Por vezes a criação do projeto pedido pelo utilizador pode tornar-se difícil de implementar por falta de esclarecimento por parte do utilizador e por falta de conhecimenento do utilizador das capacidades e funcionalidades do software.
 
-Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode se tornar um bocado difícil para os vários utilizadores que estão a desenvolver o projeto, tornando-se difícil tentar corresponder a todos os requisitos, impostos pelos utilizadores.
-Alguns desses requisitos não são possíveis de implementar ou por vezes para os implementar seria necessário alterar a estrutura do projeto em sí e por este motivo alguns requisitos não são implementados devido aos seus custos associados.
+Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode complicar a tentativa de corresponder a todos os requisitos, impostos pelos utilizadores.
+Alguns desses requisitos não são possíveis de implementar ou, por vezes, para os implementar seria necessário alterar a estrutura do projeto em si e por este motivo não são implementados devido aos custos associados.
 
 
 <h4>Análise</h4>
-Devido aos vários utilizadores poderem dar opiniões e pedir novas funcionalidades, como não existe uma ordenação da importância dos vários requisitos pode acontecer a serem implementados os requisitos menos importantes em primeiro lugar, não havendo uma evolução do projeto da forma pretendida e por vezes custos na sua implementação desnecessários.
+Uma vez que os vários utilizadores podem dar opiniões e pedir novas funcionalidades, como não existe uma ordenação da importância dos vários requisitos existe a possibilidade dos requisitos menos importantes serem implementados em primeiro lugar, não havendo uma evolução do projeto da forma pretendida e por vezes custos na sua implementação desnecessários.
 
 
 <h4>Especificação</h4>
 Embora o Shoudly possua uma documentação informal, a documentação existente sobre esta framework é bastante completa. É visível o manual de utilizador, com a descrição de cada função de testes disponíveis, bem como protótipos de chamadas às funções e a respetiva visualização dos outputs obtidos. Logo, do ponto de vista do utilizador é uma documentação suficiente e completa.
 
-Já do ponto de vista dos contribuidores não se verifica isso. Para alguém que queira tornar-se contribuidor do Shoudly a documentação existente é pouco clara em alguns aspetos. Exemplos disso seria, na documentação, incluir modelos de Use Case e Domaind como os construídos a cima, visto serem modelos que ajudam a perceber como a framework funciona internamente.
+Já do ponto de vista dos contribuidores não se verifica isso. Para alguém que queira tornar-se contribuidor do Shoudly a documentação existente é pouco clara em alguns aspetos. Exemplos disso seria, na documentação, incluir modelos de Use Case e Domain como os construídos acima, visto serem modelos que ajudam a perceber como a framework funciona internamente.
 
 
 <h4>Validação</h4>
