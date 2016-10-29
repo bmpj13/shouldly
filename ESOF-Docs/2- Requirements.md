@@ -135,7 +135,9 @@ Já do ponto de vista dos contribuidores não se verifica isso. Para alguém que
 
 
 <h4>Validação</h4>
-
+Esta framework de testes mostra-se ser bastante simples e útil no que diz respeito à escrita de testes por partes dos utilizadores.
+Estes fatores, por si só, permitem satisfazer as necessidades dos clientes em relação às frameworks standards. No entanto, como este
+projeto continua em desenvolvimento existe sempre espaço para melhorar as suas funcionalidades e a sua segurança, tendo em conta as críticas ou sugestões apresentadas tanto por parte dos developers como dos seus utilizadores. 
 
 <h4>Gestão</h4>
 
