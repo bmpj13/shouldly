@@ -24,6 +24,8 @@ Este método divide-se em 5 partes:
 
 Nesta fase inicial, é necessário interagir com os vários agentes que irão utilizar o *software*, para perceber quais os seus requisitos. Esta interação pode ser facilitada por entrevistas, reuniões, questionários, etc.
 
+O principal problema a enfrentar neste processo é falta de entendimento: os utilizadores não conhecem totalmente as suas necessidades e não conhecem as limitações dos computadores; o engenheiro pode não ter a inteira noção de qual o âmbito e contexto do software pedido; informação "óbvia" pode ser omitida, entre outros.
+
 É também possível fazê-lo com recurso a *gitter*: dúvidas, sugestões e discussões surgem de uma forma mais informal, sendo possível aparecerem novas ideias a qualquer hora. Estas podem ser, entretanto, aprovadas e, eventualmente, aperfeiçoadas para satisfazer melhor as necessidades do *software*. Nesta altura, é, por norma, aconselhado a mover a dita sugestão para o sistema de *issues* acima referido, podendo mais facilmente ser acedido por todos os participantes.
 
 <br>
@@ -116,14 +118,14 @@ Aquando da introdução da funcionalidade, o processo de **integração contínu
 <h3>Requisitos e Funcionalidades</h3>
 
 <h4>Elicitação</h4>
-O principal problema a enfrentar neste processo é falta de entendimento: os utilizadores não conhecem totalmente as suas necessidades e não conhecem as limitações dos computadores; o engenheiro pode não ter a inteira noção de qual o âmbito e contexto do software pedido; informação "óbvia" pode ser omitida e desta forma os varios agentes que pretendem utilizar o software não consguem tirar o maximo partido dele devido a falta de uma explicação e esclarecimento mais promenorizado.
+Por vezes a criação do projeto pedido pelo utilizador pode se tornar difíil de implementar por falta de esclarecimento por parte do utilizador e por falta de conhecimenento do utilizador das capacidades e funcionalidades do software.
 
-Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode se tornar um bocado difícil para os vários utilizadores que estao a desenvolver o projeto, tornando-se difícil tentar corresponder a todos os requisitos, impostos pelos utilizadores.
-Alguns desses requisitos não são possíveis de implementar ou por vezes para os implementar seria necessário alterar a estrutura do projeto em sí e por este motivo alguns requisitos não são implementados devido aos seus custos.
+Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode se tornar um bocado difícil para os vários utilizadores que estão a desenvolver o projeto, tornando-se difícil tentar corresponder a todos os requisitos, impostos pelos utilizadores.
+Alguns desses requisitos não são possíveis de implementar ou por vezes para os implementar seria necessário alterar a estrutura do projeto em sí e por este motivo alguns requisitos não são implementados devido aos seus custos associados.
 
 
 <h4>Análise</h4>
-Devido aos vários utilizadores poderem dar opiniões e pedir novas funcionalidades, como não existe uma ordenaçao da importancia dos varios requisitos pode acontecer a serem implementados os requisitos menos importantes em primeiro lugar, não havendo uma evolução do projeto da forma pretendida e por vezes custos na sua implementação desnecessários.
+Devido aos vários utilizadores poderem dar opiniões e pedir novas funcionalidades, como não existe uma ordenação da importância dos varios requisitos pode acontecer a serem implementados os requisitos menos importantes em primeiro lugar, não havendo uma evolução do projeto da forma pretendida e por vezes custos na sua implementação desnecessários.
 
 
 <h4>Especificação</h4>
