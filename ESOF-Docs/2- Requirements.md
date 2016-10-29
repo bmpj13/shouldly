@@ -136,8 +136,13 @@ Já do ponto de vista dos contribuidores não se verifica isso. Para alguém que
 
 <h4>Validação</h4>
 Esta framework de testes mostra-se ser bastante simples e útil no que diz respeito à escrita de testes por partes dos utilizadores.
-Estes fatores, por si só, permitem satisfazer as necessidades dos clientes em relação às frameworks standards. No entanto, como este
-projeto continua em desenvolvimento existe sempre espaço para melhorar as suas funcionalidades e a sua segurança, tendo em conta as críticas ou sugestões apresentadas tanto por parte dos developers como dos seus utilizadores. 
+Estes fatores, por si só, permitem satisfazer as necessidades dos clientes em relação às frameworks standards.
+
+Como este projeto continua em desenvolvimento existe sempre espaço para melhorar as suas funcionalidades e a sua segurança, tendo em conta as críticas ou sugestões apresentadas tanto por parte dos developers como dos seus utilizadores. Esta estratégia, permite obter
+opiniões diversificadas e bastante importantes no que toca ao desenvolvimento do projeto. No entanto, nem sempre é possível satisfazer
+e cumprir os objetivos e pedidos feitos devido a limitações de software. 
+
+
 
 <h4>Gestão</h4>
 
