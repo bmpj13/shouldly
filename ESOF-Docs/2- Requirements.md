@@ -24,10 +24,10 @@ Este método divide-se em 5 partes:
 
 Nesta fase inicial, é necessário interagir com os vários agentes que irão utilizar o *software*, para perceber quais os seus requisitos. Esta interação pode ser facilitada por entrevistas, reuniões, questionários, etc.
 
+É também possível fazê-lo com recurso a *gitter*: dúvidas, sugestões e discussões surgem de uma forma mais informal, sendo possível aparecerem novas ideias a qualquer hora. Estas podem ser, entretanto, aprovadas e, eventualmente, aperfeiçoadas para satisfazer melhor as necessidades do *software*. Nesta altura, é, por norma, aconselhado a mover a dita sugestão para o sistema de *issues* acima referido, podendo mais facilmente ser acedido por todos os participantes.
+
 <br>
 No que diz respeito ao levantamento de novos requisitos no projeto, este é possível pelo sistema de issues utilizada pela comunidade, onde não só é feita a listagem dos erros que precisam de ser resolvidos, como também são dadas sugestões que permitem melhorar a funcionalidade da aplicação (normalmente rotuladas com as tags *Enchancement* ou *Discussion*).
-
-É também possível fazê-lo com recurso a *gitter*: dúvidas, sugestões e discussões surgem de uma forma mais informal, sendo possível aparecerem novas ideias a qualquer hora. Estas podem ser, entretanto, aprovadas e, eventualmente, aperfeiçoadas para satisfazer melhor as necessidades do *software*. Nesta altura, é, por norma, aconselhado a mover a dita sugestão para o sistema de *issues* acima referido, podendo mais facilmente ser acedido por todos os participantes.
 
 Posteriormente, qualquer pessoa pode juntar-se para ajudar a desenvolver esta funcionalidade, e fazer parte deste projeto.
 
