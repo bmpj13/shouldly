@@ -115,25 +115,33 @@ Aquando da introdução da funcionalidade, o processo de **integração contínu
 <h1 align="center">Análise crítica</h1>
 <h3>Requisitos e Funcionalidades</h3>
 
-<h5>Elicitação</h5>
+<h4>Elicitação</h4>
 O principal problema a enfrentar neste processo é falta de entendimento: os utilizadores não conhecem totalmente as suas necessidades e não conhecem as limitações dos computadores; o engenheiro pode não ter a inteira noção de qual o âmbito e contexto do software pedido; informação "óbvia" pode ser omitida e desta forma os varios agentes que pretendem utilizar o software não consguem tirar o maximo partido dele devido a falta de uma explicação e esclarecimento mais promenorizado.
 
 Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode se tornar um bocado difícil para os vários utilizadores que estao a desenvolver o projeto, tornando-se difícil tentar corresponder a todos os requisitos, impostos pelos utilizadores.
 Alguns desses requisitos não são possíveis de implementar ou por vezes para os implementar seria necessário alterar a estrutura do projeto em sí e por este motivo alguns requisitos não são implementados devido aos seus custos.
 
 
-<h5>Análise</h5>
+<h4>Análise</h4>
 Devido aos vários utilizadores poderem dar opiniões e pedir novas funcionalidades, como não existe uma ordenaçao da importancia dos varios requisitos pode acontecer a serem implementados os requisitos menos importantes em primeiro lugar, não havendo uma evolução do projeto da forma pretendida e por vezes custos na sua implementação desnecessários.
 
 
-<h5>Especificação</h5>
+<h4>Especificação</h4>
 O Shoudly é uma framework que não possui uma documentação SRS ((Software Requirements Specificiation), isto é, uma documentação formal.
 
 Embora o Shoudly possua uma documentação informal, a documentação existente sobre esta framework é bastante completa. É visível o manual de utilizador, com a descrição de cada função de teste existem, bem como protótipos de chamadas às funções e a respetiva visualização dos outputs obtidos.
 
 Cremos que para tornar a documentação do Shoudly completa, faltaria apenas incluir os modelos construídos, isto é, o modelo Use Case e Domain Model.
-O modelo Use Case é um modelo que é construído com os casos de utilização que cada utilizador tem disponível. Ou seja, é um modelo que é construído do ponto de vista do utilizador. É mais fácil de visualizar tudo aquilo que o utilizador deve/pode fazer com esta framework.
-O modelo Domain Model é um modelo (falta completar ainda)....
+<br>O modelo Use Case é um modelo que é construído com os casos de utilização que cada utilizador tem disponível. Ou seja, é um modelo que é construído do ponto de vista do utilizador. É mais fácil de visualizar tudo aquilo que o utilizador deve/pode fazer com esta framework.
+<br>O modelo Domain Model é um modelo (falta completar ainda)....
 
 
-<h5>Validação</h5>
+<h4>Validação</h4>
+
+
+
+
+
+
+
+
