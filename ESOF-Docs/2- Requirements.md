@@ -115,7 +115,6 @@ Aquando da introdução da funcionalidade, o processo de **integração contínu
 
 <br>
 <h1 align="center">Análise crítica</h1>
-<h3>Requisitos e Funcionalidades</h3>
 <br>
 <h4>Elicitação</h4>
 Por vezes, a criação do projeto pedido pelo utilizador pode tornar-se difícil de implementar por falta de esclarecimento por parte do utilizador e por falta de conhecimento do utilizador das capacidades e funcionalidades do software.
