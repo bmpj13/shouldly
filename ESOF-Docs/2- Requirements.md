@@ -148,3 +148,13 @@ e cumprir os objetivos e pedidos feitos devido a limitações de software.
 Do modo como o a framework está desenvolvida e como tenta atender a todas as ideias e funcionalidades que os utilizadores propõem,  é de notar que, embora sem ordenação de importância dos requisitos, os contribuidores têm gerido de forma correta tudo aquilo que se justifica ser implementado para melhoria do software, à medida que novos requisitos vão surgindo.
 
 Como em qualquer projeto existem bugs ainda por resolver, mas toda esta framework está bem gerida e bem otimizada, permitindo ao utilizador ter todas as funcionalidades, desenvolvidas por parte dos contribuidores, ao longo deste tempo todo desde o inicio do Shoudly.
+
+
+
+<h3>Contribuição do grupo</h3>
+
+João Barbosa - 25% <br>
+Lázaro Costa - 25% <br> 
+Miguel Lira - 25% <br>
+Miriam Gonçalves - 25% 
+Miriam Gonçalves - 25%
