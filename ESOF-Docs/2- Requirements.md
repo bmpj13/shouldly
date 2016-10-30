@@ -118,7 +118,7 @@ Aquando da introdução da funcionalidade, o processo de **integração contínu
 <h3>Requisitos e Funcionalidades</h3>
 
 <h4>Elicitação</h4>
-Por vezes a criação do projeto pedido pelo utilizador pode tornar-se difícil de implementar por falta de esclarecimento por parte do utilizador e por falta de conhecimenento do utilizador das capacidades e funcionalidades do software.
+Por vezes a criação do projeto pedido pelo utilizador pode tornar-se difícil de implementar por falta de esclarecimento por parte do utilizador e por falta de conhecimento do utilizador das capacidades e funcionalidades do software.
 
 Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode complicar a tentativa de corresponder a todos os requisitos, impostos pelos utilizadores.
 Alguns desses requisitos não são possíveis de implementar ou, por vezes, para os implementar seria necessário alterar a estrutura do projeto em si e por este motivo não são implementados devido aos custos associados.
