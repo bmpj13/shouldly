@@ -99,7 +99,7 @@ O **Shouldly** possui uma vasta bateria de testes, que permite testar com rigor 
 
 No entanto, isto não significa que o **Shouldly** satisfaz as necessidades do utilizador: esta evidência aparece nas críticas escritas por várias entidades de alta fiabilidade - p.ex. nos artigos da [VisualStudio Magazine](https://visualstudiomagazine.com/articles/2015/08/01/improve-test-asserts-with-shouldly.aspx) ou [NuGet Must Haves](http://nugetmusthaves.com/Package/Shouldly).
 
-É quase imediato perceber que este *software* preenche uma necessidade dos clientes, que eles próprios desconheciam que a tinham até encontrarem o **Shouldly**. Isto porque a aplicação faz um trabalho notável em facilitar toda a escrita de testes, possuindo ferramentas poderosas, mas ao mesmo tempo simples, coisa que nem sempre se verifica nas *framworks* de teste *standard*.
+É quase imediato perceber que este *software* preenche uma necessidade dos clientes, que eles próprios desconheciam que a tinham até encontrarem o **Shouldly**. Isto porque a aplicação faz um trabalho notável em facilitar toda a escrita de testes, possuindo ferramentas poderosas, mas ao mesmo tempo simples, coisa que nem sempre se verifica nas *frameworks* de teste *standard*.
 
 Uma vez que o projeto ainda continua a progredir, os contribuidores, assim como os utilizadores, deparam-se, por vezes, com certas limitações no *software*. Neste contexto, devem ser introduzidas continuamente novas ideias, ou mesmo críticas, acerca do que deve ser melhorado para que esta *framework* se torne ainda mais completa, satisfatória e válida na perspetiva do cliente.
 
