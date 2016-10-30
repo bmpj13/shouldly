@@ -166,7 +166,6 @@ nossa opinião que há razões para tal:
 
 <br>
 <h4>Gestão</h4>
-<br>
 A gestão e evolução do projeto é feita maioritariamente com recurso ao sistema de *issues* (onde são colocados os problemas a resolver, e onde são introduzidas novas ideias). Este método mostra-se suficientemente adequado e simples, tendo em conta as características do projeto, pois permite ao contribuidor aceder, de forma acessível e rápida, aos vários tópicos em aberto.
 
 Além disso, a utilização de integração contínua garante a consistência e bom funcionamento do *software*, sempre que uma nova funcionalidade é adicionada. 
