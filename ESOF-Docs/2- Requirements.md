@@ -116,7 +116,7 @@ Aquando da introdução da funcionalidade, o processo de **integração contínu
 <br>
 <h1 align="center">Análise crítica</h1>
 <h3>Requisitos e Funcionalidades</h3>
-
+<br>
 <h4>Elicitação</h4>
 Por vezes, a criação do projeto pedido pelo utilizador pode tornar-se difícil de implementar por falta de esclarecimento por parte do utilizador e por falta de conhecimento do utilizador das capacidades e funcionalidades do software.
 
@@ -137,13 +137,13 @@ novas ideias para o projeto; ou então, criar um fórum exclusivo só para a int
 Tendo em conta que o **Shouldly** tem um contexto restrito (asserções em testes), a análise de requisitos é bastante simples e concisa:  o desenvolvimento de uma funcionalidade passa sempre pelas etapas anteriormente referidas.
 
 Como não existe uma ordenação da importância dos vários requisitos, existe a possibilidade de requisitos menos importantes serem implementados primeiro, podendo adiar de forma considerável o desenvolvimento de funcionalidades mais urgentes. Seria aconselhável, portanto, haver uma estruturação mais clara, neste contexto, para garantir mais qualidade e menos custos no *software*. 
-
+<br>
 <h4>Especificação</h4>
 Embora o **Shoudly** possua uma documentação informal, a documentação existente sobre esta *framework* é bastante completa. É visível o manual de utilizador, com a descrição de cada função de testes disponíveis, bem como protótipos de chamadas às funções e a respetiva visualização dos outputs obtidos. Logo, do ponto de vista do utilizador é uma documentação suficiente e completa.
 
 Já do ponto de vista dos contribuidores não se verifica isso. Para alguém que queira tornar-se contribuidor do **Shoudly** a documentação existente é pouco clara em alguns aspetos. Exemplos disso seria, na documentação, incluir modelos de *Use Case* e *Domain* como os construídos acima, visto serem modelos que ajudam a perceber como a *framework* funciona internamente.
 
-
+<br>
 <h4>Validação</h4>
 Esta *framework* de testes mostra-se ser bastante simples e útil no que diz respeito à escrita de testes por partes dos utilizadores.
 Estes fatores, por si só, permitem satisfazer as necessidades dos clientes em relação às frameworks *standard*.
@@ -163,7 +163,7 @@ nossa opinião que há razões para tal:
   contribuidores (por falta de conhecimento).
 
 <h4>Gestão</h4>
-
+<br>
 A gestão e evolução do projeto é feita maioritariamente com recurso ao sistema de *issues* (onde são colocados os problemas a resolver, e onde são introduzidas novas ideias). Este método mostra-se suficientemente adequado e simples, tendo em conta as características do projeto, pois permite ao contribuidor aceder, de forma acessível e rápida, aos vários tópicos em aberto.
 
 Além disso, a utilização de integração contínua garante a consistência e bom funcionamento do *software*, sempre que uma nova funcionalidade é adicionada. 
