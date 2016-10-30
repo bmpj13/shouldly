@@ -133,11 +133,13 @@ vertentes.
 
 Soluções para tal passariam por criar uma nova *label*, como *feature-request* ou *idea*, para utilizar exclusivamente nas 
 novas ideias para o projeto; ou então, criar um fórum exclusivo só para a introdução das mesmas. Desta forma, seria possível, de forma fácil, introduzir a aceder aos requisitos da aplicação.
+
 <br>
 <h4>Análise</h4>
 Tendo em conta que o **Shouldly** tem um contexto restrito (asserções em testes), a análise de requisitos é bastante simples e concisa:  o desenvolvimento de uma funcionalidade passa sempre pelas etapas anteriormente referidas.
 
 Como não existe uma ordenação da importância dos vários requisitos, existe a possibilidade de requisitos menos importantes serem implementados primeiro, podendo adiar de forma considerável o desenvolvimento de funcionalidades mais urgentes. Seria aconselhável, portanto, haver uma estruturação mais clara, neste contexto, para garantir mais qualidade e menos custos no *software*. 
+
 <br>
 <h4>Especificação</h4>
 Embora o **Shoudly** possua uma documentação informal, a documentação existente sobre esta *framework* é bastante completa. É visível o manual de utilizador, com a descrição de cada função de testes disponíveis, bem como protótipos de chamadas às funções e a respetiva visualização dos outputs obtidos. Logo, do ponto de vista do utilizador é uma documentação suficiente e completa.
@@ -162,6 +164,7 @@ nossa opinião que há razões para tal:
   
   - O projeto é *open source*: obrigar os *developers* a usar técnicas mais formais de validação pode restringir o número de 
   contribuidores (por falta de conhecimento).
+
 <br>
 <h4>Gestão</h4>
 <br>
