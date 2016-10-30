@@ -59,16 +59,19 @@ No contexto do **Shouldly**, os requisitos são:
     1. Escolher um tipo de asserção em testes, para desenvolver.
     2. Criar uma nova função que satisfaça a asserção escolhida.
     3. A novas funções a criar devem ser baseadas em *NUnit*, ou em **Shouldly** (caso já possua as funcionalidades                  necessárias para o desenvolvimento destas).
-    4. As asserções implementadas devem conseguir satisfazer tantas ou mais baterias de testes, relativamente ao *NUnit*.            Isto significa que devem ter o mesmo poder de asserção, podendo, no entanto, ser melhoradas. 
-    5. Repetir o processo, até o conjunto de funcionalidades pretendidas estarem implementadas.
+    4. As asserções implementadas devem conseguir satisfazer tantas ou mais baterias de testes, relativamente ao *NUnit*.            Isto significa que devem ter o mesmo poder de asserção, podendo, no entanto, ser melhoradas.
+    5. As asserções devem, em caso de insucesso, mostrar uma mensagem ao utilizador.
+    6. Repetir o processo, até o conjunto de funcionalidades pretendidas estarem implementadas.
     
   - Não funcionais
     1. Facilidade na escrita de testes.
     2. Mensagens de *output* esteticamente apelativas.
-    3. Open source
-    4. Documentação
-    5. Integração contínua
-    6. Compatível com C#
+    3. Mensagens dependentes da língua escolhida.
+    4. Mensagens personalizadas, tendo em conta a asserção utilizada e os argumentos invocados.
+    5. Open source.
+    6. Documentação.
+    7. Integração contínua.
+    8. Compatível com C#.
 
 A análise ao projeto é feita por qualquer contribuidor: de uma forma informal e bastante prática, são analisados os objetivos já realizados, e os que ainda faltam cumprir. Tendo em conta o que foi feito e as limitações existentes do projeto, há a possibilidade de se criar um novo requisito, caso este seja suficientemente necessário e/ou adicione funcionalidades importantes.
 
@@ -129,9 +132,11 @@ O utilizador pode usar variadas asserções de teste, para verificar a integrida
 
 O *domain model* é uma representação de classes conceptuais, que representam o funcionamento interno do sistema:
 
+![Domain model](https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/domain_model.jpg)
 
 <br>
 Ao invocar uma asserção, esta deve, em caso de erro, gerar uma exceção. Esta última, por sua vez, vai pedir ao construtor de mensagens para gerar um *output* personalizado para mostrar ao cliente, tendo em conta a asserção, os argumentos invocados, e a língua utilizada.
+
 Se a asserção correr com sucesso, então nenhum output é devolvido (o teste deverá continuar a correr).
 
 <br><br>
