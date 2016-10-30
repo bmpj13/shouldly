@@ -4,7 +4,7 @@
 <h1 align="center">Requisitos</h1>
 
 <h3>Âmbito e Contexto</h3>
-O **Shouldly** é uma ferramente de testes, baseada em *NUnit*, e tem como objetivo simplificar a escrita de
+O **Shouldly** é uma ferramente de testes, baseada em [NUnit](http://www.nunit.org/), e tem como objetivo simplificar a escrita de
 testes, e tornar o seu *output* visualmente mais agradável.
 
 <br>
@@ -26,10 +26,10 @@ Nesta fase inicial, é necessário interagir com os vários agentes que irão ut
 
 O principal problema a enfrentar neste processo é falta de entendimento: os utilizadores não conhecem totalmente as suas necessidades e não conhecem as limitações dos computadores; o engenheiro pode não ter a inteira noção de qual o âmbito e contexto do software pedido; informação "óbvia" pode ser omitida, entre outros.
 
-É também possível fazê-lo com recurso a *gitter*: dúvidas, sugestões e discussões surgem de uma forma mais informal, sendo possível aparecerem novas ideias a qualquer hora. Estas podem ser, entretanto, aprovadas e, eventualmente, aperfeiçoadas para satisfazer melhor as necessidades do *software*. Nesta altura, é, por norma, aconselhado a mover a dita sugestão para o sistema de *issues* acima referido, podendo mais facilmente ser acedido por todos os participantes.
-
 <br>
-No que diz respeito ao levantamento de novos requisitos no projeto, este é possível pelo sistema de issues utilizada pela comunidade, onde não só é feita a listagem dos erros que precisam de ser resolvidos, como também são dadas sugestões que permitem melhorar a funcionalidade da aplicação (normalmente rotuladas com as tags *Enchancement* ou *Discussion*).
+No que diz respeito ao levantamento de novos requisitos no projeto, este é possível pelo sistema de [issues](https://github.com/shouldly/shouldly/issues) utilizada pela comunidade, onde não só é feita a listagem dos erros que precisam de ser resolvidos, como também são dadas sugestões que permitem melhorar a funcionalidade da aplicação (normalmente rotuladas com as tags *Enchancement* ou *Discussion*).
+
+É também possível fazê-lo com recurso a *gitter*: dúvidas, sugestões e discussões surgem de uma forma mais informal, sendo possível aparecerem novas ideias a qualquer hora. Estas podem ser, entretanto, aprovadas e, eventualmente, aperfeiçoadas para satisfazer melhor as necessidades do *software*. Nesta altura, é, por norma, aconselhado a mover a dita sugestão para o sistema de *issues* acima referido, podendo mais facilmente ser acedido por todos os participantes.
 
 Posteriormente, qualquer pessoa pode juntar-se para ajudar a desenvolver esta funcionalidade, e fazer parte deste projeto.
 
@@ -100,7 +100,7 @@ O projeto não possui um documento formal *SRS*, mas possui [documentação](htt
 <br>
 O **Shouldly** possui uma vasta bateria de testes, que permite testar com rigor a qualidade do código produzido. Isto permite trazer mais segurança ao cliente, quando utiliza o *software* - não obstante que existirão sempre *bugs*.
 
-No entanto, isto não significa que o **Shouldly** satisfaz as necessidades do utilizador: esta evidência aparece nas críticas escritas por várias entidades de alta fiabilidade - p.ex. nos artigos da [VisualStudio Magazine](https://visualstudiomagazine.com/articles/2015/08/01/improve-test-asserts-with-shouldly.aspx) ou [NuGet Must Haves](http://nugetmusthaves.com/Package/Shouldly).
+No entanto, só isto não é suficiente para afirmar que o **Shouldly** satisfaz as necessidades do utilizador: esta evidência aparece nas críticas escritas por várias entidades de alta fiabilidade - p.ex. nos artigos da [VisualStudio Magazine](https://visualstudiomagazine.com/articles/2015/08/01/improve-test-asserts-with-shouldly.aspx) ou [NuGet Must Haves](http://nugetmusthaves.com/Package/Shouldly).
 
 É quase imediato perceber que este *software* preenche uma necessidade dos clientes, que eles próprios desconheciam que a tinham até encontrarem o **Shouldly**. Isto porque a aplicação faz um trabalho notável em facilitar toda a escrita de testes, possuindo ferramentas poderosas, mas ao mesmo tempo simples, coisa que nem sempre se verifica nas *frameworks* de teste *standard*.
 
@@ -125,12 +125,12 @@ O diagrama de *use cases* permite descrever, de forma clara e consistente, o que
 <sub>_\* Esta funcionalidade está fora do âmbito do **Shouldly**, mas é necessária para tirar partido máximo das suas funcionalidades._</sub>
 
 <br>
-O utilizador pode usar variadas asserções de teste, para verificar a integridade do seu código. Em caso de erro, enquanto se corre os testes, será mostrada uma mensagem personalizada, dependendo da língua definida.
+O utilizador pode usar variadas asserções de teste, para verificar a integridade do seu código. Quando correr os testes, poderão ser mostradas mensagens personalizadas, traduzidas para a língua definida.
 
 <br>
 <h3>Domínio</h3>
 
-O *domain model* é uma representação de classes conceptuais, que representam o funcionamento interno do sistema:
+O *domain model* consiste numa representação de classes conceptuais, que modelam o funcionamento interno do sistema:
 
 ![Domain model](https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/domain_model.jpg)
 
@@ -142,10 +142,6 @@ Se a asserção correr com sucesso, então nenhum output é devolvido (o teste d
 <br><br>
 <h1 align="center">Análise crítica</h1>
 <h4>Elicitação</h4>
-Por vezes, a criação do projeto pedido pelo utilizador pode tornar-se difícil de implementar por falta de esclarecimento por parte do utilizador e por falta de conhecimento do utilizador das capacidades e funcionalidades do software.
-
-Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode complicar a tentativa de corresponder a todos os requisitos, impostos pelos utilizadores.
-Alguns desses requisitos não são possíveis de implementar ou, por vezes, para os implementar seria necessário alterar a estrutura do projeto em si e por este motivo não são implementados devido aos custos associados.
 
 O uso do sistema de *issues*, tal como o **Shouldly** utiliza, mostra-se como uma boa prática para a introdução de novas ideias 
 e sugestões, pois pode ser facilmente acedido, visto que se encontra diretamente no repositório do projeto. É portanto, em geral,
@@ -159,22 +155,22 @@ novas ideias para o projeto; ou então, criar um fórum exclusivo só para a int
 
 <br>
 <h4>Análise</h4>
-Tendo em conta que o **Shouldly** tem um contexto restrito (asserções em testes), a análise de requisitos é bastante simples e concisa:  o desenvolvimento de uma funcionalidade passa sempre pelas etapas anteriormente referidas.
+Tendo em conta que o **Shouldly** tem um contexto restrito (asserções em testes), a análise de requisitos é bastante simples e concisa:  o desenvolvimento de uma funcionalidade passa sempre pelas etapas referidas nos requisitos funcionais.
 
 Como não existe uma ordenação da importância dos vários requisitos, existe a possibilidade de requisitos menos importantes serem implementados primeiro, podendo adiar de forma considerável o desenvolvimento de funcionalidades mais urgentes. Seria aconselhável, portanto, haver uma estruturação mais clara, neste contexto, para garantir mais qualidade e menos custos no *software*. 
 
 <br>
 <h4>Especificação</h4>
-Embora o **Shoudly** possua uma documentação informal, a documentação existente sobre esta *framework* é bastante completa. É visível o manual de utilizador, com a descrição de cada função de testes disponíveis, bem como protótipos de chamadas às funções e a respetiva visualização dos outputs obtidos. Logo, do ponto de vista do utilizador é uma documentação suficiente e completa.
+Embora o **Shoudly** possua uma documentação informal, a documentação existente sobre esta *framework* é bastante extensa para o utilizador. Nesta mesma, é fácil de perceber as possibilidades da aplicação, com a descrição de cada função de testes disponíveis, bem como protótipos de chamadas às funções e a respetiva visualização dos outputs obtidos. Logo, do ponto de vista do utilizador é uma documentação suficiente e completa.
 
-Já do ponto de vista dos contribuidores não se verifica isso. Para alguém que queira tornar-se contribuidor do **Shoudly** a documentação existente é pouco clara em alguns aspetos. Exemplos disso seria, na documentação, incluir modelos de *Use Case* e *Domain* como os construídos acima, visto serem modelos que ajudam a perceber como a *framework* funciona internamente.
+Já do ponto de vista dos contribuidores não se verifica isso. Para alguém que se queira tornar contribuidor do **Shoudly**, a documentação existente, para além da documentação para o utilizador, é pouca ou mesmo nula. Seria importante, então, formalizar a modular a aplicação, de forma a ajudar novos *developers* a começar a contribuir no projeto. Exemplos disso seriam incluir modelos de *Use Case* e *Domain*, como os construídos acima, visto serem diagramas que ajudam a perceber como a *framework* funciona internamente.
 
 <br>
 <h4>Validação</h4>
 Esta *framework* de testes mostra-se ser bastante simples e útil no que diz respeito à escrita de testes por partes dos utilizadores.
 Estes fatores, por si só, permitem satisfazer as necessidades dos clientes em relação às frameworks *standard*.
 
-Como este projeto continua em desenvolvimento, existe sempre espaço para melhorar as suas funcionalidades e a sua segurança, tendo em conta as críticas ou sugestões apresentadas tanto por parte dos developers, como dos seus utilizadores. A diversidade de opiniões permite, com alguma segurança, garantir que as necessidades dos clientes são satisfeitas.
+Como este projeto continua em desenvolvimento, existe sempre espaço para melhorar as suas funcionalidades e a sua segurança, tendo em conta as críticas ou sugestões apresentadas tanto por parte dos developers, como dos seus utilizadores. A diversidade e quantidade de opiniões permitem garantir, com alguma segurança, que a funcionalidade a ser desenvolvida vai satisfazer os requisitos dos clientes.
 
 É de notar que, por norma, não existe uma “validação intermédia” no desenvolvimento das funcionalidades do **Shouldly** 
 (p.ex. via prototipagem), o que se torna perigoso, visto poder vir a refletir-se em custos acrescidos. No entanto, é da 
@@ -190,7 +186,7 @@ nossa opinião que há razões para tal:
 
 <br>
 <h4>Gestão</h4>
-A gestão e evolução do projeto é feita maioritariamente com recurso ao sistema de *issues* (onde são colocados os problemas a resolver, e onde são introduzidas novas ideias). Este método mostra-se suficientemente adequado e simples, tendo em conta as características do projeto, pois permite ao contribuidor aceder, de forma acessível e rápida, aos vários tópicos em aberto.
+A gestão e evolução do projeto é feita maioritariamente com recurso ao sistema de *issues* (onde são colocados os problemas a resolver, e onde são introduzidas novas ideias). Este método mostra-se suficientemente adequado e simples, tendo em conta as características do projeto, pois permite ao contribuidor ter acesso, de forma simples e rápida, aos vários tópicos em aberto.
 
 Além disso, a utilização de integração contínua garante a consistência e bom funcionamento do *software*, sempre que uma nova funcionalidade é adicionada. 
 
