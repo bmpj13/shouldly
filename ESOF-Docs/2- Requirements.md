@@ -170,7 +170,7 @@ A gestão e evolução do projeto é feita maioritariamente com recurso ao siste
 
 Além disso, a utilização de integração contínua garante a consistência e bom funcionamento do *software*, sempre que uma nova funcionalidade é adicionada. 
 
-
+<br>
 <h3>Contribuição do grupo</h3>
 
 João Barbosa - 25% <br>
