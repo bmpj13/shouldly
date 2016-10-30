@@ -114,6 +114,27 @@ Os requisitos do projeto podem, naturalmente, mudar ao longo do tempo. O princip
 Aquando da introdução da funcionalidade, o processo de **integração contínua** vai permitir aos principais colaboradores saber se esta interfere com os outros módulos do programa, garantindo de forma constante a consistência do programa.
 
 <br>
+<h3>Casos de uso</h3>
+
+O diagrama de *use cases* permite descrever, de forma clara e consistente, o que o programa deve fazer, da perspetiva do utilizador - é, essencialmente, uma sequência de transações no sistema. No contexto do **Shouldly**, tem o seguinte aspeto:
+
+![Use cases](https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/use_case.jpg)
+<sub>_\* Esta funcionalidade está fora do âmbito do **Shouldly**, mas é necessária para tirar partido máximo das suas funcionalidades._</sub>
+
+<br>
+O utilizador pode usar variadas asserções de teste, para verificar a integridade do seu código. Em caso de erro, enquanto se corre os testes, será mostrada uma mensagem personalizada, dependendo da língua definida.
+
+<br>
+<h3>Domínio</h3>
+
+O *domain model* é uma representação de classes conceptuais, que representam o funcionamento interno do sistema:
+
+
+<br>
+Ao invocar uma asserção, esta deve, em caso de erro, gerar uma exceção. Esta última, por sua vez, vai pedir ao construtor de mensagens para gerar um *output* personalizado para mostrar ao cliente, tendo em conta a asserção, os argumentos invocados, e a língua utilizada.
+Se a asserção correr com sucesso, então nenhum output é devolvido (o teste deverá continuar a correr).
+
+<br><br>
 <h1 align="center">Análise crítica</h1>
 <h4>Elicitação</h4>
 Por vezes, a criação do projeto pedido pelo utilizador pode tornar-se difícil de implementar por falta de esclarecimento por parte do utilizador e por falta de conhecimento do utilizador das capacidades e funcionalidades do software.
