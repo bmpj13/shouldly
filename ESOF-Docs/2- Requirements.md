@@ -123,10 +123,20 @@ Por vezes a criação do projeto pedido pelo utilizador pode tornar-se difícil 
 Por outro lado, o constante surgimento de novas ideias e funcionalidades para o software pode complicar a tentativa de corresponder a todos os requisitos, impostos pelos utilizadores.
 Alguns desses requisitos não são possíveis de implementar ou, por vezes, para os implementar seria necessário alterar a estrutura do projeto em si e por este motivo não são implementados devido aos custos associados.
 
+O uso do sistema de *issues*, tal como o **Shouldly** utiliza, mostra-se como uma boa prática para a introdução de novas ideias 
+e sugestões, pois pode ser facilmente acedido, visto que se encontra diretamente no repositório do projeto. É portanto, em geral,
+um método suficientemente bom para o levantamento de novos requisitos. No entanto, no nosso caso, não existe uma grande 
+distinção entre a listagem de problemas no *software*, e a listagem de novos requisitos propriamente ditos: as tags utilizadas,
+*Discussion* e *Enhancement*, podem ser referidas em ambos os contextos. Consequentemente, não é possível filtrar de forma clara as duas 
+vertentes.
+
+Soluções para tal passariam por criar uma nova *label*, como *feature-request* ou *idea*, para utilizar exclusivamente nas 
+novas ideias para o projeto; ou então, criar um fórum exclusivo só para a introdução das mesmas. Desta forma, seria possível, de forma fácil, introduzir a aceder aos requisitos da aplicação.
 
 <h4>Análise</h4>
-Uma vez que os vários utilizadores podem dar opiniões e pedir novas funcionalidades, como não existe uma ordenação da importância dos vários requisitos existe a possibilidade dos requisitos menos importantes serem implementados em primeiro lugar, não havendo uma evolução do projeto da forma pretendida e por vezes custos na sua implementação desnecessários.
+Tendo em conta que o **Shouldly** tem um contexto restrito (asserções em testes), a análise de requisitos é bastante simples e concisa:  o desenvolvimento de uma funcionalidade passa sempre pelas etapas anteriormente referidas.
 
+Como não existe uma ordenação da importância dos vários requisitos, existe a possibilidade de requisitos menos importantes serem implementados primeiro, podendo adiar de forma considerável o desenvolvimento de funcionalidades mais urgentes. Seria aconselhável, portanto, haver uma estruturação mais clara, neste contexto, para garantir mais qualidade e menos custos no *software*. 
 
 <h4>Especificação</h4>
 Embora o Shoudly possua uma documentação informal, a documentação existente sobre esta framework é bastante completa. É visível o manual de utilizador, com a descrição de cada função de testes disponíveis, bem como protótipos de chamadas às funções e a respetiva visualização dos outputs obtidos. Logo, do ponto de vista do utilizador é uma documentação suficiente e completa.
@@ -136,19 +146,27 @@ Já do ponto de vista dos contribuidores não se verifica isso. Para alguém que
 
 <h4>Validação</h4>
 Esta framework de testes mostra-se ser bastante simples e útil no que diz respeito à escrita de testes por partes dos utilizadores.
-Estes fatores, por si só, permitem satisfazer as necessidades dos clientes em relação às frameworks standards.
+Estes fatores, por si só, permitem satisfazer as necessidades dos clientes em relação às frameworks *standard*.
 
-Como este projeto continua em desenvolvimento existe sempre espaço para melhorar as suas funcionalidades e a sua segurança, tendo em conta as críticas ou sugestões apresentadas tanto por parte dos developers como dos seus utilizadores. Esta estratégia, permite obter
-opiniões diversificadas e bastante importantes no que toca ao desenvolvimento do projeto. No entanto, nem sempre é possível satisfazer
-e cumprir os objetivos e pedidos feitos devido a limitações de software. 
+Como este projeto continua em desenvolvimento, existe sempre espaço para melhorar as suas funcionalidades e a sua segurança, tendo em conta as críticas ou sugestões apresentadas tanto por parte dos developers, como dos seus utilizadores. A diversidade de opiniões permite, com alguma segurança, garantir que as necessidades dos clientes são satisfeitas.
 
+É de notar que, por norma, não existe uma “validação intermédia” no desenvolvimento das funcionalidades do **Shouldly** 
+(p.ex. via prototipagem), o que se torna perigoso, visto poder vir a refletir-se em custos acrescidos. No entanto, é da 
+nossa opinião que há razões para tal:
 
+  - As principais funcionalidades do **Shouldly** são independentes umas das outras: dificilmente a introdução de uma 
+  nova funcionalidade danifica a aplicação.
+
+  - São também, em geral, pequenas, o que facilita a correção de erros, sem introduzir grandes custos.
+  
+  - O projeto é *open source*: obrigar os *developers* a usar técnicas mais formais de validação pode restringir o número de 
+  contribuidores (por falta de conhecimento).
 
 <h4>Gestão</h4>
-Do modo como o a framework está desenvolvida e como tenta atender a todas as ideias e funcionalidades que os utilizadores propõem,  é de notar que, embora sem ordenação de importância dos requisitos, os contribuidores têm gerido de forma correta tudo aquilo que se justifica ser implementado para melhoria do software, à medida que novos requisitos vão surgindo.
 
-Como em qualquer projeto existem bugs ainda por resolver, mas toda esta framework está bem gerida e bem otimizada, permitindo ao utilizador ter todas as funcionalidades, desenvolvidas por parte dos contribuidores, ao longo deste tempo todo desde o inicio do Shoudly.
+A gestão e evolução do projeto é feita maioritariamente com recurso ao sistema de *issues* (onde são colocados os problemas a resolver, e onde são introduzidas novas ideias). Este método mostra-se suficientemente adequado e simples, tendo em conta as características do projeto, pois permite ao contribuidor aceder, de forma acessível e rápida, aos vários tópicos em aberto.
 
+Além disso, a utilização de integração contínua garante a consistência e bom funcionamento do software, sempre que uma nova funcionalidade é adicionada. 
 
 
 <h3>Contribuição do grupo</h3>
