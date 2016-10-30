@@ -104,6 +104,7 @@ No entanto, isto não significa que o **Shouldly** satisfaz as necessidades do u
 Uma vez que o projeto ainda continua a progredir, os contribuidores, assim como os utilizadores, deparam-se, por vezes, com certas limitações no *software*. Neste contexto, devem ser introduzidas continuamente novas ideias, ou mesmo críticas, acerca do que deve ser melhorado para que esta *framework* se torne ainda mais completa, satisfatória e válida na perspetiva do cliente.
 
 <br>
+
 <h4>5. Gestão</h4>
 
   - Gestão na mudança e na evolução dos requisitos, ao longo do tempo.
@@ -132,7 +133,7 @@ vertentes.
 
 Soluções para tal passariam por criar uma nova *label*, como *feature-request* ou *idea*, para utilizar exclusivamente nas 
 novas ideias para o projeto; ou então, criar um fórum exclusivo só para a introdução das mesmas. Desta forma, seria possível, de forma fácil, introduzir a aceder aos requisitos da aplicação.
-
+<br>
 <h4>Análise</h4>
 Tendo em conta que o **Shouldly** tem um contexto restrito (asserções em testes), a análise de requisitos é bastante simples e concisa:  o desenvolvimento de uma funcionalidade passa sempre pelas etapas anteriormente referidas.
 
@@ -161,7 +162,7 @@ nossa opinião que há razões para tal:
   
   - O projeto é *open source*: obrigar os *developers* a usar técnicas mais formais de validação pode restringir o número de 
   contribuidores (por falta de conhecimento).
-
+<br>
 <h4>Gestão</h4>
 <br>
 A gestão e evolução do projeto é feita maioritariamente com recurso ao sistema de *issues* (onde são colocados os problemas a resolver, e onde são introduzidas novas ideias). Este método mostra-se suficientemente adequado e simples, tendo em conta as características do projeto, pois permite ao contribuidor aceder, de forma acessível e rápida, aos vários tópicos em aberto.
