@@ -157,4 +157,3 @@ João Barbosa - 25% <br>
 Lázaro Costa - 25% <br> 
 Miguel Lira - 25% <br>
 Miriam Gonçalves - 25% 
-Miriam Gonçalves - 25%
