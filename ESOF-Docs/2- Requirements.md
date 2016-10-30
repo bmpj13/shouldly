@@ -109,7 +109,6 @@ Uma vez que o projeto ainda continua a progredir, os contribuidores, assim como 
 
   - Gestão na mudança e na evolução dos requisitos, ao longo do tempo.
 
-<br>
 Os requisitos do projeto podem, naturalmente, mudar ao longo do tempo. O principal factor para tal, é a introdução de ideias e novas funcionalidades por parte da comunidade. Ideias que sejam bem fundamentadas podem e devem ser implementadas, para melhorar a qualidade do *software*.
 
 Aquando da introdução da funcionalidade, o processo de **integração contínua** vai permitir aos principais colaboradores saber se esta interfere com os outros módulos do programa, garantindo de forma constante a consistência do programa.
