@@ -49,6 +49,7 @@ Mostra o *hardware* do sistema, e como as componentes de *software* são distrib
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/deployment_view.png" alt="deployment view">
 </p>
+Para utilizar esta framework que utiliza a linguagem c# é necessário usar o Visual Studio e, após a instalação, deve seguir-se as seguintes instruções: Tools > NuGet Package Manager > Package Manager Console e escrever na consola do Package Manager o comando: Install-Package Shouldly.
 
 
 <br>
