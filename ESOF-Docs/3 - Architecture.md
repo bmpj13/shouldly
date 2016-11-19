@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Arquitetura</h1>
 
-A arquitetura de *software* define-se como a organização fundamental de um sistema, incoporado em diversas componentes, estipulando as suas relações, e também os princípios de *design* da aplicação. Permitindo, desta forma, uma análise à evolução e desenvolvimento do projeto. Esta arquitetura centra-se na ideia da redução da complexida através da abstração e separação de interesses. 
+A arquitetura de *software* define-se como a organização fundamental de um sistema, incorporado em diversas componentes, estipulando as suas relações, e também os princípios de *design* da aplicação. Permitindo, desta forma, uma análise à evolução e desenvolvimento do projeto. Esta arquitetura centra-se na ideia da redução da complexida através da abstração e separação de interesses. 
 
 Resumidamente, estabelece e responde às principais questões de desenho da aplicação.
 
