@@ -1,10 +1,9 @@
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/master/ESOF-Docs/resources/images/ShouldlyLogo.png" alt="icon">
 </p>
-
 <h1 align="center">Arquitetura</h1>
 
-A arquitetura de *software* define-se como a organização fundamental de um sistema, incoporado em diversas componentes, estipulando as suas relações, e também os princípios de *design* da aplicação.
+A arquitetura de *software* define-se como a organização fundamental de um sistema, incoporado em diversas componentes, estipulando as suas relações, e também os princípios de *design* da aplicação. Permitindo, desta forma, uma análise à evolução e desenvolvimento do projeto. Esta arquitetura centra-se na ideia da redução da complexida através da abstração e separação de interesses. 
 
 Resumidamente, estabelece e responde às principais questões de desenho da aplicação.
 
@@ -31,6 +30,7 @@ Mostra as abstrações chave no sistema. No caso do **Shouldly**, as principais 
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/logical_view.jpg" alt="logical view">
 </p>
 
+O shouldly como se pode ver pela vista lógica é uma ferramenta de testes baseada em NUnit, que tem como principal objetivo simplificar a escrita de testes e tornar o seu output mais agradável. Para que isto seja possível, recorre-se a todos os pacotes referidos no diagrama acima, sendo que este projeto usa o NUnit para permitir o output melhorado dos testes.
 
 <br>
 <h3> Vista de Implementação </h3>
