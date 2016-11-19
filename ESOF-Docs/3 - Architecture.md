@@ -34,7 +34,7 @@ Mostra as abstrações chave no sistema. No caso do **Shouldly**, as principais 
 
 <br>
 <h3> Vista de Implementação </h3>
-Define como os o *software* é decomposto, em várias componentes para desenvolvimento.
+Define como o *software* é decomposto, em várias componentes para desenvolvimento.
 
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/implementation_view.png" alt="implementation view">
