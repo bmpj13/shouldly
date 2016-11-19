@@ -22,17 +22,38 @@ o *Use Case View*. Além disso, serão também exibidos os diferentes padrões d
 <h3>Padrões de Arquitetura</h3>
 Um padrão arquitetural é uma solução, geral e reusável, para um problema comum na arquitetura de *software*, dentro de um contexto.
 
+
 <br>
 <h3> Vista Lógica </h3>
-A vista lógica mostra as abstrações chave no sistema. No caso do **Shouldly**, as principais abstrações manifestam-se nos diferentes *namespaces* que são definidos e utilizados na aplicação.
+Mostra as abstrações chave no sistema. No caso do **Shouldly**, as principais abstrações manifestam-se nos diferentes *namespaces* que são definidos e utilizados na aplicação.
 
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/logical_view.jpg" alt="logical view">
 </p>
 
+
+<br>
+<h3> Vista de Implementação </h3>
+Define como os o *software* é decomposto, em várias componentes para desenvolvimento.
+
+<p align="center">
+  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/implementation_view.png" alt="implementation view">
+</p>
+<sub> Nota: a vermelho encontram-se as componentes externas, utilizadas pelo **Shouldly** </sub>
+
+
+<br>
+<h3> Vista de Distribuição </h3>
+Mostra o *hardware* do sistema, e como as componentes de *software* são distribuídas.
+
+<p align="center">
+  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/deployment_view.png" alt="deployment view">
+</p>
+
+
 <br>
 <h3> Vista de Processo </h3>
-A vista de processo define as diferentes interações dos processos do sistema, em *run-time*. Tendo em conta que o **Shouldly** é uma *framework*, não existe um ponto de início do programa, e portanto esta vista define-se em várias partes. Seguidamente serão mostradas essas mesmas partes, para as componentes principais da aplicação:
+Define as diferentes interações dos processos do sistema, em *run-time*. Tendo em conta que o **Shouldly** é uma *framework*, não existe um ponto de início do programa, e portanto esta vista define-se em várias partes. Para as componentes principais da aplicação, as modelações são:
 
 - Processo da asserção
 <p align="center">
