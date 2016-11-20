@@ -21,18 +21,22 @@ o *Use Case View*. Além disso, serão também exibidos os diferentes padrões d
 <h3>Padrões de Arquitetura</h3>
 Um padrão arquitetural é uma solução, geral e reusável, para um problema comum na arquitetura de *software*, dentro de um contexto.
 
-No caso do shoudly um dos padrões de arquitetura usado é **Engenharia de software baseada em componentes** (**CBSE**), é uma abordagem baseada em reutilização de definição, implementação e composição de componente independentes.
+No caso do **Shouldly**, um dos padrões de arquitetura usado é **Engenharia de software baseada em componentes** (**CBSE**): é uma abordagem baseada em reutilização de definição, implementação e composição de componente independentes.
 
 <h5>Caraterísticas</h5>
   + Maior organização do sistema.
   + Os diferentes processos dos sistema são colocados em componentes, de modo a que as funções e dados de cada componente se relacionem entre si, idêntico a uma classe.
   + Cada componente do sistema comunica entre sí através de interfaces  disponibilizadas pelo sistema.
   + O cliente nao tem acesso ao funcionamente interno de cada componente.
-  + A utilização de componentes permite ao fabricante do projeto uma melhor manipulação dos mesmos, podem ser alterados ou substituidos, sem comprometer o normal funcionamento do sistema devido a intepêndencia dos componetes.
-  + Capacidade de reutilização, pois vários programas irão utilizar as mesmas componentes do software, sendo difícil definir componentes reutilizáveis, visto o componente ter que ser documentado e exaustivamente testado.
-  
-Existe, para além do padrão já referido, um outro padrão, **Reflexão**, que é a capacidade de um programa ler e examinar o código em tempo de execução. 
-Este tipo de padrão é usado no **Shouldly** para adaptar, de forma dinâmica, o programa para determinados tipos de inputs utilizados pelo utilizador. Tem que existir conhecimentos adicionais para poder o programa adaptar-se aos inputs, para se poder tirar proveito da execução de código mais genérico.
+  + A utilização de componentes permite ao fabricante do projeto uma melhor manipulação dos mesmos: podem ser alterados ou substituidos, sem comprometer o normal funcionamento do sistema devido a intepêndencia dos componetes.
+  + Capacidade de reutilização.
+
+A utilização deste padrão é demonstrada na secção da *Vista de Implementação*.
+
+<br>
+O padrão **Reflexão** também é utilizado. Define-se como a capacidade de um programa ler e examinar o código em tempo de execução. Pode também ser utilizado para alterar propriedades e estruturas do programa - o que não se sucede, nesta aplicação.
+
+Este tipo de padrão é usado no **Shouldly** para adaptar, de forma dinâmica, o programa para determinados tipos de asserções utilizados pelo cliente. Desta forma, analisando o código do *developer*, é possível apresentar mensagens ao utilizador, com mais informação e mais qualidade. A utilização deste padrão pode ser encontrada [aqui](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/Internals/SourceCodeTextGetter.cs).
 
 
 <br>
@@ -105,13 +109,13 @@ Define as diferentes interações dos processos do sistema, em *run-time*. Tendo
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/activity_assercao.png" alt="process_assertion">
 </p>
-Quando o utilizador chama uma função da API do **Shouldly**, é verificada a validade da operação. Se o resultado estiver incorreto é lançada uma exceção, em resultado contrário nada é feito.
+Quando o utilizador chama uma função da API do **Shouldly**, é verificada a validade da operação. Se o resultado estiver incorreto é lançada uma exceção, caso contrário o processo termina.
 
 - Processo da exceção
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/activity_excecao.png" alt="process_exception">
 </p>
-Após o lançamento da exceção é invocado o gerador de mensagens e ,de seguida, é feita a conversão desta para string.
+Após o lançamento da exceção é invocado o gerador de mensagens e, de seguida, é feita a conversão desta para string.
 
 - Processo do gerador de mensagens
 <p align="center">
