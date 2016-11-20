@@ -64,3 +64,5 @@ Os diferentes relatórios podem ser encontrados aqui:
 1 - [Processos de Desenvolvimento de Software](https://github.com/bmpj13/shouldly/blob/master/ESOF-Docs/1%20-%20Software%20Process.md)
 
 2 - [Requisitos](https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/2%20-%20Requirements.md)
+
+3 - [Arquitetura](https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/3%20-%20Architecture.md)
