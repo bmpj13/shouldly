@@ -30,7 +30,31 @@ Mostra as abstrações chave no sistema. No caso do **Shouldly**, as principais 
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/logical_view.jpg" alt="logical view">
 </p>
 
-O shouldly como se pode ver pela vista lógica é uma ferramenta de testes baseada em NUnit, que tem como principal objetivo simplificar a escrita de testes e tornar o seu output mais agradável. Para que isto seja possível, recorre-se a todos os pacotes referidos no diagrama acima, sendo que este projeto usa o NUnit para permitir o output melhorado dos testes realizados.
+O **Shouldly** é uma ferramenta de testes baseada em [NUnit](https://www.nunit.org/), que tem como principal objetivo simplificar a escrita de testes e tornar o seu output mais agradável. Para que isto seja possível, recorre-se a todos os pacotes referidos no diagrama acima.
+
+Os diferentes namespaces têm a sua função no projeto:
+
+- Shouldly
+  + Definir asserções da API.
+  + Definir exceções (de interação com o utilizador).
+  + Definir contexto da aplicação.
+  
+- Shouldly.MessageGenerators
+  + Gerar de mensagens de erro, dependendo do contexto da aplicação.
+  
+- Shouldly.DifferenceHighlighting
+  + Diferenciar, de forma mais clara, o resultado esperado *vs* resultado devolvido.
+  
+- Shouldly.Configuration
+  + Configura e verifica as definições do computador, onde o programa está a ser corrido.
+  
+- Shouldly.Internals
+  + Definir *templates* a serem utilizados pelas outras componentes da aplicação (mensagens, operadores, etc).
+  
+- NUnit
+  + Framework externa ao programa.
+  + Suporte para construír as asserções base do **Shouldly**.
+
 
 <br>
 <h3> Vista de Implementação </h3>
