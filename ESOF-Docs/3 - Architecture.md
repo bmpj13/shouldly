@@ -123,3 +123,11 @@ Após o lançamento da exceção é invocado o gerador de mensagens e, de seguid
 </p>
 
 Dependendo da asserção invocada pelo utilizador, o contexto do programa é atualizado. Tendo em conta este contexto, o **Shouldly** verifica se é necessário para esta asserção sublinhar as suas diferenças. Após esta verificação, é gerada e retornada a mensagem. 
+
+<br>
+------
+<h3>Contribuição do grupo</h3>
+João Barbosa - 25% <br>
+Lázaro Costa - 25% <br> 
+Miguel Lira - 25% <br>
+Miriam Gonçalves - 25% 
