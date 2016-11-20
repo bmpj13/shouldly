@@ -85,13 +85,17 @@ Define as diferentes interações dos processos do sistema, em *run-time*. Tendo
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/activity_assercao.png" alt="process_assertion">
 </p>
+Quando o utilizador chama uma função da API do **Shouldly**, é verificada a validade da operação. Se o resultado estiver incorreto é lançada uma exceção, em resultado contrário nada é feito.
 
 - Processo da exceção
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/activity_excecao.png" alt="process_exception">
 </p>
+Após o lançamento da exceção é invocado o gerador de mensagens e ,de seguida, é feita a conversão desta para string.
 
 - Processo do gerador de mensagens
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/activity_gerador_de_mensagens.png" alt="process_exception">
 </p>
+
+Dependendo da asserção invocada pelo utilizador, o contexto do programa é atualizado. Tendo em conta este contexto, o **Shouldly** verifica se é necessário para esta asserção sublinhar as suas diferenças. Após esta verificação, é gerada e retornada a mensagem. 
