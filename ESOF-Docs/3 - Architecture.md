@@ -63,8 +63,15 @@ Define como o *software* é decomposto, em várias componentes para desenvolvime
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/implementation_view.png" alt="implementation view">
 </p>
-<sub> Nota: a vermelho encontram-se as componentes externas, utilizadas pelo **Shouldly** </sub>
+<sub> Nota: a vermelho encontram-se as componentes externas, utilizadas pelo **Shouldly**. </sub>
 
+Pelo diagrama apresentado, é visível que a componente *Assertion* funciona de interface com o utilizador, mas, na realidade, a componente *Exception* vai ser a componente principal, pois vai garantir que uma mensagem chega ao utilizador, caso o resultado da asserção seja inesperado.
+
+Além disso, vai servir de intermediário entre a função de asserção utilizada e a mensagem a apresentar ao cliente: sempre que a componente *Exception* é necessária, esta vai transmitir a informação suficiente ao *Message Generator* - para que este último possa criar uma mensagem de erro de acordo com os objetivos do **Shouldly**.
+
+A componente *Message Generator* vai converter a informação recebida da *Exception*, e alterar o contexto da aplicação. Dependendo do contexto, o *Differences Highlighter* poderá ser utilizado. Seguidamente, é retornada a mensagem a mostrar ao utilizador, à componente *Exception*.
+
+A arquitetura estruturada e simbiótica destas componentes permite, com facilidade, atingir os objetivos do **Shouldly**: criar uma ferramenta de testes de fácil escrita, e de visualização agradável. 
 
 <br>
 <h3> Vista de Distribuição </h3>
