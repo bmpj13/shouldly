@@ -57,7 +57,7 @@ Os diferentes namespaces têm a sua função no projeto:
   + Definir contexto da aplicação.
   
 - Shouldly.MessageGenerators
-  + Gerar de mensagens de erro, dependendo do contexto da aplicação.
+  + Gerador de mensagens de erro, dependendo do contexto da aplicação.
   
 - Shouldly.DifferenceHighlighting
   + Diferenciar, de forma mais clara, o resultado esperado *vs* resultado devolvido.
