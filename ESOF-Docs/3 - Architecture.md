@@ -21,6 +21,15 @@ o *Use Case View*. Além disso, serão também exibidos os diferentes padrões d
 <h3>Padrões de Arquitetura</h3>
 Um padrão arquitetural é uma solução, geral e reusável, para um problema comum na arquitetura de *software*, dentro de um contexto.
 
+No caso do shoudly um dos padrões de arquitetura usado é **Engenharia de software baseada em componentes** (**CBSE**), é uma abordagem baseada em reutilização de definição, implementação e composição de componente independentes.
+
+<h5>Caraterísticas</h5>
+  + Maior organização do sistema.
+  + Os diferentes processos dos sistema são colocados em componentes, de modo a que as funções e dados de cada componente se relacionem entre si, idêntico a uma classe.
+  + Cada componente do sistema comunica entre sí através de interfaces  disponibilizadas pelo sistema.
+  + O cliente nao tem acesso ao funcionamente interno de cada componente.
+  + A utilização de componentes permite ao fabricante do projeto uma melhor manipulação dos mesmos, podem ser alterados ou substituidos, sem comprometer o normal funcionamento do sistema devido a intepêndencia dos componetes.
+
 
 <br>
 <h3> Vista Lógica </h3>
