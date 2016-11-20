@@ -28,7 +28,7 @@ No caso do **Shouldly**, um dos padrões de arquitetura usado é **Engenharia de
   + Os diferentes processos dos sistema são colocados em componentes, de modo a que as funções e dados de cada componente se relacionem entre si, idêntico a uma classe.
   + Cada componente do sistema comunica entre sí através de interfaces  disponibilizadas pelo sistema.
   + O cliente nao tem acesso ao funcionamente interno de cada componente.
-  + A utilização de componentes permite ao fabricante do projeto uma melhor manipulação dos mesmos: podem ser alterados ou substituidos, sem comprometer o normal funcionamento do sistema devido a intepêndencia dos componetes.
+  + A utilização de componentes permite ao fabricante do projeto uma melhor manipulação dos mesmos: podem ser alterados ou substituidos, sem comprometer o normal funcionamento do sistema devido a intepêndencia dos componentes.
   + Capacidade de reutilização.
 
 A utilização deste padrão é demonstrada na secção da *Vista de Implementação*.
