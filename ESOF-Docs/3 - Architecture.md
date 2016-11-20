@@ -29,6 +29,10 @@ No caso do shoudly um dos padrões de arquitetura usado é **Engenharia de softw
   + Cada componente do sistema comunica entre sí através de interfaces  disponibilizadas pelo sistema.
   + O cliente nao tem acesso ao funcionamente interno de cada componente.
   + A utilização de componentes permite ao fabricante do projeto uma melhor manipulação dos mesmos, podem ser alterados ou substituidos, sem comprometer o normal funcionamento do sistema devido a intepêndencia dos componetes.
+  + Capacidade de reutilização, pois vários programas irão utilizar as mesmas componentes do software, sendo difícil definir componentes reutilizáveis, visto o componente ter que ser documentado e exaustivamente testado.
+  
+Existe, para além do padrão já referido, um outro padrão, **Reflexão**, que é a capacidade de um programa ler e examinar o código em tempo de execução. 
+Este tipo de padrão é usado no **Shouldly** para adaptar, de forma dinâmica, o programa para determinados tipos de inputs utilizados pelo utilizador. Tem que existir conhecimentos adicionais para poder o programa adaptar-se aos inputs, para se poder tirar proveito da execução de código mais genérico.
 
 
 <br>
