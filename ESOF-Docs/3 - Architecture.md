@@ -30,7 +30,7 @@ Mostra as abstrações chave no sistema. No caso do **Shouldly**, as principais 
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/logical_view.jpg" alt="logical view">
 </p>
 
-O shouldly como se pode ver pela vista lógica é uma ferramenta de testes baseada em NUnit, que tem como principal objetivo simplificar a escrita de testes e tornar o seu output mais agradável. Para que isto seja possível, recorre-se a todos os pacotes referidos no diagrama acima, sendo que este projeto usa o NUnit para permitir o output melhorado dos testes.
+O shouldly como se pode ver pela vista lógica é uma ferramenta de testes baseada em NUnit, que tem como principal objetivo simplificar a escrita de testes e tornar o seu output mais agradável. Para que isto seja possível, recorre-se a todos os pacotes referidos no diagrama acima, sendo que este projeto usa o NUnit para permitir o output melhorado dos testes realizados.
 
 <br>
 <h3> Vista de Implementação </h3>
@@ -51,10 +51,9 @@ Mostra o *hardware* do sistema, e como as componentes de *software* são distrib
 </p>
 Para utilizar esta framework desenvolvida na linguagem c# é necessário usar o Visual Studio e, após a instalação, deve seguir-se as seguintes instruções: Tools > NuGet Package Manager > Package Manager Console e escrever na consola do Package Manager o comando: Install-Package Shouldly.
 
-
 <br>
 <h3> Vista de Processo </h3>
-Define as diferentes interações dos processos do sistema, em *run-time*. Tendo em conta que o **Shouldly** é uma *framework*, não existe um ponto de início do programa, e portanto esta vista define-se em várias partes. Para as componentes principais da aplicação, as modelações são:
+Define as diferentes interações dos processos do sistema, em *run-time*. Tendo em conta que o **Shouldly** é uma *framework*, não existe um ponto de início do programa, e portanto esta vista define-se em várias partes. Para as componentes principais da aplicação, apresenta as seguintes modelações:
 
 - Processo da asserção
 <p align="center">
