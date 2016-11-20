@@ -70,7 +70,7 @@ Os diferentes namespaces têm a sua função no projeto:
   
 - NUnit
   + Framework externa ao programa.
-  + Suporte para construír as asserções base do **Shouldly**.
+  + Suporte para construir as asserções base do **Shouldly**.
 
 
 <br>
