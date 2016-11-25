@@ -47,7 +47,15 @@ A testabilidade de um *software* caracteriza-se pelo **grau de suporte de testes
 
 Para as parágrafos seguintes, é importante referir que o **Shouldly** não usa *casos de teste*, mas sim *__cenários de teste__*. A diferença entre os dois reside no facto de um cenário ser um conjunto de casos.
 
+<p align="center">
+  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/test_scenario.png" width=50%>
+  <br>
+  <sub>Source: blog.testlodge.com</sub>
+</p>
 
+Por este motivo, nem tudo descrito será diretamente visível nos testes da aplicação. No entanto, é da nossa opinião que os características seguintes estão presentes.
+
+<br>
 A testabilidade de componentes do *software* é determinada por factores como:
 
 - Controlabilidade
@@ -59,7 +67,15 @@ A testabilidade de componentes do *software* é determinada por factores como:
 - Isolabilidade
   + Possibilidade de uma CUT ser testada isoladamente
   
+  A isolabilidade das CUTs no **Shouldly** decresce com o grau de dependência de outras componentes.
   
+  Por exemplo, a componente *Assertion* utiliza a componente *Exception* (caso a asserção falhe). Para garantir que a asserção está a funcionar como pretendido, deve ser assegurado que a exceção é chamada corretamente, e que retorna os valores esperados. 
+  
+  Por sua vez, a componente *Exception* recorre à componente *MessageGenerator* para obter as mensagens para o utilizador, pelo que testar o seu correto funcionamento implica recorrer sempre a essa componente. 
+  
+  A *MessageGenerator*, no entanto, já tem menos grau de dependência, pelo que poderia ser testada isoladamente. Note-se que esta componente tem dependências, mas são de mais baixo nível, facilmente controláveis e têm um relacionamento direto com a componente (*Context* e *DifferencesHighlighter*).
+  
+  Para simplificar a escrita dos testes, a melhor maneira de implementá-los é usar os cenários de teste, tal como o **Shouldly** utiliza, pois permite que todos os pontos essenciais sejam verificados, para cenários específicos. É necessário, no entanto, garantir que há uma grande cobertura dos diferentes cenários de utilização da aplicação.
   
 - Separação de responsabilidades
   + Grau de separação de responsabilidades das CUTs - se têm uma única responsabilidade, bem definida
