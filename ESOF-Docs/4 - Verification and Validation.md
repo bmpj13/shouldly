@@ -53,7 +53,7 @@ Para as parágrafos seguintes, é importante referir que o **Shouldly** não usa
   <sub>Source: blog.testlodge.com</sub>
 </p>
 
-Por este motivo, nem tudo descrito será diretamente visível nos testes da aplicação. No entanto, é da nossa opinião que os características seguintes estão presentes.
+Por este motivo, nem tudo descrito será diretamente visível nos testes da aplicação. No entanto, é da nossa opinião que as características ilustradas estão presentes.
 
 <br>
 A testabilidade de componentes do *software* é determinada por factores como:
@@ -80,6 +80,23 @@ A testabilidade de componentes do *software* é determinada por factores como:
 - Separação de responsabilidades
   + Grau de separação de responsabilidades das CUTs - se têm uma única responsabilidade, bem definida
   
+  Apesar de haver pouca isolabilidade das componentes (ou, pelo menos, em parte delas), isto não implica que não há uma boa separação de responsabilidades. No **Shouldly**, as componentes possuem um propósito bem definido - em termos gerais, cada componente tem garantia que a informação recebida a partir de outra componente é estável, bem construída e correta. Desta forma, não é preciso haver um processamento adicional sob os dados.
+  
+  As várias responsabilidades das componentes são:
+  - *Assertion*
+    1. Verificar a validade dos valores recebidos.
+  - *Exception*
+    1. Invocar a *MessageGenerator*
+    2. Apresentar o *output*
+  - *MessageGenerator*
+    1. Invocar a *Context*
+    2. Invocar a *DifferencesHighlighter*
+    3. Contruir a mensagem a ser apresentada ao cliente
+  - *Context*
+    1. Atualizar o contexto da aplicação
+  - *DifferencesHighlighter*
+    1. Realçar as diferenças em *valor esperado vs. valor recebido*
+    
 - Compreensibilidade
   + Grau de legibilidade da CUT, por clareza intrínseca ou documentação disponível
   
