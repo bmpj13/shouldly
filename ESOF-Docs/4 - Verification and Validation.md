@@ -58,13 +58,13 @@ Por este motivo, nem tudo descrito será diretamente visível nos testes da apli
 <br>
 A testabilidade de componentes do *software* é determinada por factores como:
 
-- Controlabilidade
+- **Controlabilidade**
   + Possibilidade de controlar o estado de uma componente sob teste (CUT)
   
-- Observalidade
+- **Observalidade**
   + Possibilidade de observar resultados de testes, intermédios ou finais
   
-- Isolabilidade
+- **Isolabilidade**
   + Possibilidade de uma CUT ser testada isoladamente
   
   A isolabilidade das CUTs no **Shouldly** decresce com o grau de dependência de outras componentes.
@@ -77,7 +77,7 @@ A testabilidade de componentes do *software* é determinada por factores como:
   
   Para simplificar a escrita dos testes, a melhor maneira de implementá-los é usar os cenários de teste, tal como o **Shouldly** utiliza, pois permite que todos os pontos essenciais sejam verificados, para cenários específicos. É necessário, no entanto, garantir que há uma grande cobertura dos diferentes cenários de utilização da aplicação.
   
-- Separação de responsabilidades
+- **Separação de responsabilidades**
   + Grau de separação de responsabilidades das CUTs - se têm uma única responsabilidade, bem definida
   
   Apesar de haver pouca isolabilidade das componentes (ou, pelo menos, em parte delas), isto não implica que não há uma boa separação de responsabilidades. No **Shouldly**, as componentes possuem um propósito bem definido - em termos gerais, cada componente tem garantia que a informação recebida a partir de outra componente é estável, bem construída e correta. Desta forma, não é preciso haver um processamento adicional sob os dados.
@@ -97,8 +97,12 @@ A testabilidade de componentes do *software* é determinada por factores como:
   - *DifferencesHighlighter*
     1. Realçar as diferenças em *valor esperado vs. valor recebido*
     
-- Compreensibilidade
+- **Compreensibilidade**
   + Grau de legibilidade da CUT, por clareza intrínseca ou documentação disponível
   
-- Heterogeneidade
+  Ao contrário da isolabilidade, o grau de compreensibilidade cresce com o grau de dependência das componentes. Concretamente, as componentes *Assertion* e *Exception* são mais simples de compreender. Isto deve-se ao facto de as responsabilidades destas componentes serem mais leves, no sentido em que não existe um grande processamento de informação. Exemplos ilustrativos podem ser encontrados [aqui](https://github.com/bmpj13/shouldly/tree/develop/src/Shouldly/ShouldlyExtensionMethods) para a *Assertion*, e [aqui](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/ShouldAssertException.cs) para a *Exception*.
+  
+  As restantes componentes, intrinsecamente relacionadas, fazem um processamento extensivo sob *Strings*, para gerar as mensagens que serão apresentadas ao cliente. A legibilidade dessas operações é reduzida, e há pouca ajuda disponível para aumentar a compreensão do código. Por exemplo, o código relativo ao [processamento do *source code*](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/Internals/SourceCodeTextGetter.cs) do utilizador é uma das componentes fundamentais, na construção de mensagens, e encontra-se pouco documentada. O mesmo acontece para o [principal construtor de mensagens](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/Internals/StringHelpers.cs).
+  
+- **Heterogeneidade**
   + 
