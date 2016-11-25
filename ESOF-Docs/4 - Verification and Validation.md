@@ -40,3 +40,27 @@ O processo **V&V** segue o modelo *V-Model*, no que diz respeito às atividades 
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/v%26v_model.png">
 </p>
+
+<br>
+<h3> Testabilidade </h3>
+A testabilidade de um *software* caracteriza-se pelo **grau de suporte de testes**, para um certo artefacto da aplicação, num determinado contexto. Se a testabilidade de um artefacto for elevada, então significa que encontrar *bugs* no sistema, via testes, torna-se mais simples e fácil.
+
+A testabilidade de componentes *software* é determinado por factores como:
+
+- Controlabilidade
+  + Possibilidade de controlar o estado de uma componente a ser testada (CUT)
+  
+- Observalidade
+  + Possibilidade de observar resultados de testes, intermédios ou finais
+  
+- Isolabilidade
+  + Possibilidade de uma CUT ser testada isoladamente
+  
+- Separação de responsabilidades
+  + Grau de separação de responsabilidades das CUTs - se têm uma única responsabilidade, bem definida
+  
+- Compreensibilidade
+  + Grau de legibilidade da CUT, por clareza intrínseca ou documentação disponível
+  
+- Heterogeneidade
+  + 
