@@ -62,6 +62,7 @@ Por este motivo, nem tudo descrito será diretamente visível nos testes da apli
 <br>
 A testabilidade de componentes do *software* é determinada por factores como:
 
+<a name="controllability"/>
 - **Controlabilidade**
   + Possibilidade de controlar o estado de uma componente sob teste (CUT)
   
@@ -193,8 +194,10 @@ A testabilidade de componentes do *software* é determinada por factores como:
 
 <br>
 - **Heterogeneidade**
-  + Determina o grau que o uso de diversas tecnologias requer bem como os inúmeros casos de teste
+  + Determina o grau em que o uso de diversas tecnologias requer diversos casos de teste
   
-  O **Shouldly** utilizada principalmente duas grandes tecnologias, sendo elas **NET** e **System**. Principalmente o **System** é uma tecnologia que implica usar abusivamente casos de testes, pois vai fazer com que altere o programa consoante as definições da máquina.
+  O **Shouldly**, tal como pode ser verificado na [lista de dependências](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/project.json) do projeto, utiliza várias tecnologias nas suas diferentes implementações, nomeadamente utiliza [.NET](https://www.microsoft.com/net) e [System](https://msdn.microsoft.com/en-us/library/system(v=vs.110).aspx).
   
-  É de salientar que o **Shouldly** não consegue prever todos os desfechos possíveis que possam surgir, nem testar todos as possibilidades existentes visto serem num numero notável. Mas o facto de **Shouldly** ser um projeto *open source* permite que quando um novo desfecho surja, por parte de utilizadores ou contribuidores do projeto, seja possível desenvolver o programa de modo a que seja adicionado o novo desfecho surgido.
+  Das ferramentas utilizadas, a tecnologia *System* requer uma atenção especial, pois é utilizada para alterar o comportamento do programa, tendo em conta as definições da máquina onde a aplicação está a ser corrida. Este uso provoca dificuldades no teste da aplicação, pelas razões mencionadas na secção da [controlabilidade](#controllability).
+  
+  Desta forma, devido à quantidade de desfechos possíveis, e visto que o **Shouldly** é um projeto *open-source*, torna-se compreensível que nem todos sejam testados. É importante, portanto, que incongruências sejam reportadas pelos diferentes contribuidores do projeto, tornando, assim, possível, reduzir o número de *outcomes* não testados.
