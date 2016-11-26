@@ -197,4 +197,4 @@ A testabilidade de componentes do *software* é determinada por factores como:
   
   O **Shouldly** utilizada principalmente duas grandes tecnologias, sendo elas **NET** e **System**. Principalmente o **System** é uma tecnologia que implica usar abusivamente casos de testes, pois vai fazer com que altere o programa consoante as definições da máquina.
   
-  É de salientar que o **Shouldly** não consegue prever todos os desfechos possíveis que possam surgir, nem testar todos as possibilidades existentes visto serem num numero notável. Mas o facto de **Shouldly** ser um projeto *open source* permite que quando um novo desfecho surja, seja possível, desenvolver o programa de modo a que seja adicionado o novo desfecho surgido.
+  É de salientar que o **Shouldly** não consegue prever todos os desfechos possíveis que possam surgir, nem testar todos as possibilidades existentes visto serem num numero notável. Mas o facto de **Shouldly** ser um projeto *open source* permite que quando um novo desfecho surja, por parte de utilizadores ou contribuidores do projeto, seja possível desenvolver o programa de modo a que seja adicionado o novo desfecho surgido.
