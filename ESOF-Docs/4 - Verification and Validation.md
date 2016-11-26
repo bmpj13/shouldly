@@ -65,7 +65,9 @@ A testabilidade de componentes do *software* é determinada por factores como:
 - **Controlabilidade**
   + Possibilidade de controlar o estado de uma componente sob teste (CUT)
   
-  Os desenvolvedores dos diferentes componentes são responsáveis pela realização dos diferentes testes ao componente em sí, deste modo como este é um sistema isolado do resto do sistema é mais facíl controlar e verificar as suas funcionalidades em específico.
+  Os desenvolvedores dos diferentes componentes são responsáveis pela realização dos diferentes testes ao componente em sí, deste modo como este é um sistema isolado do resto do sistema é mais fácil controlar e verificar as suas funcionalidades em específico.
+  As asserções são fáceis de controlar. No entanto, há certo casos em que é difícil controlar as asserções, que é o caso das mensagens no **Shouldly**, como utilizam o source code, não podem ser facilmente testadas de forma inequívoca, uma vez que não dá para testar para todos os sources codes. Isto acontece, principalmente, quando se testam mensagens que são traduzidas, neste caso, as asserções falham, uma vez que após a tradução a mensagem esperada pelo teste é diferente da original, por exemplo, espera-se que o resultado seja uma mensagem em inglês, mas como a mensagem esperada foi traduzida para português isto faz com que o resultado do teste seja falso, quando, na verdade, está correto. 
+  
   
   
 - **Observalidade**
