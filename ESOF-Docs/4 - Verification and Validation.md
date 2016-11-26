@@ -201,3 +201,30 @@ A testabilidade de componentes do *software* é determinada por factores como:
   Das ferramentas utilizadas, a tecnologia *System* requer uma atenção especial, pois é utilizada para alterar o comportamento do programa, tendo em conta as definições da máquina onde a aplicação está a ser corrida. Este uso provoca dificuldades no teste da aplicação, pelas razões mencionadas na secção da [controlabilidade](#controllability).
   
   Desta forma, devido à quantidade de desfechos possíveis, e visto que o **Shouldly** é um projeto *open-source*, torna-se compreensível que nem todos sejam testados. É importante, portanto, que incongruências sejam reportadas pelos diferentes contribuidores do projeto, tornando, assim, possível, reduzir o número de *outcomes* não testados.
+  
+<h3>Estatísticas e Análises de Testes</h3>
+  
+  Os testes são um processo realizado pelo testador de software, estes fornencem informações importantes sobre a qualidade, fiabilidade e eficiência do código desenvolvido e têm como principais objetivos descobrir possíveis erros e encontrar inconsistências no código, no entanto, para se ter confiança no código desenvolvido é também necessário que os testes tenham qualidade, para que os seus resultados permitam detetar defeitos no sistema. 
+  Após uma breve análise ao **Shouldly**, detetámos que os testes nesta framework são essenciais para ter a certeza de que os resultados sejam os esperados, com isto, a parte de testes é importante e insubstituível para averiguar que não se comete nenhuma falha durante o seu desenvolvimento. 
+  No total de 626 testes desenvolvidos, o resultado total foi de 21 testes falhados e 605 passados com sucesso, isto mostra uma inconsistência com os resultados indicados no site do shouldly, em que a taxa de sucesso nestes é de 100%. Com estas incoerências, verificamos que o comportamento do **Shouldly** é inconsistente. 
+  <p align="center">
+  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/TestsResult.png" width=50%>
+  <br>
+  <sub> Resultado dos testes</sub>
+</p>
+
+**Cobertura de Código**
+  
+  Com o uso da ferramenta Resharper, desenvolvida pela JetBrains, sendo a única compatível com as versões mais recentes da framework .NET core utilizadas no **Shouldly**, obteu-se o seguinte resultado na cobertura de código:
+  
+
+  <p align="center">
+  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/Coverage.png" width=50%>
+  <br>
+  <sub> Resultado dos testes</sub>
+  </p>
+  
+  Como se pode ver, mais de metade do código é testado, no entanto, pouco se pode afirmar, uma vez que esta funcionalidade, apenas tem como finalidade indicar a efetividade dos testes numa aplicação. 
+  
+  
+  
