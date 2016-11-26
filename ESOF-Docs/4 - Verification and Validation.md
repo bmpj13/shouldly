@@ -45,9 +45,9 @@ O processo **V&V** segue o modelo *V-Model*, no que diz respeito às atividades 
 <h3> Testabilidade </h3>
 A testabilidade de um *software* caracteriza-se pelo **grau de suporte de testes**, para um certo artefacto da aplicação, num determinado contexto. Se a testabilidade de um artefacto for elevada, então significa que encontrar *bugs* no sistema, via testes, torna-se mais simples e fácil para além disso, de fácil correção.
 
-Para as parágrafos seguintes, é importante referir que o **Shouldly** não usa *casos de teste*, mas sim *__cenários de teste__*. A diferença entre os dois reside no facto de um cenário ser um conjunto de casos.
+Os diferentes testes são usados para descobrir *bugs*, e não garantir a sua ausência; os testes de defeito são testes mais específicos e, deste modo, têm maior probabilidade de encontrar erros; também podem ser usados testes de estatística para verificar o desempenho e a eficiência do programa.
 
-  Os diferentes testes são usados para descobrir bugs, mas nao a sua ausência; os testes de defeito são testes mais específicos e deste modo tem maior probabilidade de encontrar erros; também podem ser usados testes de estatistica para verificar o desempenho e a eficiência do programa.
+Para as parágrafos seguintes, é importante referir que o **Shouldly** não usa *casos de teste*, mas sim *__cenários de teste__*. A diferença entre os dois reside no facto de um cenário ser um conjunto de casos.
 
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/test_scenario.png" width=50%>
@@ -68,14 +68,24 @@ A testabilidade de componentes do *software* é determinada por factores como:
 - **Observalidade**
   + Possibilidade de observar resultados de testes, intermédios ou finais.
   
-  Pelo facto de testar os testes fornecidos ao sistema é possivel encontrar e descobrir os diferentes desvios das espectativas das funcionalidades do programa.   
+  Para uma CUT do **Shouldly**, determinar se um teste deve falhar ou não, é uma tarefa relativamente fácil, devido à simplicidade do funcionamento da API. Além disso, a recriação de situações específicas, para testar certos estados do programa, também é bastante acessível e descomplicada. Por exemplo, é fácil de perceber que
+  
+      [Fact]
+      public void ShouldPass()
+      {
+         (-7).ShouldBeNegative();
+      }
+      
+  deve ser um teste que passa com sucesso. Seria, também, igualmente fácil criar um teste em que esta mesma asserção falhasse - usando um número positivo.
+  
+  O facto do **Shouldly** usar cenários de teste, aumenta o grau de dificuldade de recriação de certas situações, nomeadamente asserções que falham - pois é necessário também prevêr a mensagem que deve ser recebida pelo utilizador. Nestes casos, a [documentação](http://docs.shouldly-lib.net/v2.4.0/docs) da aplicação ajuda a prevêr a mensagem que deve ser recebida.
   
 - **Isolabilidade**
   + Possibilidade de uma CUT ser testada isoladamente
   
   A isolabilidade das CUTs no **Shouldly** decresce com o grau de dependência de outras componentes.
   
-  Por exemplo, a componente *Assertion* utiliza a componente *Exception* (caso a asserção falhe). Para garantir que a asserção está a funcionar como pretendido, deve ser assegurado que a exceção é chamada corretamente, e que retorna os valores esperados. 
+  Por exemplo, a componente *Assertion* utiliza a componente *Exception* (caso a asserção falhe). Para garantir que a asserção está a funcionar como pretendido, deve ser assegurado que a exceção é chamada corretamente, e que retorna os valores esperados. É, portanto, importante que as duas sejam testadas em simultâneo.
   
   Por sua vez, a componente *Exception* recorre à componente *MessageGenerator* para obter as mensagens para o utilizador, pelo que testar o seu correto funcionamento implica recorrer sempre a essa componente. 
   
