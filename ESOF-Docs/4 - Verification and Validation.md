@@ -204,11 +204,11 @@ A testabilidade de componentes do *software* é determinada por factores como:
   
 <h3>Estatísticas e Análises de Testes</h3>
   
-  Os testes são um processo realizado pelo testador de software, estes fornencem informações importantes sobre a qualidade, fiabilidade e eficiência do código desenvolvido e têm como principais objetivos descobrir possíveis erros e encontrar inconsistências no código, no entanto, para se ter confiança no código desenvolvido é também necessário que os testes tenham qualidade, para que os seus resultados permitam detetar defeitos no sistema. 
+  Os testes são um processo realizado pelo testador de software, estes fornecem informações importantes sobre a qualidade, fiabilidade e eficiência do código desenvolvido e têm como principais objetivos descobrir possíveis erros e encontrar inconsistências no código, no entanto, para se ter confiança no código desenvolvido é também necessário que os testes tenham qualidade, para que os seus resultados permitam detetar defeitos no sistema. 
 
   Após uma breve análise ao **Shouldly**, detetámos que os testes nesta framework são essenciais para ter a certeza de que os resultados sejam os esperados, com isto, a parte de testes é importante e insubstituível para averiguar que não se comete nenhuma falha durante o seu desenvolvimento. 
 
-  No total de 626 testes desenvolvidos, o resultado total foi de 21 testes falhados e 605 passados com sucesso, isto mostra uma inconsistência com os resultados indicados no site do shouldly, em que a taxa de sucesso nestes é de 100%. Estas incoerências devem-se ao facto do **Shouldly** utilizar definições do sistema, como é explicado no anteriormente.
+  No total de 626 testes desenvolvidos, o resultado total foi de 21 testes concluidos com insucesso e 605 concluidos com sucesso, isto mostra uma inconsistência com os resultados indicados no site do shouldly, em que a taxa de sucesso nestes é de 100%. Estas incoerências devem-se ao facto do **Shouldly** utilizar definições do sistema, como é explicado anteriormente.
   
   <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/TestsResult.png">
