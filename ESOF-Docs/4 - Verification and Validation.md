@@ -63,12 +63,12 @@ A testabilidade de componentes do *software* é determinada por factores como:
 - **Controlabilidade**
   + Possibilidade de controlar o estado de uma componente sob teste (CUT)
   
-  Os desenvolvedores dos diferentes componentes são responsáveis pela realização dos diferentes testes ao componete em sí, deste modo como este é um sistema isolado do resto do sistema é mais facíl controlar e verificar as suas funcionalidades em específico.
+  Os desenvolvedores dos diferentes componentes são responsáveis pela realização dos diferentes testes ao componente em sí, deste modo como este é um sistema isolado do resto do sistema é mais facíl controlar e verificar as suas funcionalidades em específico.
   
 - **Observalidade**
   + Possibilidade de observar resultados de testes, intermédios ou finais.
   
-  Pelo facto de testar os testes fornecidos ao sistema é possivel encontrar e descobrir os diferentes desvios das espectactivas das funcionalidades do programa.   
+  Pelo facto de testar os testes fornecidos ao sistema é possivel encontrar e descobrir os diferentes desvios das espectativas das funcionalidades do programa.   
   
 - **Isolabilidade**
   + Possibilidade de uma CUT ser testada isoladamente
