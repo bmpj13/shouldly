@@ -12,7 +12,7 @@ Este processo, tal como o nome indica, divide-se em duas componentes, apesar de 
 </p>
 
 - **Verificação**: garantir que os produtos intermédios, e o produto final, cumprem os requisitos especificados, para a fase de desenvolvimento em questão.
-  + Questão: *estamos a contruir o produto __de forma correta__?*
+  + Questão: *estamos a construir o produto __de forma correta__?*
   + Itens para avaliação:
     - Planeamentos
     - Requisitos especificados
@@ -26,7 +26,7 @@ Este processo, tal como o nome indica, divide-se em duas componentes, apesar de 
     - *Walktroughs*
     
 - **Validação**: garantir que as especificações eram, efetivamente, as pretendidas, e que o *software* cumpre os requisitos do cliente.
-  + Questão: *estamos a contruir o produto __certo__?*
+  + Questão: *estamos a construir o produto __certo__?*
   + Itens para avaliação:
     - A aplicação propriamente dita
     - Protótipos
@@ -105,4 +105,6 @@ A testabilidade de componentes do *software* é determinada por factores como:
   As restantes componentes, intrinsecamente relacionadas, fazem um processamento extensivo sob *Strings*, para gerar as mensagens que serão apresentadas ao cliente. A legibilidade dessas operações é reduzida, e há pouca ajuda disponível para aumentar a compreensão do código. Por exemplo, o código relativo ao [processamento do *source code*](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/Internals/SourceCodeTextGetter.cs) do utilizador é uma das componentes fundamentais, na construção de mensagens, e encontra-se pouco documentada. O mesmo acontece para o [principal construtor de mensagens](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/Internals/StringHelpers.cs).
   
 - **Heterogeneidade**
-  + 
+  + Dificuldade de obter um software confiável que é flexível o suficiente para lidar com dificuldades futuras
+  
+  No caso do **Shoudly**, isto é visivel no facto de os testes poderem ser usados para diferentes situações e existir um vasto leque de testes disponivéis, que foram implementados, tendo por base necessidades futuras por parte dos utilizadores. 
