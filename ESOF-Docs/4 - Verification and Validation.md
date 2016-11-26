@@ -196,3 +196,5 @@ A testabilidade de componentes do *software* é determinada por factores como:
   + Dificuldade de obter um software confiável que é flexível o suficiente para lidar com dificuldades futuras
   
   No caso do **Shoudly**, isto é visivel no facto de os testes poderem ser usados para diferentes situações e existir um vasto leque de testes disponivéis, que foram implementados, tendo por base necessidades futuras por parte dos utilizadores. 
+  
+  Aqui (link para a documentaçao) é possivel ver todas as categorias de testes que o **Shouldly** possui, podendo ver todos os tipos de testes para a categoria em questão. Existe uma categoria de exceções para se poder perceber as exceções que existem e em que situações se podem usar.
