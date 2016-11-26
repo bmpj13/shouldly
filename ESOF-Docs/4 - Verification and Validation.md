@@ -47,6 +47,8 @@ A testabilidade de um *software* caracteriza-se pelo **grau de suporte de testes
 
 Para as parágrafos seguintes, é importante referir que o **Shouldly** não usa *casos de teste*, mas sim *__cenários de teste__*. A diferença entre os dois reside no facto de um cenário ser um conjunto de casos.
 
+  Os diferentes testes são usados para descobrir bugs, mas nao a sua ausência; os testes de defeito são testes mais específicos e deste modo tem maior probabilidade de encontrar erros; também podem ser usados testes de estatistica para verificar o desempenho e a eficiência do programa.
+
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/test_scenario.png" width=50%>
   <br>
@@ -62,7 +64,8 @@ A testabilidade de componentes do *software* é determinada por factores como:
   + Possibilidade de controlar o estado de uma componente sob teste (CUT)
   
 - **Observalidade**
-  + Possibilidade de observar resultados de testes, intermédios ou finais
+  + Possibilidade de observar resultados de testes, intermédios ou finais.
+  Pelo facto de testar os testes fornecidos ao sistema é possivel encontrar e descobrir os diferentes desvios das espectactivas das funcionalidades do programa.   
   
 - **Isolabilidade**
   + Possibilidade de uma CUT ser testada isoladamente
