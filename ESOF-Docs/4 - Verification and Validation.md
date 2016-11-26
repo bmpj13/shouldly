@@ -129,7 +129,8 @@ A testabilidade de componentes do *software* é determinada por factores como:
   Além do supramencionado, mensagens que retornem números não inteiros também irão falhar, como o caso do [DoubleScenario](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly.Tests/ShouldBePositive/DoubleScenario.cs), pois o teste espera que o separador decimal seja um ponto ('.'), quando, na realidade, também pode ser uma vírgula (',').
   
   Esta geração dinâmica de mensagens torna-se difícil de testar, e dificulta também a previsão do estado da aplicação. 
-  
+
+<br>  
 - **Observalidade**
   + Possibilidade de observar resultados de testes, intermédios ou finais.
   
@@ -146,7 +147,8 @@ A testabilidade de componentes do *software* é determinada por factores como:
   deve ser um teste que passa com sucesso. Seria, também, igualmente fácil criar um teste em que esta mesma asserção falhasse - usando um número positivo.
   
   O facto do **Shouldly** usar cenários de teste, aumenta o grau de dificuldade de recriação de certas situações, nomeadamente asserções que falham - pois é necessário também prevêr a mensagem que deve ser recebida pelo utilizador. Nestes casos, a [documentação](http://docs.shouldly-lib.net/v2.4.0/docs) da aplicação ajuda a prevêr a mensagem que deve ser recebida.
-  
+
+<br>
 - **Isolabilidade**
   + Possibilidade de uma CUT ser testada isoladamente
   
@@ -159,7 +161,8 @@ A testabilidade de componentes do *software* é determinada por factores como:
   A *MessageGenerator*, no entanto, já tem menos grau de dependência, pelo que poderia ser testada isoladamente. Note-se que esta componente tem dependências, mas são de mais baixo nível, facilmente controláveis e têm um relacionamento direto com a componente (*Context* e *DifferencesHighlighter*).
   
   Para simplificar a escrita dos testes, a melhor maneira de implementá-los é usar os cenários de teste, tal como o **Shouldly** utiliza, pois permite que todos os pontos essenciais sejam verificados, para cenários específicos. É necessário, no entanto, garantir que há uma grande cobertura dos diferentes cenários de utilização da aplicação.
-  
+
+<br>
 - **Separação de responsabilidades**
   + Grau de separação de responsabilidades das CUTs - se têm uma única responsabilidade, bem definida
   
@@ -179,14 +182,16 @@ A testabilidade de componentes do *software* é determinada por factores como:
     1. Atualizar o contexto da aplicação
   - *DifferencesHighlighter*
     1. Realçar as diferenças em *valor esperado vs. valor recebido*
-    
+
+<br>
 - **Compreensibilidade**
   + Grau de legibilidade da CUT, por clareza intrínseca ou documentação disponível
   
   Ao contrário da isolabilidade, o grau de compreensibilidade cresce com o grau de dependência das componentes. Concretamente, as componentes *Assertion* e *Exception* são mais simples de compreender. Isto deve-se ao facto de as responsabilidades destas componentes serem mais leves, no sentido em que não existe um grande processamento de informação. Exemplos ilustrativos podem ser encontrados [aqui](https://github.com/bmpj13/shouldly/tree/develop/src/Shouldly/ShouldlyExtensionMethods) para a *Assertion*, e [aqui](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/ShouldAssertException.cs) para a *Exception*.
   
   As restantes componentes, intrinsecamente relacionadas, fazem um processamento extensivo sob *Strings*, para gerar as mensagens que serão apresentadas ao cliente. A legibilidade dessas operações é reduzida, e há pouca ajuda disponível para aumentar a compreensão do código. Por exemplo, o código relativo ao [processamento do *source code*](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/Internals/SourceCodeTextGetter.cs) do utilizador é uma das componentes fundamentais, na construção de mensagens, e encontra-se pouco documentada. O mesmo acontece para o [principal construtor de mensagens](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/Internals/StringHelpers.cs).
-  
+
+<br>
 - **Heterogeneidade**
   + Dificuldade de obter um software confiável que é flexível o suficiente para lidar com dificuldades futuras
   
