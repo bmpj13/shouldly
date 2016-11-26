@@ -205,12 +205,13 @@ A testabilidade de componentes do *software* é determinada por factores como:
 <h3>Estatísticas e Análises de Testes</h3>
   
   Os testes são um processo realizado pelo testador de software, estes fornencem informações importantes sobre a qualidade, fiabilidade e eficiência do código desenvolvido e têm como principais objetivos descobrir possíveis erros e encontrar inconsistências no código, no entanto, para se ter confiança no código desenvolvido é também necessário que os testes tenham qualidade, para que os seus resultados permitam detetar defeitos no sistema. 
-  <br>
+
   Após uma breve análise ao **Shouldly**, detetámos que os testes nesta framework são essenciais para ter a certeza de que os resultados sejam os esperados, com isto, a parte de testes é importante e insubstituível para averiguar que não se comete nenhuma falha durante o seu desenvolvimento. 
-  <br>
-  No total de 626 testes desenvolvidos, o resultado total foi de 21 testes falhados e 605 passados com sucesso, isto mostra uma inconsistência com os resultados indicados no site do shouldly, em que a taxa de sucesso nestes é de 100%. Com estas incoerências, verificamos que o comportamento do **Shouldly** é inconsistente. 
+
+  No total de 626 testes desenvolvidos, o resultado total foi de 21 testes falhados e 605 passados com sucesso, isto mostra uma inconsistência com os resultados indicados no site do shouldly, em que a taxa de sucesso nestes é de 100%. Estas incoerências devem-se ao facto do **Shouldly** utilizar definições do sistema, como é explicado no anteriormente.
+  
   <p align="center">
-  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/TestsResult.png" width=50%>
+  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/TestsResult.png">
   <br>
   <sub> Resultado dos testes</sub>
 </p>
@@ -223,10 +224,16 @@ A testabilidade de componentes do *software* é determinada por factores como:
   <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/Coverage.png" width=50%>
   <br>
-  <sub> Resultado dos testes</sub>
+  <sub> Resultado da cobertura de código dos testes</sub>
   </p>
   
-  Como se pode ver, mais de metade do código é testado, no entanto, pouco se pode afirmar, uma vez que esta funcionalidade, apenas tem como finalidade indicar a efetividade dos testes numa aplicação. 
-  
+  Como se pode ver, os testes cobrem 72% do código. Acredita-se que, atualmente, esta framework tem um boa cobertura de código, porque , na maior parte das funcionalidades, os módulos principais têm todos 100% ou perto de cobertura. Os módulos JetBrains.Annotations e NUnit.Framework.Constraints são ficheiros auxiliares que não fazem integralmente parte do programa.
+  Foi também possível obter os sítios no código onde há mais risco de haver erros, chamados de [HotSpots] (https://www.jetbrains.com/help/dotcover/10.0/dotCover__Detecting_Hot_Spots.html)  
+ 
+  <p align="center">
+  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/HotSpots.png">
+  <br>
+  <sub> Sitíos potenciais de risco </sub>
+  </p>
   
   
