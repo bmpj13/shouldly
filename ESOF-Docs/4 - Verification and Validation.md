@@ -55,6 +55,8 @@ Para as parágrafos seguintes, é importante referir que o **Shouldly** não usa
   <sub>Source: blog.testlodge.com</sub>
 </p>
 
+Nesta aplicação, os cenários de teste passam por, não só verificar se a asserção passa ou falha, mas também qual a mensagem que será retornada - com e sem *source code* do utilizador.
+
 Por este motivo, nem tudo descrito será diretamente visível nos testes da aplicação. No entanto, é da nossa opinião que as características ilustradas estão presentes.
 
 <br>
@@ -68,7 +70,9 @@ A testabilidade de componentes do *software* é determinada por factores como:
 - **Observalidade**
   + Possibilidade de observar resultados de testes, intermédios ou finais.
   
-  Para uma CUT do **Shouldly**, determinar se um teste deve falhar ou não, é uma tarefa relativamente fácil, devido à simplicidade do funcionamento da API. Além disso, a recriação de situações específicas, para testar certos estados do programa, também é bastante acessível e descomplicada. Por exemplo, é fácil de perceber que
+  Para uma CUT do **Shouldly**, determinar se um teste deve falhar ou não, é uma tarefa relativamente fácil, devido à simplicidade do funcionamento da API. Além disso, a recriação de situações específicas, para testar certos estados do programa, também é bastante acessível e descomplicada. 
+  
+  Por exemplo, é fácil de perceber que
   
       [Fact]
       public void ShouldPass()
