@@ -69,46 +69,46 @@ A testabilidade de componentes do *software* é determinada por factores como:
   
   Tomando como exemplo o seguinte teste:
   
-        [Fact]
-        public void ShouldPass()
-        {
-            new[] { 1, 2, 3 }.ShouldAllBe(x => x < 4);
-        }
+      [Fact]
+      public void ShouldPass()
+      {
+          new[] { 1, 2, 3 }.ShouldAllBe(x => x < 4);
+      }
   
   é constatável a facilidade em criar os *inputs* necessários para a asserção funcionar. A criação de um array com valores inteiros, e a criação de uma condição que se verifica em cada um deles são variáveis da CUT facilmente controláveis.
   
   O problema da controlabilidade torna-se mais claro, no entanto, quando se quer verificar se a asserção falha. Tomando o mesmo contexto do exemplo anterior:
   
       [Fact]
-        public void IntegerArrayScenarioShouldFail()
-        {
-            Verify.ShouldFail(() =>
-              new[] { 1, 2, 3 }.ShouldAllBe(x => x < 2, "Some additional context"),
+      public void IntegerArrayScenarioShouldFail()
+      {
+          Verify.ShouldFail(() =>
+            new[] { 1, 2, 3 }.ShouldAllBe(x => x < 2, "Some additional context"),
 
-              errorWithSource:
-              @"new[] { 1, 2, 3 }
-                  should satisfy the condition
-              (x < 2)
-                  but
-              [2, 3]
-                  do not
-              Additional Info:
-                  Some additional context",
+            errorWithSource:
+            @"new[] { 1, 2, 3 }
+                should satisfy the condition
+            (x < 2)
+                but
+            [2, 3]
+                do not
+            Additional Info:
+                Some additional context",
 
-              errorWithoutSource:
-              @"[1, 2, 3]
-                  should satisfy the condition
-              (x < 2)
-                  but
-              [2, 3]
-                  do not
-              Additional Info:
-                  Some additional context");
-        }
+            errorWithoutSource:
+            @"[1, 2, 3]
+                should satisfy the condition
+            (x < 2)
+                but
+            [2, 3]
+                do not
+            Additional Info:
+                Some additional context");
+      }
   
   Controlar o desfecho da asserção continua a ter o mesmo nível de complexidade. A dificuldade encontra-se na geração da mensagem de erro: na utilização normal do **Shouldly**, a informação que irá substituir a frase *"Some additional context"*. Esta informação adicional depende muitos factores, nomeadamente se está a ser utilizado *source code* para melhorar as mensagens, e também dos argumentos da chamada à função.
   
-  Esta geração dinâmica de mensagens torna-se difícil de testar e de prevêr o estado da aplicação. 
+  Esta geração dinâmica de mensagens torna-se difícil de testar, e dificulta também a previsão do estado da aplicação. 
   
 - **Observalidade**
   + Possibilidade de observar resultados de testes, intermédios ou finais.
