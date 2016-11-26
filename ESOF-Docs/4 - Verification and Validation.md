@@ -43,7 +43,7 @@ O processo **V&V** segue o modelo *V-Model*, no que diz respeito às atividades 
 
 <br>
 <h3> Testabilidade </h3>
-A testabilidade de um *software* caracteriza-se pelo **grau de suporte de testes**, para um certo artefacto da aplicação, num determinado contexto. Se a testabilidade de um artefacto for elevada, então significa que encontrar *bugs* no sistema, via testes, torna-se mais simples e fácil.
+A testabilidade de um *software* caracteriza-se pelo **grau de suporte de testes**, para um certo artefacto da aplicação, num determinado contexto. Se a testabilidade de um artefacto for elevada, então significa que encontrar *bugs* no sistema, via testes, torna-se mais simples e fácil para além disso, de fácil correção.
 
 Para as parágrafos seguintes, é importante referir que o **Shouldly** não usa *casos de teste*, mas sim *__cenários de teste__*. A diferença entre os dois reside no facto de um cenário ser um conjunto de casos.
 
@@ -63,8 +63,11 @@ A testabilidade de componentes do *software* é determinada por factores como:
 - **Controlabilidade**
   + Possibilidade de controlar o estado de uma componente sob teste (CUT)
   
+  Os desenvolvedores dos diferentes componentes são responsáveis pela realização dos diferentes testes ao componete em sí, deste modo como este é um sistema isolado do resto do sistema é mais facíl controlar e verificar as suas funcionalidades em específico.
+  
 - **Observalidade**
   + Possibilidade de observar resultados de testes, intermédios ou finais.
+  
   Pelo facto de testar os testes fornecidos ao sistema é possivel encontrar e descobrir os diferentes desvios das espectactivas das funcionalidades do programa.   
   
 - **Isolabilidade**
