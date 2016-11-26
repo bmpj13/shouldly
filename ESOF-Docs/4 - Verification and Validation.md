@@ -193,8 +193,8 @@ A testabilidade de componentes do *software* é determinada por factores como:
 
 <br>
 - **Heterogeneidade**
-  + Dificuldade de obter um software confiável que é flexível o suficiente para lidar com dificuldades futuras
+  + Determina o grau que o uso de diversas tecnologias requer bem como os inúmeros casos de teste
   
-  No caso do **Shoudly**, isto é visivel no facto de os testes poderem ser usados para diferentes situações e existir um vasto leque de testes disponivéis, que foram implementados, tendo por base necessidades futuras por parte dos utilizadores. 
+  O **Shouldly** utilizada principalmente duas grandes tecnologias, sendo elas **NET** e **System**. Principalmente o **System** é uma tecnologia que implica usar abusivamente casos de testes, pois vai fazer com que altere o programa consoante as definições da máquina.
   
-  Aqui (link para a documentaçao) é possivel ver todas as categorias de testes que o **Shouldly** possui, podendo ver todos os tipos de testes para a categoria em questão. Existe uma categoria de exceções para se poder perceber as exceções que existem e em que situações se podem usar.
+  É de salientar que o **Shouldly** não consegue prever todos os desfechos possíveis que possam surgir, nem testar todos as possibilidades existentes visto serem num numero notável. Mas o facto de **Shouldly** ser um projeto *open source* permite que quando um novo desfecho surja, seja possível, desenvolver o programa de modo a que seja adicionado o novo desfecho surgido.
