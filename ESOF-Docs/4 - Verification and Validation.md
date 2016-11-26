@@ -228,6 +228,7 @@ A testabilidade de componentes do *software* é determinada por factores como:
   </p>
   
   Como se pode ver, os testes cobrem 72% do código. Acredita-se que, atualmente, esta framework tem um boa cobertura de código, porque , na maior parte das funcionalidades, os módulos principais têm todos 100% ou perto de cobertura. Os módulos JetBrains.Annotations e NUnit.Framework.Constraints são ficheiros auxiliares que não fazem integralmente parte do programa.
+  
   Foi também possível obter os sítios no código onde há mais risco de haver erros, chamados de [HotSpots] (https://www.jetbrains.com/help/dotcover/10.0/dotCover__Detecting_Hot_Spots.html)  
  
   <p align="center">
@@ -236,4 +237,9 @@ A testabilidade de componentes do *software* é determinada por factores como:
   <sub> Sitíos potenciais de risco </sub>
   </p>
   
+  Os HotSpots são calculados a partir da seguinte fórmula:
   
+    Risk(m) = comp(m)^2 * (1 – cov(m)/100)^3 + comp(m)
+    m - método;
+    comp(m) - complexidade ciclomática do método;
+    cov(m) - cobertura de código do método obtida pelos testes.
