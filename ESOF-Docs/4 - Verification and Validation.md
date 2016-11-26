@@ -43,7 +43,7 @@ O processo **V&V** segue o modelo *V-Model*, no que diz respeito às atividades 
 
 <br>
 <h3> Testabilidade </h3>
-A testabilidade de um *software* caracteriza-se pelo **grau de suporte de testes**, para um certo artefacto da aplicação, num determinado contexto. Se a testabilidade de um artefacto for elevada, então significa que encontrar *bugs* no sistema, via testes, torna-se mais simples e fácil para além disso, de fácil correção.
+A testabilidade de um *software* caracteriza-se pelo **grau de suporte de testes**, para um certo artefacto da aplicação, num determinado contexto. Se a testabilidade de um artefacto for elevada, então significa que encontrar *bugs* no sistema, via testes, torna-se mais simples e fácil, para além disso, de fácil correção.
 
 Os diferentes testes são usados para descobrir *bugs*, e não garantir a sua ausência; os testes de defeito são testes mais específicos e, deste modo, têm maior probabilidade de encontrar erros; também podem ser usados testes de estatística para verificar o desempenho e a eficiência do programa.
 
@@ -65,7 +65,7 @@ A testabilidade de componentes do *software* é determinada por factores como:
 - **Controlabilidade**
   + Possibilidade de controlar o estado de uma componente sob teste (CUT)
   
-  Os desenvolvedores dos diferentes componentes são responsáveis pela realização dos diferentes testes ao componente em sí, deste modo como este é um sistema isolado do resto do sistema é mais fácil controlar e verificar as suas funcionalidades em específico.
+  Os desenvolvedores dos diferentes componentes são responsáveis pela realização dos diferentes testes ao componente em si, deste modo como este é um sistema isolado do resto do sistema é mais fácil controlar e verificar as suas funcionalidades em específico.
   As asserções são fáceis de controlar. No entanto, há certo casos em que é difícil controlar as asserções, que é o caso das mensagens no **Shouldly**, como utilizam o source code, não podem ser facilmente testadas de forma inequívoca, uma vez que não dá para testar para todos os sources codes. Isto acontece, principalmente, quando se testam mensagens que são traduzidas, neste caso, as asserções falham, uma vez que após a tradução a mensagem esperada pelo teste é diferente da original, por exemplo, espera-se que o resultado seja uma mensagem em inglês, mas como a mensagem esperada foi traduzida para português isto faz com que o resultado do teste seja falso, quando, na verdade, está correto. 
   
   
