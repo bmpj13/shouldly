@@ -65,10 +65,50 @@ A testabilidade de componentes do *software* é determinada por factores como:
 - **Controlabilidade**
   + Possibilidade de controlar o estado de uma componente sob teste (CUT)
   
-  Os desenvolvedores dos diferentes componentes são responsáveis pela realização dos diferentes testes ao componente em si, deste modo como este é um sistema isolado do resto do sistema é mais fácil controlar e verificar as suas funcionalidades em específico.
-  As asserções são fáceis de controlar. No entanto, há certo casos em que é difícil controlar as asserções, que é o caso das mensagens no **Shouldly**, como utilizam o source code, não podem ser facilmente testadas de forma inequívoca, uma vez que não dá para testar para todos os sources codes. Isto acontece, principalmente, quando se testam mensagens que são traduzidas, neste caso, as asserções falham, uma vez que após a tradução a mensagem esperada pelo teste é diferente da original, por exemplo, espera-se que o resultado seja uma mensagem em inglês, mas como a mensagem esperada foi traduzida para português isto faz com que o resultado do teste seja falso, quando, na verdade, está correto. 
+  A controlabilidade do **Shouldly** possui duas facetas. As asserções propriamente ditas são faceis de controlar: controlar o seu estado, i.e. saber quais os passos que executa e qual o resultado que deve devolver, é claro e natural.
   
+  Tomando como exemplo o seguinte teste:
   
+        [Fact]
+        public void ShouldPass()
+        {
+            new[] { 1, 2, 3 }.ShouldAllBe(x => x < 4);
+        }
+  
+  é constatável a facilidade em criar os *inputs* necessários para a asserção funcionar. A criação de um array com valores inteiros, e a criação de uma condição que se verifica em cada um deles são variáveis da CUT facilmente controláveis.
+  
+  O problema da controlabilidade torna-se mais claro, no entanto, quando se quer verificar se a asserção falha. Tomando o mesmo contexto do exemplo anterior:
+  
+      [Fact]
+        public void IntegerArrayScenarioShouldFail()
+        {
+            Verify.ShouldFail(() =>
+              new[] { 1, 2, 3 }.ShouldAllBe(x => x < 2, "Some additional context"),
+
+              errorWithSource:
+              @"new[] { 1, 2, 3 }
+                  should satisfy the condition
+              (x < 2)
+                  but
+              [2, 3]
+                  do not
+              Additional Info:
+                  Some additional context",
+
+              errorWithoutSource:
+              @"[1, 2, 3]
+                  should satisfy the condition
+              (x < 2)
+                  but
+              [2, 3]
+                  do not
+              Additional Info:
+                  Some additional context");
+        }
+  
+  Controlar o desfecho da asserção continua a ter o mesmo nível de complexidade. A dificuldade encontra-se na geração da mensagem de erro: na utilização normal do **Shouldly**, a informação que irá substituir a frase *"Some additional context"*. Esta informação adicional depende muitos factores, nomeadamente se está a ser utilizado *source code* para melhorar as mensagens, e também dos argumentos da chamada à função.
+  
+  Esta geração dinâmica de mensagens torna-se difícil de testar e de prevêr o estado da aplicação. 
   
 - **Observalidade**
   + Possibilidade de observar resultados de testes, intermédios ou finais.
