@@ -108,6 +108,26 @@ A testabilidade de componentes do *software* é determinada por factores como:
   
   Controlar o desfecho da asserção continua a ter o mesmo nível de complexidade. A dificuldade encontra-se na geração da mensagem de erro: na utilização normal do **Shouldly**, a informação que irá substituir a frase *"Some additional context"*. Esta informação adicional depende muitos factores, nomeadamente se está a ser utilizado *source code* para melhorar as mensagens, e também dos argumentos da chamada à função.
   
+  Outra dificuldade está relacionada com o facto do **Shouldly** utilizar informações do sistema, em certas partes da construção da mensagem. No cenário [*ActionDelegateScenario*](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly.Tests/ShouldNotThrow/ActionDelegateScenario.cs), no teste da asserção *ShouldNotThrow*, é esperado que a mensagem retorne
+      
+      (...)
+      System.InvalidOperationException
+      with message
+      ""Operation is not valid due to the current state of the object.""
+      
+  mas, quando corrido nos nosso computadores, a mensagem retornada foi
+  
+      (...)
+      System.InvalidOperationException
+      with message
+      ""A operação não é válida devido ao estado atual do objeto.""
+  
+  e, consequentemente, o teste falha.
+  
+  O teste não está mal formulado, nem a função retorna valores inesperados. Aliás, a [integração contínua](https://ci.appveyor.com/project/shouldly/shouldly/build/2.8.3+29.build.308/tests) do **Shouldly** aprova o teste. A adversidade está na utilização de informações do sistema, de que esta aplicação tira partido: certas mensagens são automaticamente traduzidas, pelo que o teste falhará quando as definições não estão em inglês.
+  
+  Além do supramencionado, mensagens que retornem números não inteiros também irão falhar, como o caso do [DoubleScenario](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly.Tests/ShouldBePositive/DoubleScenario.cs), pois o teste espera que o separador decimal seja um ponto ('.'), quando, na realidade, também pode ser uma vírgula (',').
+  
   Esta geração dinâmica de mensagens torna-se difícil de testar, e dificulta também a previsão do estado da aplicação. 
   
 - **Observalidade**
