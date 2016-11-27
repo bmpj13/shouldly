@@ -260,4 +260,5 @@ d<br>
  
   O uso desta biblioteca, tornou-se um obstáculo na parte de obter a cobertura de código, uma vez que é incompatível com uma grande parte das aplicações existentes para correr e calcular a cobertura de código para a linguagem C#. 
   
+  Como o **Shouldly** é um projeto de grande complexidade, o uso de tantas dependências permite a sua modularização, ou seja, a sua divisão em partes distintas, melhorando a sua legibilidade e a sua manutenção. Esta divisão em módulos permite melhorar a programação e os testes ao programa, a criação de bibliotecas que podem ser usadas noutros projetos ou por outros programadores, economizar memória do computador e entre outras vantagens. No entanto, a necessidade de modularizar um programa aumenta o tempo de execução de código, devido ao tratamento adicional de ativação dos diferentes módulos.  
   
