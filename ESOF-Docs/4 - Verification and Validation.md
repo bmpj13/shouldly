@@ -247,8 +247,8 @@ d<br>
   Das potenciais áreas de risco a que aparece mais destacada é o ficheiro ExpressionStringBuilder.cs localizado em \src\Shouldly\App_packages\ExpressionStringBuilder.0.10.0\ExpressionStringBuilder.c. Após estudar-se o código existente neste ficheiro, verifica-se que aqui é feita a construção de uma asserção ("string") através de uma expressão recebida como argumento. Uma vez que o Shouldly trabalha substancialmente com asserções, considera-se que esta parte em específico, sendo de conversão pode ser considerada um potencial risco, durante as conversões muita informação recebida pode ser perdida e com as traduções a possibilidade de a conversão ser mal feita é maior ainda.
   
 **Dependências**
-
-  Após seguir as instruções do **Shouldly** para proceder corretamente à sua instalação, constatou-se que esta framework tem bastantes dependências que são essenciais para o seu correto funcionamento.   
+  
+  Após seguir as instruções do **Shouldly** para proceder corretamente à sua instalação, constatou-se que esta framework tem bastantes dependências, interação entre diversos módulos/sistemas de um projeto de software, que são essenciais para o seu correto funcionamento.   
   
   <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/Dependencies.png">
