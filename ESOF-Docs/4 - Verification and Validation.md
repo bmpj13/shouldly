@@ -266,8 +266,10 @@ A testabilidade de componentes do *software* é determinada por factores como:
   
 <h3>Identificação e correção de um bug</h3>
 
-  Na pádina do  **Shouldly** no *GitHub*, na secção das *issues* verificamos que apenas existem dois *bugs*.  Depois de uma breve discução e análise de ambos os *bugs*, propusemo-nos a tentar proceder à correção do *bug* #363.  Este *bug*  está situado no teste *Should.Throw*, funcionando este de modo incorreto para **TimeoutException**.
+  Na pádina do  **Shouldly** no *GitHub*, na secção das *issues* verificamos que apenas existem dois *bugs*.  Depois de uma breve discução e análise de ambos os *bugs*, propusemo-nos a tentar proceder à correção do *bug* #363.  Este *bug*  está situado no teste *Should.Throw* e apesar do teste ser realizado com sucesso(dentro do tempo previsto pelo teste), este teste por sua vez laça a exceção **TimeoutException**, coisa que não o devia fazer.
+ 
   
-<h5>Estratégia de resolução</h5>
+<h4>Estratégia de resolução</h4>
 
   Enquanto o programa está a correr, é lançada a exceção **TimeoutException**, para informar o **Shouldly** de que o programa está demorar algum tempo a responder. Como **TimeoutException** é uma exceção pública, isto é, pode ser usada por qualquer utilizador que esteja a usar *c#*, pode não estar adaptada para certas funcionalidades do **Shouldly**. Para tal, entre várias hipóteses, propomo-nos a resolver este *bug* criando uma exceção *private* para o próprio **Shouldly**, que irá ter a mesma funcionalidade que o **TimeoutException**.
+  Assim em vez de ser lançada a exceção publica é lançada a exceção do proprio **Shouldly** em si, deste modo não existe interferências com a outra exceção  
