@@ -262,3 +262,12 @@ A testabilidade de componentes do *software* é determinada por factores como:
   
   Como o **Shouldly** é um projeto de grande complexidade, o uso de tantas dependências permite a sua modularização, ou seja, a sua divisão em partes distintas, melhorando a sua legibilidade e a sua manutenção. Esta divisão em módulos permite melhorar a programação e os testes ao programa, a criação de bibliotecas que podem ser usadas noutros projetos ou por outros programadores, economizar memória do computador e entre outras vantagens. No entanto, a necessidade de modularizar um programa aumenta o tempo de execução de código, devido ao tratamento adicional de ativação dos diferentes módulos.  
   
+  
+  
+<h3>Identificação e correção de um bug</h3>
+
+  Na pádina do  **Shouldly** no *GitHub*, na secção das *issues* verificamos que apenas existem dois *bugs*.  Depois de uma breve discução e análise de ambos os *bugs*, propusemo-nos a tentar proceder à correção do *bug* #363.  Este *bug*  está situado no teste *Should.Throw*, funcionando este de modo incorreto para **TimeoutException**.
+  
+<h5>Estratégia de resolução</h5>
+
+  Enquanto o programa está a correr, é lançada a exceção **TimeoutException**, para informar o **Shouldly** de que o programa está demorar algum tempo a responder. Como **TimeoutException** é uma exceção pública, isto é, pode ser usada por qualquer utilizador que esteja a usar *c#*, pode não estar adaptada para certas funcionalidades do **Shouldly**. Para tal, entre várias hipóteses, propomo-nos a resolver este *bug* criando uma exceção *private* própria para o **Shouldly**, que irá ter a mesma funcionalidade que o **TimeoutException**.
