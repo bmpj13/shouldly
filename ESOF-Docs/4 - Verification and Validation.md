@@ -192,7 +192,7 @@ A testabilidade de componentes do *software* é determinada por factores como:
   
   As restantes componentes, intrinsecamente relacionadas, fazem um processamento extensivo sob *Strings*, para gerar as mensagens que serão apresentadas ao cliente. A legibilidade dessas operações é reduzida, e há pouca ajuda disponível para aumentar a compreensão do código. Por exemplo, o código relativo ao [processamento do *source code*](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/Internals/SourceCodeTextGetter.cs) do utilizador é uma das componentes fundamentais, na construção de mensagens, e encontra-se pouco documentada. O mesmo acontece para o [principal construtor de mensagens](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/Internals/StringHelpers.cs).
 
-<br>
+d<br>
 - **Heterogeneidade**
   + Determina o grau em que o uso de diversas tecnologias requer diversos casos de teste
   
@@ -229,7 +229,7 @@ A testabilidade de componentes do *software* é determinada por factores como:
   
   Como se pode ver, os testes cobrem 72% do código. Acredita-se que, atualmente, esta framework tem um boa cobertura de código, porque , na maior parte das funcionalidades, os módulos principais têm todos 100% ou perto de cobertura. Os módulos JetBrains.Annotations e NUnit.Framework.Constraints são ficheiros auxiliares que não fazem integralmente parte do programa.
   
-  Foi também possível obter os sítios no código onde há mais risco de haver erros, chamados de [HotSpots] (https://www.jetbrains.com/help/dotcover/10.0/dotCover__Detecting_Hot_Spots.html)  
+  Foi também possível obter os sítios no código onde há mais risco de haver erros, chamados de [HotSpots](https://www.jetbrains.com/help/dotcover/10.0/dotCover__Detecting_Hot_Spots.html)  
  
   <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/HotSpots.png">
@@ -243,3 +243,20 @@ A testabilidade de componentes do *software* é determinada por factores como:
     m - método;
     comp(m) - complexidade ciclomática do método;
     cov(m) - cobertura de código do método obtida pelos testes.
+   
+  Das potenciais áreas de risco a que aparece mais destacada é o ficheiro ExpressionStringBuilder.cs localizado em \src\Shouldly\App_packages\ExpressionStringBuilder.0.10.0\ExpressionStringBuilder.c. Após estudar-se o código existente neste ficheiro, verifica-se que aqui é feita a construção de uma asserção ("string") através de uma expressão recebida como argumento. Uma vez que o Shouldly trabalha substancialmente com asserções, considera-se que esta parte em específico, sendo de conversão pode ser considerada um potencial risco, durante as conversões muita informação recebida pode ser perdida e com as traduções a possibilidade de a conversão ser mal feita é maior ainda.
+  
+**Dependências**
+
+  Após seguir as instruções do **Shouldly** para proceder corretamente à sua instalação, constatou-se que esta framework tem bastantes dependências que são essenciais para o seu correto funcionamento.   
+  
+  <p align="center">
+  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/Dependencies.png">
+  <br>
+  <sub> Sitíos potenciais de risco </sub>
+  </p>
+  
+  De todas a mais significativa para todo o projeto é a ["NETStandard.Library"](https://docs.microsoft.com/en-us/dotnet/articles/standard/library), esta biblioteca tem um conjunto de .NET runtimes que melhoram esta biblioteca, tais como .NET Standard, .Net Core, .NET Framework e outras importantes. Trazendo vantagens como a possibilidade dos developers criarem bibliotecas portáteis, reduz e , em alguns casos, elimina compilação condicional source partilhada e outras vantagens. 
+  O uso desta biblioteca, tornou-se um obstáculo na parte de obter a cobertura de código, uma vez que é incompatível com uma grande parte das aplicações existentes para correr e calcular a cobertura de código para a linguagem C#. 
+  
+  
