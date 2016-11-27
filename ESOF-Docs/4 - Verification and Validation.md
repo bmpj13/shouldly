@@ -274,4 +274,4 @@ A testabilidade de componentes do *software* é determinada por factores como:
 
   A nossa estrategica para a resolução do *bug* passa por  criar uma exceção *private* para o próprio **Shouldly** chamada de **ShouldlyTimeOutException**, que irá ter a mesma funcionalidade que o **TimeOutException** mas devido ao facto de o utilizador não usar esta exceção não há interferencias no catch das diferentes Exceções.
   
-  Assim em vez de ser lançada a exceção publica é lançada a exceção do próprio **Shouldly**,**ShouldlyTimeOutException**. 
+  Assim em vez de ser lançada a exceção publica é lançada a exceção do próprio projeto a **ShouldlyTimeOutException**.
