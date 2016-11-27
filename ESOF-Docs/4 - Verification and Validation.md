@@ -257,6 +257,7 @@ d<br>
   </p>
   
   De todas a mais significativa para todo o projeto é a ["NETStandard.Library"](https://docs.microsoft.com/en-us/dotnet/articles/standard/library), esta biblioteca tem um conjunto de .NET runtimes que melhoram esta biblioteca, tais como .NET Standard, .Net Core, .NET Framework e outras importantes. Trazendo vantagens como a possibilidade dos developers criarem bibliotecas portáteis, reduz e , em alguns casos, elimina compilação condicional source partilhada e outras vantagens. 
+ 
   O uso desta biblioteca, tornou-se um obstáculo na parte de obter a cobertura de código, uma vez que é incompatível com uma grande parte das aplicações existentes para correr e calcular a cobertura de código para a linguagem C#. 
   
   
