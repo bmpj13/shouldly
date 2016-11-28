@@ -201,14 +201,13 @@ A testabilidade de componentes do *software* é determinada por factores como:
   Das ferramentas utilizadas, a tecnologia *System* requer uma atenção especial, pois é utilizada para alterar o comportamento do programa, tendo em conta as definições da máquina onde a aplicação está a ser corrida. Este uso provoca dificuldades no teste da aplicação, pelas razões mencionadas na secção da [controlabilidade](#controllability).
   
   Desta forma, devido à quantidade de desfechos possíveis, e visto que o **Shouldly** é um projeto *open-source*, torna-se compreensível que nem todos sejam testados. É importante, portanto, que incongruências sejam reportadas pelos diferentes contribuidores do projeto, tornando, assim, possível, reduzir o número de *outcomes* não testados.
-  
+
+<br>
 <h3>Estatísticas e Análises de Testes</h3>
   
-  Os testes são um processo realizado pelo testador de software, estes fornecem informações importantes sobre a qualidade, fiabilidade e eficiência do código desenvolvido e têm como principais objetivos descobrir possíveis erros e encontrar inconsistências no código, no entanto, para se ter confiança no código desenvolvido é também necessário que os testes tenham qualidade, para que os seus resultados permitam detetar defeitos no sistema. 
+  Os testes são um processo realizado pelo testador de software. Estes fornecem informações importantes sobre a qualidade, fiabilidade e eficiência do código desenvolvido e têm como principais objetivos descobrir possíveis erros, e encontrar inconsistências no código. No entanto, para se ter confiança no código desenvolvido, é também necessário que os testes tenham qualidade, para que os seus resultados permitam detetar defeitos no sistema. 
 
-  Após uma breve análise ao **Shouldly**, detetámos que os testes nesta framework são essenciais para ter a certeza de que os resultados sejam os esperados, com isto, a parte de testes é importante e insubstituível para averiguar que não se comete nenhuma falha durante o seu desenvolvimento. 
-
-  No total de 626 testes desenvolvidos, o resultado total foi de 21 testes concluidos com insucesso e 605 concluidos com sucesso, isto mostra uma inconsistência com os resultados indicados no site do shouldly, em que a taxa de sucesso nestes é de 100%. Estas incoerências devem-se ao facto do **Shouldly** utilizar definições do sistema, como é explicado anteriormente.
+  No total de 626 testes desenvolvidos, o resultado total foi de 21 testes falhados e 605 concluidos com sucesso. Isto mostra uma inconsistência com os resultados indicados pela integração contínua **Shouldly**, em que a taxa de sucesso nestes é de 100%. Estas incoerências devem-se ao facto do **Shouldly** utilizar definições do sistema, como é explicado anteriormente.
   
   <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/TestsResult.png">
@@ -218,23 +217,25 @@ A testabilidade de componentes do *software* é determinada por factores como:
 
 **Cobertura de Código**
   
-  Com o uso da ferramenta Resharper, desenvolvida pela JetBrains, sendo a única compatível com as versões mais recentes da framework .NET core utilizadas no **Shouldly**, obteu-se o seguinte resultado na cobertura de código:
+  Com o uso da ferramenta [ReSharper](https://www.jetbrains.com/resharper/), desenvolvida pela JetBrains, obteu-se o seguinte resultado na cobertura de código:
   
-
   <p align="center">
-  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/Coverage.png" width=50%>
-  <br>
-  <sub> Resultado da cobertura de código dos testes</sub>
+    <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/Coverage.png" width=50%>
+    <br>
+    <sub> Resultado da cobertura de código dos testes</sub>
   </p>
   
-  Como se pode ver, os testes cobrem 72% do código. Acredita-se que, atualmente, esta framework tem um boa cobertura de código, porque , na maior parte das funcionalidades, os módulos principais têm todos 100% ou perto de cobertura. Os módulos JetBrains.Annotations e NUnit.Framework.Constraints são ficheiros auxiliares que não fazem integralmente parte do programa.
-  
-  Foi também possível obter os sítios no código onde há mais risco de haver erros, chamados de [HotSpots](https://www.jetbrains.com/help/dotcover/10.0/dotCover__Detecting_Hot_Spots.html)  
+  Como se pode ver, os testes cobrem 72% do código. Acredita-se que, atualmente, esta *framework* tem um boa cobertura de código, porque , na maior parte das funcionalidades, os módulos principais têm todos 100% ou perto de cobertura. Os módulos *JetBrains.Annotations* e *NUnit.Framework.Constraints*, por exemplo, são ficheiros auxiliares que não fazem integralmente parte do programa e não desempenham uma função vital - por isso, é aceitável que tenham pouca cobertura.
+
+<br>
+**_HotSpots_**
+
+  Foi também possível obter os sítios no código onde há mais risco de haver erros, chamados de [HotSpots](https://www.jetbrains.com/help/dotcover/10.0/dotCover__Detecting_Hot_Spots.html).  
  
   <p align="center">
-  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/HotSpots.png">
-  <br>
-  <sub> Sitíos potenciais de risco </sub>
+    <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/HotSpots.png">
+    <br>
+    <sub> Sitíos potenciais de risco </sub>
   </p>
   
   Os HotSpots são calculados a partir da seguinte fórmula:
@@ -244,16 +245,21 @@ A testabilidade de componentes do *software* é determinada por factores como:
     comp(m) - complexidade ciclomática do método;
     cov(m) - cobertura de código do método obtida pelos testes.
    
-  Das potenciais áreas de risco a que aparece mais destacada é o ficheiro ExpressionStringBuilder.cs localizado em \src\Shouldly\App_packages\ExpressionStringBuilder.0.10.0\ExpressionStringBuilder.c. Após estudar-se o código existente neste ficheiro, verifica-se que aqui é feita a construção de uma asserção ("string") através de uma expressão recebida como argumento. Uma vez que o Shouldly trabalha substancialmente com asserções, considera-se que esta parte em específico, sendo de conversão pode ser considerada um potencial risco, durante as conversões muita informação recebida pode ser perdida e com as traduções a possibilidade de a conversão ser mal feita é maior ainda.
+  As expressões de maior tamanho representam as zonas de código onde há mais vulnerabilidade a erros. Pode-se confirmar, então, que os módulos *JetBrains.Annotations* e *NUnit.Framework.Constraints* estão bem controlados, e não precisam de mais cobertura.
   
+  Das potenciais áreas de risco, a que aparece mais destacada é a [ExpressionStringBuilder](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/App_Packages/ExpressionStringBuilder.0.10.0/ExpressionStringBuilder.cs). Após estudar-se o código existente neste ficheiro, verifica-se que aqui é feita a construção de uma asserção ("string") através de uma expressão recebida como argumento. Uma vez que o **Shouldly** trabalha substancialmente com asserções, considera-se que esta parte em específico, sendo de conversão, pode ser considerada um potencial risco. Durante as conversões muita informação recebida pode ser perdida, e com as traduções a possibilidade de a conversão ser mal feita é maior ainda.
+  
+  Estes aspetos vêm a confirmar a análise feita acerca da testabilidade do programa.
+
+<br>
 **Dependências**
   
   Após seguir as instruções do **Shouldly** para proceder corretamente à sua instalação, constatou-se que esta framework tem bastantes dependências, interação entre diversos módulos/sistemas de um projeto de software, que são essenciais para o seu correto funcionamento.   
   
   <p align="center">
-  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/Dependencies.png">
-  <br>
-  <sub> Sitíos potenciais de risco </sub>
+    <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/Dependencies.png">
+    <br>
+    <sub> Lista de dependências </sub>
   </p>
   
   De todas a mais significativa para todo o projeto é a ["NETStandard.Library"](https://docs.microsoft.com/en-us/dotnet/articles/standard/library), esta biblioteca tem um conjunto de .NET runtimes que melhoram esta biblioteca, tais como .NET Standard, .Net Core, .NET Framework e outras importantes. Trazendo vantagens como a possibilidade dos developers criarem bibliotecas portáteis, reduz e , em alguns casos, elimina compilação condicional source partilhada e outras vantagens. 
