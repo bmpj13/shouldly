@@ -262,16 +262,54 @@ A testabilidade de componentes do *software* é determinada por factores como:
   
   Como o **Shouldly** é um projeto de grande complexidade, o uso de tantas dependências permite a sua modularização, ou seja, a sua divisão em partes distintas, melhorando a sua legibilidade e a sua manutenção. Esta divisão em módulos permite melhorar a programação e os testes ao programa, a criação de bibliotecas que podem ser usadas noutros projetos ou por outros programadores, economizar memória do computador e entre outras vantagens. No entanto, a necessidade de modularizar um programa aumenta o tempo de execução de código, devido ao tratamento adicional de ativação dos diferentes módulos.  
   
-  
-  
+<br>    
 <h3>Identificação e correção de um bug</h3>
-
-  Na página do  **Shouldly** no *GitHub*, na secção das *issues* dos dois *bugs* encontrados no projeto depois de uma breve discução e análise de ambos os *bugs*, propusemo-nos a tentar proceder à correção do *bug* #363.  Este *bug*  está situado no teste *Should.Throw*.
-  Enquanto o programa está a correr, é lançada a exceção **TimeoutException**, para informar o **Shouldly** de que o programa está demorar algum tempo a responder. Como **TimeoutException** é uma exceção pública, isto é, pode ser usada por qualquer utilizador que esteja a usar *c#*, pode não estar adaptada para certas funcionalidades do **Shouldly**.
- 
   
-<h3>Estratégia de resolução</h3>
-
-  A nossa estrategica para a resolução do *bug* passa por  criar uma exceção *private* para o próprio **Shouldly** chamada de **ShouldlyTimeOutException**, que irá ter a mesma funcionalidade que o **TimeOutException** mas devido ao facto de o utilizador não usar esta exceção não há interferencias no catch das diferentes Exceções.
+  Na página de *issues* do **Shouldly**, pode ser encontrado o [bug](https://github.com/shouldly/shouldly/issues/363) que aqui será discutido.
   
-  Assim em vez de ser lançada a exceção publica é lançada a exceção do próprio projeto a **ShouldlyTimeOutException**.
+<h4> Informação </h4>
+
+  Para reproduzir o problema, o seguinte código de teste poderia ser corrido:
+  
+      [Test]
+      public void ShouldHandleTimeoutException()
+      {
+          Func<Task> func = async () => { throw new TimeoutException(); };
+
+          Should.Throw<TimeoutException>(func);
+      }
+      
+   O teste criado deveria correr com sucesso, já que a *Task* lança a exceção *TimeoutException* da [.NET Framework](https://msdn.microsoft.com/en-us/library/system.timeoutexception(v=vs.110).aspx), e a chamada a asserção do **Shouldly** espera que ele faça isso mesmo. No entanto, o teste falha com a seguinte mensagem:
+   
+        Shouldly.ShouldCompleteInException : 
+        Task
+            should complete in
+        00:00:10
+            but did not
+        ----> System.TimeoutException : The operation has timed out.
+        
+  É importante notar que a asserção *Should.Throw* pode lançar a mensagem acima, quando a *Task* criada não corre no tempo estabelecido (alterável pelo utilizador). Porém, no excerto de código apresentado tal não devia acontecer, pois o lançamento da exceção não demoraria 10 segundos.
+  
+ Quando a *Task* demora demasiado tempo a acabar de correr, o **Shouldly**, internamente, lançaria a mesma exceção *TimeoutException* utilizada no exemplo, e geraria a mensagem correspondente. No código de teste, esta exceção é lançada diretamente, e aplicação não estava preparada para prevêr este tipo de comportamento.
+  
+<h4>Estratégia de resolução</h4>
+   
+   A origem do *bug* não se encontra num erro de codificação, mas sim num erro de concepção - devido à grande agilidade e diversidade dos *inputs* que o **Shouldly** pode receber, este devia-se abster de usar ferramentas acessíveis a qualquer utilizador, para ditar o comportamento do programa - pois vai fragilizar a sua segurança, aumentando a probabilidade de ser "atacado" (note-se que esta estratégia devia ser adotada para qualquer código que altere o estado do programa, e não só para corrigir este *bug* em específico).
+   
+   A estratégia de resolução passa, então, por alterar o *handling* das *Tasks*, quando estas demoram muito a correr. Em vez de ser usada a exceção *System.TimeoutException*, foi criada uma nova exceção, denominada de *ShouldlyTimeoutException*, que será lançada nas condições referidas. Como a exceção *ShouldlyTimeoutException* é usada somente dentro do **Shouldly**, não podendo ser chamada por utilizadores, o programa correrá conforme esperado.
+   
+   As alterações feitas podem ser vistas com mais detalhe [aqui](https://github.com/bmpj13/shouldly/commit/50a46607fa196bbece867ce22efd812c2b3abb85). Foram também criados [novos testes](https://github.com/bmpj13/shouldly/commit/b9aef0062940f9756dcda30329a1724da0316707), para garantir que o *bug* estava a ser corrigido.
+   
+*<h4> Pull Request </h4>*
+  
+  É da nossa opinião que a resolução criada segue os *coding standards* do **Shouldly**, tem qualidade, é escalável, e resolve de forma simples o *bug* pretendido. Por essas mesmas razões, um [*pull request*](https://github.com/shouldly/shouldly/pull/414) foi enviado para o repositório principal.
+  
+  Note-se, também, que as alterações efetuadas não mudam os *outcomes* dos [testes de integração contínua](https://ci.appveyor.com/project/shouldly/shouldly/build/2.8.3-PullRequest.414+33.build.312/tests).
+  
+<br>
+------
+<h3>Contribuição do grupo</h3>
+João Barbosa - 25% <br>
+Lázaro Costa - 25% <br> 
+Miguel Lira - 25% <br>
+Miriam Gonçalves - 25% 
