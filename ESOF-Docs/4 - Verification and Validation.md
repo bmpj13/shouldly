@@ -290,7 +290,7 @@ A testabilidade de componentes do *software* é determinada por factores como:
         
   É importante notar que a asserção *Should.Throw* pode lançar a mensagem acima, quando a *Task* criada não corre no tempo estabelecido (alterável pelo utilizador). Porém, no excerto de código apresentado tal não devia acontecer, pois o lançamento da exceção não demoraria 10 segundos.
   
- Quando a *Task* demora demasiado tempo a acabar de correr, o **Shouldly**, internamente, lançaria a mesma exceção *TimeoutException* utilizada no exemplo, e geraria a mensagem correspondente. No código de teste, esta exceção é lançada diretamente, e aplicação não estava preparada para prevêr este tipo de comportamento.
+ Quando a *Task* demora demasiado tempo a acabar de correr, o **Shouldly**, internamente, lançaria a mesma exceção *TimeoutException* utilizada no exemplo. No código de teste, esta exceção é lançada diretamente, e a aplicação não estava preparada para receber este tipo de *input*.
   
 <h4>Estratégia de resolução</h4>
    
