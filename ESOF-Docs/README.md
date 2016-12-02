@@ -66,3 +66,5 @@ Os diferentes relatórios podem ser encontrados aqui:
 2 - [Requisitos](https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/2%20-%20Requirements.md)
 
 3 - [Arquitetura](https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/3%20-%20Architecture.md)
+
+4 - [V&V](https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/4%20-%20Verification%20and%20Validation.md)
