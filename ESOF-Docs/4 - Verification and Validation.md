@@ -197,6 +197,7 @@ A testabilidade de componentes do *software* é determinada por factores como:
   + Determina o grau em que o uso de diversas tecnologias requer diversos casos de teste
   
   O **Shouldly** tem pouca heterogeneidade, no sentido em que só usa testes de integração. Os testes dos módulos têm sempre a mesma receita:
+  
   1. Criar um cenário de teste que deve passar.
   2. Criar um cenário de teste que deve falhar, verificando a mensagem retornada.
   3. Podem ser criados mais testes - por exemplo, quando são encontrados *bugs*.
