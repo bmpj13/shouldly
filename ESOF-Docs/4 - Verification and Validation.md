@@ -55,7 +55,7 @@ Para as parágrafos seguintes, é importante referir que o **Shouldly** não usa
   <sub>Source: blog.testlodge.com</sub>
 </p>
 
-Nesta aplicação, os cenários de teste passam por, não só verificar se a asserção passa ou falha, mas também qual a mensagem que será retornada - com e sem *source code* do utilizador.
+Nesta aplicação, os cenários de teste passam por, não só verificar se a asserção passa ou falha, mas também qual a mensagem que será retornada - com e sem *source code* do utilizador. Por isso, pode-se considerar que o tipo de teste utilizado é *teste de integração*.
 
 Por este motivo, nem tudo descrito será diretamente visível nos testes da aplicação. No entanto, é da nossa opinião que as características ilustradas estão presentes.
 
@@ -196,11 +196,12 @@ A testabilidade de componentes do *software* é determinada por factores como:
 - **Heterogeneidade**
   + Determina o grau em que o uso de diversas tecnologias requer diversos casos de teste
   
-  O **Shouldly**, tal como pode ser verificado na [lista de dependências](https://github.com/bmpj13/shouldly/blob/develop/src/Shouldly/project.json) do projeto, utiliza várias tecnologias nas suas diferentes implementações, nomeadamente utiliza [.NET](https://www.microsoft.com/net) e [System](https://msdn.microsoft.com/en-us/library/system(v=vs.110).aspx).
+  O **Shouldly** tem pouca heterogeneidade, no sentido em que só usa testes de integração. Os testes dos módulos têm sempre a mesma receita:
+  1. Criar um cenário de teste que deve passar.
+  2. Criar um cenário de teste que deve falhar, verificando a mensagem retornada.
+  3. Podem ser criados mais testes - por exemplo, quando são encontrados *bugs*.
   
-  Das ferramentas utilizadas, a tecnologia *System* requer uma atenção especial, pois é utilizada para alterar o comportamento do programa, tendo em conta as definições da máquina onde a aplicação está a ser corrida. Este uso provoca dificuldades no teste da aplicação, pelas razões mencionadas na secção da [controlabilidade](#controllability).
-  
-  Desta forma, devido à quantidade de desfechos possíveis, e visto que o **Shouldly** é um projeto *open-source*, torna-se compreensível que nem todos sejam testados. É importante, portanto, que incongruências sejam reportadas pelos diferentes contribuidores do projeto, tornando, assim, possível, reduzir o número de *outcomes* não testados.
+  Note-se, no entanto, que, apesar da pouca heterogeneidade nos testes, os uso de cenários como testes de integração são suficientes para garantir uma boa consistência da aplicação.
 
 <br>
 <h3>Estatísticas e Análises de Testes</h3>
