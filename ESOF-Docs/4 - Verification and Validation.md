@@ -310,9 +310,9 @@ A testabilidade de componentes do *software* é determinada por factores como:
    
 *<h4> Pull Request </h4>*
   
-  É da nossa opinião que a resolução criada segue os *coding standards* do **Shouldly**, tem qualidade, é escalável, e resolve de forma simples o *bug* pretendido. Por essas mesmas razões, um [*pull request*](https://github.com/shouldly/shouldly/pull/414) foi enviado para o repositório principal.
+  É da nossa opinião que a resolução criada segue os *coding standards* do **Shouldly**, tem qualidade, é escalável, e resolve de forma simples o *bug* pretendido. Por essas mesmas razões, um [*pull request*](https://github.com/shouldly/shouldly/pull/414) foi enviado para o repositório principal. Note-se, também, que as alterações efetuadas não mudam os *outcomes* dos [testes de integração contínua](https://ci.appveyor.com/project/shouldly/shouldly/build/tests).
   
-  Note-se, também, que as alterações efetuadas não mudam os *outcomes* dos [testes de integração contínua](https://ci.appveyor.com/project/shouldly/shouldly/build/2.8.3-PullRequest.414+33.build.312/tests).
+  O *pull request* foi revisto e aceite pelos dois coordenadores do projeto :+1:.
   
 <br>
 ------
