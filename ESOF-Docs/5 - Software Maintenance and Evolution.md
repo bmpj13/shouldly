@@ -10,6 +10,8 @@ Durante esta alteração feita ao software com o objetivo de melhorá-lo é nece
 
 Estas mudanças, dependendo do tipo de projeto, podem requerer custos. No entanto, sendo o **Shouldly** um projeto *open source* aberto à comunidade para o seu desenvolvimento a parte dos custos não é aplicável a esta *framework*. Por outro lado, o facto de haver mudança na equipa de desenvolvimento do *software* é obrigatório que haja diálogo entre os *developers* se as mudanças a aplicar ao projeto são necessárias, úteis ou mesmo possíveis de concretizar tendo em conta a características e estrutura do projeto em desenvolvimento.   
 
+<h3> Métricas SIG <h3>
+
 Tendo em conta o *software* em estudo, **Shouldly**, foi proposto o uso de uma ferramenta para verificar se é possível a sua manutenção e, de certa forma, avaliar a qualidade do projeto desenvolvido até então.
 
 Para que um projeto seja de possível manutenção é necessário que, segundo esta framework obdeça aos seguintes pontos:
