@@ -14,7 +14,7 @@ Estas mudanças, dependendo do tipo de projeto, podem requerer custos. No entant
 
 Tendo em conta o *software* em estudo, **Shouldly**, foi proposto o uso de uma ferramenta para verificar se é possível a sua manutenção e, de certa forma, avaliar a qualidade do projeto desenvolvido até então.
 
-Para que um projeto seja de possível manutenção é necessário que, segundo esta framework obdeça aos seguintes pontos:
+Para que um projeto seja de possível manutenção é necessário que, segundo esta framework obedeça aos seguintes pontos:
    -	Escrever pequenas unidade de código
    - 	Escrever unidades simples de código
    -  Evitar a repetição de código
