@@ -1,7 +1,9 @@
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/master/ESOF-Docs/resources/images/ShouldlyLogo.png" alt="icon">
 </p>
-<h1 align="center">Evolução e Manutenção do Software</h1>
+<h1 align="center">Evolução e Manutenção do Software </h1> 
+
+[![BCH compliance](https://bettercodehub.com/edge/badge/bmpj13/shouldly)](https://bettercodehub.com)
 
 Em engenharia de *software*, manutenção ou evolução de *software* é descrito como o processo de otimização e melhoria de um software já desenvolvido. Esta fase, que ocorre durante o desenvolvimento de um *software*, envolve a melhoria de funcionalidades, correção e prevenção de erros, adaptação a diferentes mudanças do sistema e o requerimento de novas funcionalidades por parte dos utilizadores.
 
