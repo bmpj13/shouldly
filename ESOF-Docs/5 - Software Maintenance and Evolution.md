@@ -96,3 +96,11 @@ _<h3> Pull Request </h3>_
 A solução foi implementada com sucesso, mostrando-se simples e fiável. Foram também adicionados testes, para garantir o seu bom funcionamento.
 
 Por estes motivos, foi enviado um [_pull request_](https://github.com/shouldly/shouldly/pull/417) para o repositório principal. Note-se, no entanto, que provavelmente não será aceite, tendo em conta que as *issues* referentes às funções implementadas na nossa solução foram abertas em 2015, e não houve posteriormente uma grande discussão sobre o tópico. Isto porque o **Shouldly** é uma aplicação com alguns anos, e, portanto, a maioria das *features* principais já foram implementadas. Portanto, a maioria dos *pull requests* aceites passam por resolução de *bugs*, ou pela implementação de funcionalidades especialmente pedidas pelos coordenadores do projeto.
+
+<br>
+------
+<h3>Contribuição do grupo</h3>
+João Barbosa - 25% <br>
+Lázaro Costa - 25% <br> 
+Miguel Lira - 25% <br>
+Miriam Gonçalves - 25% 
