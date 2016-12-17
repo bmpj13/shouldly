@@ -74,7 +74,7 @@ Foram implementadas duas novas funcionalidades para adicionar à aplicação: as
 As funcionalidades são similares ao método [ShouldContain](http://docs.shouldly-lib.net/docs/shouldcontain), no sentido em que processam o conteúdo de [IEnumerables](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable(v=vs.110).aspx).
 Ao contrário do *ShouldContain* que verifica se um certo elemento pertence ao enumerável, as funções *ShouldBeginWith* e *ShouldEndWith* verificam se esse elemento se encontra exatamente no início ou no fim do enumerável, respetivamente. 
 
-Estes métodos são bastante úteis quando é necessário ter mais especifidade nas unidades de teste, utilizando o **Shouldly**. Estas funcionalidades são implementadas noutras ferramentas variadas de teste, pelo que o desenvolvimento destas pretendem preencher uma lacuna na aplicação. São funções genéricas pois funcionam com qualquer tipo de enumerável.
+Estes métodos são bastante úteis quando é necessário ter mais especifidade nas unidades de teste, utilizando o **Shouldly**. Estas funcionalidades são implementadas noutras ferramentas de teste, pelo que o desenvolvimento destas pretende preencher uma lacuna na aplicação. São funções genéricas pois funcionam com qualquer tipo de enumerável. Como acontece em todas as asserções da API do **Shouldly**, caso o valor recebido seja diferente do valor expectável, é lançada uma exceção, gerando uma mensagem de erro. No caso da função *ShouldBeginWith*, a exceção é lançada se o primeiro elemento do conjunto não for igual ao valor recebido como argumento. Na função *ShouldEndWith*, tal acontece se o último elemento não for igual ao recebido.
 
 A facilidade na implementação destas *features* comprova que a aplicação tem, na realidade, uma estrutura ótima para poder evoluir as suas funcionalidades: nenhum código já feito teve que ser alterado, pois o **Shouldly** tem algum tratamento semi-automático para as suas funções. Nomedamente, existe um processamento no nome do método, que posteriormente é utilizado para gerar mensagens de erro. Desta forma, o gerador de mensagens do projeto consegue criar grande parte da mensagem, somente acedendo às ao nome e aos argumentos da função.
 
@@ -89,12 +89,6 @@ A criação de novas asserções passa, então, por:
   2. Associar a funcionalidade ao gerador de mensagens apropriado.
   
 A facilidade em implementar novas *features* torna o **Shouldly** um projeto bastante convidativo para novos participantes. Além disso, é simplificada a manutenção e evolução do programa.
-
-Para além de ser uma feature que pode ser muito útil, pois pode verificar se um dado conjunto de elementos começa ou acaba com um valor expetável, também despertou algum interesse na nossa parte para a tentar resolver.
-
-São asserções genéricas pois recebe como argumentos o conjunto de elementos de qualquer tipo e o elemento expetável.
-
-No caso da função **ShouldBeginWith** se o primeiro elemento do conjunto não for igual ao expectavél, lança uma exceção, na outra função **ShoulendWith**, que é muito parecida com a anterior, no caso de o último elemento do conjunto não for igual ao expetável lança também uma exceção e em ambos o caso o teste é terminado com insucesso.
 
 <br>
 _<h3> Pull Request </h3>_
