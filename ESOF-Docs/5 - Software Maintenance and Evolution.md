@@ -37,7 +37,17 @@ Duas das métricas que fazem com que o **Shouldly** possa ser considerado um pro
 
 Outro fator crucial, para permitir uma melhor manutenção e evolução da aplicação, está relacionado com o tamanho do *source code* do projeto. O *BetterCode* avalia o projeto em 12 *man-month*, afirmando ainda que o limite ideal máximo é de 20 *man-year*. Isto é um resultado notável, tendo em conta que o projeto é uma ferramenta de asserções, e, por essa razão, tem uma API extensa.
 
-Um dos pontos em que o **Shouldly** não teve aprovação, foi na métrica de testes automatizados:
+<br>
+Uma das métricas em que o projeto não passou com sucesso, foi em manter as interfaces pequenas.
+
+<p align="center">
+  <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/bch_interfaces_small.png" alt="icon">
+</p>
+
+O **Shouldly** tem diversos métodos que necessitam de muitos argumentos (como é visível na imagem), pelo que esta avaliação é correta. A quantidade de argumentos devia ser reduzida, para tornar a utilização das funções mais intituiva, e também para facilitar a manutenção destas componentes. Uma solução passaria por agrupar a informação em estruturas apropriadas, para tornar o código mais organizado e legível.
+
+<br>
+Outro dos pontos em que o **Shouldly** não obteve aprovação, foi na métrica de testes automatizados:
 
 <p align="center">
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/bch_automate_tests.png" alt="icon">
@@ -45,7 +55,9 @@ Um dos pontos em que o **Shouldly** não teve aprovação, foi na métrica de te
 
 O *BetterCode* rotula o **Shouldly** como um projeto de dimensão média (menos de 10.000 linhas de código), pelo que indica que a aplicação deve ter metade das linhas de código para linhas de teste. Além disso, deve ter 1% de asserções. Note-se que este projeto tem mais linhas de testes do que linhas de código - pelo que, provavelmente, esta métrica falha devido à falta de asserções, visto que nenhuma é usada nos testes.
 
-Tendo em conta que o **Shouldly** possui um rácio de 170% na cobertura, é possível admitir que está bem testado, e que cobre grande parte dos pontos cruciais da aplicação. Por isso, é da nossa opinião que este ponto de avaliação, provavelmente, deveria ter passado, podendo o *BetterCode* ser mais flexível. 
+Tendo em conta que o **Shouldly** possui um rácio de 170% na cobertura, é possível admitir que está bem testado, e que cobre grande parte dos pontos cruciais da aplicação. Por isso, é da nossa opinião que este ponto de avaliação, provavelmente, deveria ter passado, podendo o *BetterCode* ser mais flexível.
+
+
 
 (nao disse nada sobre o ponto oito porque nao entendi muito bem)
 (nao disse nada sobre o ponto dez porque acho que seria repetir me ainda mais pois acho que em termos práticos tudo é diferente, mas em termos teoricos todos nos levam a um codigo muito bem organizado e estruturado e limpo)
