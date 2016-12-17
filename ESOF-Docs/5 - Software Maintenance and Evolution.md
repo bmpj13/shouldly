@@ -61,3 +61,10 @@ Outro dos pontos em que o **Shouldly** não obteve aprovação, foi na métrica 
 O *BetterCode* rotula o **Shouldly** como um projeto de dimensão média (menos de 10.000 linhas de código), pelo que indica que a aplicação deve ter metade das linhas de código para linhas de teste. Além disso, deve ter 1% de asserções. Note-se que este projeto tem mais linhas de testes do que linhas de código - pelo que, provavelmente, esta métrica falha devido à falta de asserções, visto que nenhuma é usada nos testes.
 
 Tendo em conta que o **Shouldly** possui um rácio de 170% na cobertura, é possível admitir que está bem testado, e que cobre grande parte dos pontos cruciais da aplicação. Por isso, é da nossa opinião que este ponto de avaliação, provavelmente, deveria ter passado, podendo o *BetterCode* ser mais flexível.
+
+<br>
+_<h3> Pull Request </h3>_
+
+A solução foi implementada com sucesso, mostrando-se simples e fiável. Foram também adicionados testes, para garantir o seu bom funcionamento.
+
+Por estes motivos, foi enviado um [_pull request_](https://github.com/shouldly/shouldly/pull/417) para o repositório principal. Note-se, no entanto, que provavelmente não será aceite, tendo em conta que as *issues* referentes às funções implementadas na nossa solução foram abertas em 2015, e não houve posteriormente uma grande discussão sobre o tópico. Isto porque o **Shouldly** é uma aplicação com alguns anos, e, portanto, a maioria das *features* principais já foram implementadas. Portanto, a maioria dos *pull requests* aceites passam por resolução de *bugs*, ou pela implementação de funcionalidades especialmente pedidas pelos coordenadores do projeto.
