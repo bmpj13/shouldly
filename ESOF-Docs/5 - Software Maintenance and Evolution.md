@@ -82,6 +82,8 @@ Este tratamento é __semi__-automático, porque, na realidade, é necessário id
 
 Note-se que não foi necessário alterar código já criado na aplicação, pois os métodos *ShouldBeginWith* e *ShouldEndWith* já exisitiam para processar *strings*, como referido anteriormente. Assim, a associação ao gerador de mensagens já tinha sido implementada, não sendo necessários esforços adicionais.
 
+Tendo em conta todos estes fatores, não foi necessário uma grande análise sobre o impacto das mudanças: visto que nenhum código foi alterado, dificilmente a criação de novas asserções vão afetar o bom funcionamento das restantes, visto que são independentes entre si. Para chegar a estas conclusões, foram analisadas a sequências de chamadas a partir da asserção *ShouldContain*, e é facilmente perceptível que os maiores cuidados a ter residem no gerador de mensagens.
+
 A criação de novas asserções passa, então, por:
   1. Implementar a funcionalidade.
   2. Associar a funcionalidade ao gerador de mensagens apropriado.
