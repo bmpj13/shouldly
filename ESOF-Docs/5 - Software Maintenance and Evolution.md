@@ -90,6 +90,12 @@ A criação de novas asserções passa, então, por:
   
 A facilidade em implementar novas *features* torna o **Shouldly** um projeto bastante convidativo para novos participantes. Além disso, é simplificada a manutenção e evolução do programa.
 
+Para além de ser uma feature que pode ser muito útil, pois pode verificar se um dado conjunto de elementos começa ou acaba com um valor expetável, também despertou algum interesse na nossa parte para a tentar resolver.
+
+São asserções genéricas pois recebe como argumentos o conjunto de elementos de qualquer tipo e o elemento expetável.
+
+No caso da função **ShouldBeginWith** se o primeiro elemento do conjunto não for igual ao expectavél, lança uma exceção, na outra função ** ShoulendWith**, que é muito parecida com a anterior, no caso de o último elemento do conjunto não for igual ao expetável lança também uma exceção e em ambos o caso o teste é terminado com insucesso.
+
 <br>
 _<h3> Pull Request </h3>_
 
