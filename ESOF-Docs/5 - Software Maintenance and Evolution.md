@@ -11,7 +11,7 @@ Durante esta alteração feita ao software com o objetivo de melhorá-lo, é nec
 
 Estas mudanças, dependendo do tipo de projeto, podem requerer custos. No entanto, sendo o **Shouldly** um projeto *open source*, aberto à comunidade para o seu desenvolvimento, este não é um fator considerável. Por outro lado, o facto de haver mudança na equipa de desenvolvimento do *software* é obrigatório que haja diálogo entre os *developers*, se as mudanças a aplicar ao projeto são necessárias, úteis ou mesmo possíveis de concretizar, tendo em conta a características e estrutura do projeto em desenvolvimento.   
 
-<h3> Métricas SIG </h3>
+<h3> Evolução e Manutenção </h3>
 
 Para avaliar a qualidade do **Shouldly**, foi utilizada a ferramenta [Better Code Hub](https://bettercodehub.com/). Esta ferramenta avalia a aplicação e determina fatores como legibilidade, manutenibilidade e capacidade de evolução. Para tal, os seguintes são calculados os seguintes pontos:
 
