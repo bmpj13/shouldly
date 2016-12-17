@@ -56,10 +56,3 @@ Outro dos pontos em que o **Shouldly** não obteve aprovação, foi na métrica 
 O *BetterCode* rotula o **Shouldly** como um projeto de dimensão média (menos de 10.000 linhas de código), pelo que indica que a aplicação deve ter metade das linhas de código para linhas de teste. Além disso, deve ter 1% de asserções. Note-se que este projeto tem mais linhas de testes do que linhas de código - pelo que, provavelmente, esta métrica falha devido à falta de asserções, visto que nenhuma é usada nos testes.
 
 Tendo em conta que o **Shouldly** possui um rácio de 170% na cobertura, é possível admitir que está bem testado, e que cobre grande parte dos pontos cruciais da aplicação. Por isso, é da nossa opinião que este ponto de avaliação, provavelmente, deveria ter passado, podendo o *BetterCode* ser mais flexível.
-
-
-
-(nao disse nada sobre o ponto oito porque nao entendi muito bem)
-(nao disse nada sobre o ponto dez porque acho que seria repetir me ainda mais pois acho que em termos práticos tudo é diferente, mas em termos teoricos todos nos levam a um codigo muito bem organizado e estruturado e limpo)
-(falta o primeiro e o segundo ponto que falha)
-
