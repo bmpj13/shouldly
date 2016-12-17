@@ -317,7 +317,7 @@ A testabilidade de componentes do *software* é determinada por factores como:
 <br>
 ------
 <h3>Contribuição do grupo</h3>
-João Barbosa - 25% <br>
-Lázaro Costa - 25% <br> 
-Miguel Lira - 25% <br>
-Miriam Gonçalves - 25% 
+João Barbosa - 30% <br>
+Lázaro Costa - 20% <br> 
+Miguel Lira - 20% <br>
+Miriam Gonçalves - 30% 
