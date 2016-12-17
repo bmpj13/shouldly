@@ -62,22 +62,33 @@ O *BetterCode* rotula o **Shouldly** como um projeto de dimensão média (menos 
 
 Tendo em conta que o **Shouldly** possui um rácio de 170% na cobertura, é possível admitir que está bem testado, e que cobre grande parte dos pontos cruciais da aplicação. Por isso, é da nossa opinião que este ponto de avaliação, provavelmente, deveria ter passado, podendo o *BetterCode* ser mais flexível.
 
+Em geral, é possível afirmar que o **Shouldly** é um projeto bem construído, pelo que a pontuação atribuída é merecida - devendo até, provavelmente, ser superior.
+
+<br>
+<h3> Implementação da feature </h3>
+
+Foram implementadas duas novas funcionalidades para adicionar à aplicação: as funções [ShouldBeginWith](https://github.com/shouldly/shouldly/issues/281) e [ShouldEndWith](https://github.com/shouldly/shouldly/issues/282) foram discutidas no sistema de *issues* do **Shouldly**, e, sendo métodos úteis, foi decidido que seriam desenvolvidas.
+
+É de notar que a função *ShouldBeginWith* foi inicialmente proposta para se chamar *ShouldStartWith*. No entanto, como estas funções já exisitiam para *strings* e usavam a notação __Begin__ e __End__, decidimos que seria melhor manter os mesmos nomes, pois torna mais intuitiva a sua utilização.
+
+As funcionalidades são similares ao método [ShouldContain](http://docs.shouldly-lib.net/docs/shouldcontain), no sentido em que processam o conteúdo de [IEnumerables](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable(v=vs.110).aspx).
+Ao contrário do *ShouldContain* que verifica se um certo elemento pertence ao enumerável, as funções *ShouldBeginWith* e *ShouldEndWith* verificam se esse elemento se encontra exatamente no início ou no fim do enumerável, respetivamente. 
+
+Estes métodos são bastante úteis quando é necessário ter mais especifidade nas unidades de teste, utilizando o **Shouldly**. Estas funcionalidades são implementadas noutras ferramentas variadas de teste, pelo que o desenvolvimento destas pretendem preencher uma lacuna na aplicação. São funções genéricas pois funcionam com qualquer tipo de enumerável.
+
+A facilidade na implementação destas *features* comprova que a aplicação tem, na realidade, uma estrutura ótima para poder evoluir as suas funcionalidades: nenhum código já feito teve que ser alterado, pois o **Shouldly** tem algum tratamento semi-automático para as suas funções. Nomedamente, existe um processamento no nome do método, que posteriormente é utilizado para gerar mensagens de erro. Desta forma, o gerador de mensagens do projeto consegue criar grande parte da mensagem, somente acedendo às ao nome e aos argumentos da função.
+
+Este tratamento é __semi__-automático, porque, na realidade, é necessário identificar o tipo de mensagem que queremos criar, pelo que o nome do método deve ser identificado no [ficheiro apropriado](https://github.com/shouldly/shouldly/blob/cb58830180c1c3f87db9b0eb74ef9d7c446ec71e/src/Shouldly/MessageGenerators/ShouldBeginEndWithMessageGenerator.cs). Deve também ser construído o *template* da mensagem a ser gerada - mas, seguindo os padrões do **Shouldly**, isto torna-se relativamente simples. Note-se que não foi necessário alterar código já criado na aplicação, pois os métodos *ShouldBeginWith* e *ShouldEndWith* já exisitiam para processar *strings*, como referido anteriormente. Assim, a associação ao gerador de mensagens já tinha sido implementado, não sendo necessários esforços adicionais.
+
+A criação de novas asserções passa, então, por:
+  1. Implementar a funcionalidade.
+  2. Associar a funcionalidade ao gerador de mensagens apropriado.
+  
+A facilidade em implementar novas *features* torna o **Shouldly** um projeto bastante convidativo para novos participantes. Além disso, é simplificada a manutenção e evolução do programa.
+
 <br>
 _<h3> Pull Request </h3>_
 
 A solução foi implementada com sucesso, mostrando-se simples e fiável. Foram também adicionados testes, para garantir o seu bom funcionamento.
 
 Por estes motivos, foi enviado um [_pull request_](https://github.com/shouldly/shouldly/pull/417) para o repositório principal. Note-se, no entanto, que provavelmente não será aceite, tendo em conta que as *issues* referentes às funções implementadas na nossa solução foram abertas em 2015, e não houve posteriormente uma grande discussão sobre o tópico. Isto porque o **Shouldly** é uma aplicação com alguns anos, e, portanto, a maioria das *features* principais já foram implementadas. Portanto, a maioria dos *pull requests* aceites passam por resolução de *bugs*, ou pela implementação de funcionalidades especialmente pedidas pelos coordenadores do projeto.
-
-<h3>Implementação da  feature</h3>
-No projeto **Shouldly**, decidimos imprementar a feature  ShouldBeginWith & ShouldEndWith #417.
-
-Foi uma feature bastante discutida e falada nas issues do projeto e como alguns develops necessitavam desta feature decidimos implementa-la.
-
-Para além de ser uma feature que pode ser muito útil, pois pode verificar se um dado conjunto de elementos começa ou acaba com uma valor espetável, também despertou algum interesse na nossa parte para a tentar resolver.
-
-São funções genéricas pois recebem como argumentos o conjunto de elementos de qualquer tipo e o elemento expetável, caso não se verifique a igualdade a função lança uma exceção, não se verificando a validade do teste.
-
-O projeto **Shouldly** é um projeto muito framentado em pequenas partes indepedentes umas das outras, para tal apenas precisamos de acrescentar estas novas funcionalidades, neste caso novas funçoes de teste sem alterar o projeto em si. 
-
-Tentamos melhoramos as ferramentas de teste deste projeto para uma melhor eficiência, automatização e rapidez nos testes.
