@@ -31,6 +31,9 @@ Após execução da ferramenta no nosso projeto, verificámos que nem todos as m
   <img src="https://github.com/bmpj13/shouldly/blob/develop/ESOF-Docs/resources/images/bch_score.png" alt="icon">
 </p>
 
+É de notar que, para obter uma avaliação positiva em *Keep Architecture Componentes Balanced*, foi preciso criar um ficheiro de configuração designado [.bettercodehubyml](https://github.com/bmpj13/shouldly/blob/master/.bettercodehub.yml), alterando o nível de profundidade das componentes.
+
+<br>
 De facto o **Shouldly** é um projeto que possui, em geral, pequenos e simples pedaços de código, que o tornam mais legível e de mais fácil compreensão. Além disso, é um projeto que não possui código repetido, isto é, existe apenas uma função para cada ação.
 
 Duas das métricas que fazem com que o **Shouldly** possa ser considerado um projeto extremamente estruturado, é o facto de estar dividido em módulos, tendo cada módulo a ver apenas com uma certa secção do projeto, e além disso, tem um grande grau de independência entre cada um dos módulos. Mostra, também, que tem uma arquitetura sólida.
