@@ -68,3 +68,16 @@ _<h3> Pull Request </h3>_
 A solução foi implementada com sucesso, mostrando-se simples e fiável. Foram também adicionados testes, para garantir o seu bom funcionamento.
 
 Por estes motivos, foi enviado um [_pull request_](https://github.com/shouldly/shouldly/pull/417) para o repositório principal. Note-se, no entanto, que provavelmente não será aceite, tendo em conta que as *issues* referentes às funções implementadas na nossa solução foram abertas em 2015, e não houve posteriormente uma grande discussão sobre o tópico. Isto porque o **Shouldly** é uma aplicação com alguns anos, e, portanto, a maioria das *features* principais já foram implementadas. Portanto, a maioria dos *pull requests* aceites passam por resolução de *bugs*, ou pela implementação de funcionalidades especialmente pedidas pelos coordenadores do projeto.
+
+<h3>Implementação da  feature</h3>
+No projeto **Shouldly**, decidimos imprementar a feature  ShouldBeginWith & ShouldEndWith #417.
+
+Foi uma feature bastante discutida e falada nas issues do projeto e como alguns develops necessitavam desta feature decidimos implementa-la.
+
+Para além de ser uma feature que pode ser muito útil, pois pode verificar se um dado conjunto de elementos começa ou acaba com uma valor espetável, também despertou algum interesse na nossa parte para a tentar resolver.
+
+São funções genéricas pois recebem como argumentos o conjunto de elementos de qualquer tipo e o elemento expetável, caso não se verifique a igualdade a função lança uma exceção, não se verificando a validade do teste.
+
+O projeto **Shouldly** é um projeto muito framentado em pequenas partes indepedentes umas das outras, para tal apenas precisamos de acrescentar estas novas funcionalidades, neste caso novas funçoes de teste sem alterar o projeto em si. 
+
+Tentamos melhoramos as ferramentas de teste deste projeto para uma melhor eficiência, automatização e rapidez nos testes.
